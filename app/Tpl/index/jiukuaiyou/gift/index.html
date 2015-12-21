@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<include file="public:head" />
+<load href="__STATIC__/ftxia/new/css/md-pagination.css" />
+<load href="__STATIC__/ftxia/new/css/md-goodslist.css" />
+<load href="__STATIC__/ftxia/new/css/md-nav-good.css" />
+<load href="__STATIC__/ftxia/new/css/md-alertSearch.css" />
+<load href="__STATIC__/ftxia/new/css/md-public.css" />
+<load href="__STATIC__/ftxia/new/css/pg-juandou.css" />
+<load href="__STATIC__/ftxia/new/css/pg-try.css" />
+<style>
+.main .nav_con {width: 980px;}
+.main .item_info {width: 980px;}
+.jiu_bd .goods_box {width: 244px;}
+</style>
+</head>
+<body>
+<include file="public:header" />
+<div class="jiu-nav widescreen clear" style="z-index: 18; ">
+	<include file="public:nav-classify2" /> 
+</div>
+
+<div class="main">
+	<div class="piece jiu_goods">
+		<div class="jiu_info">
+            <div class="jiu_bd jiu_top fl">
+                <div class="nav_con">
+                    <div class="top_nav">
+                        <ul>
+                            <li class="other_normal other_active"><a href="{:U('gift/index')}">0元兑换</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item_info">
+                    <ul>
+
+					<volist name="item_list" id="item" mod="3">
+
+						<li class="goods_box juandou_box  ">
+                            <div class="inner_box tag_buy">
+                                <h3>
+                                    <span class="green"></span>
+                                    <a class="inform_title" href="{:U('gift/detail', array('id'=>$item['id']))}" target="_blank">{$item.title}</a>
+                                </h3>
+                                <div class="pic">
+                                    <a href="{:U('gift/detail', array('id'=>$item['id']))}" target="_blank">
+                                        <img alt="{$item.title}" src="{:attach($item['img'], 'score_item')}">
+                                    </a>
+                                    <div class="restate"><span><b>{$item.stock}</b>件以下</span></div>                                </div>
+                                <div class="juan_detail">
+                                    <span class="current_price"><b>￥</b>{$item.coupon_price}</span>
+                                    <span class="original_pirce">￥{$item.price}</span>
+                                    <div class="juan_price">
+                                        <span class="all_juandou">{$item.score}</span>
+                                        <span class="normal">&nbsp;{:L('exchange')}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+ 
+					</volist>
+
+                    </ul>
+                </div>
+            </div>
+
+            
+        </div>
+        <div class="page"><div class="pageNav">{$page_bar}</div></div>	
+		</div>
+</div>
+
+ 
+<include file="public:footer" />
+</body>
+</html>

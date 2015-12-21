@@ -1,0 +1,26 @@
+<div class="dialog_login ">
+    <form id="J_dlogin_form" action="{:U('user/login')}" method="post">
+    <p id="J_login_fail" class="login_fail">{:L('username_require')}</p>
+    <div class="login_form">
+        <dl>
+            <dd>{:L('username')}：</dd>
+            <dt><input type="text" class="J_username text" name="username"></dt>
+            <dd>{:L('password')}：</dd>
+            <dt><input type="password" class="J_password text" name="password"></dt>
+            <dd>&nbsp;</dd>
+            <dt><label><input type="checkbox" checked="" class="checkbox" name="remember">{:L('rememberme')}</label></dt>
+            <dd>&nbsp;</dd>
+            <dt>
+                <input type="submit" class="smt" value="{:L('login')}"> 
+                <a href="{:U('forget/index')}">{:L('forget_password')}</a>
+            </dt>
+        </dl>
+    </div>
+    </form>
+    <div class="reg_or_oauth">
+        <p>{:L('other_login_model')}：</p>
+		<volist name="oauth_list" id="val">
+            <a href="{:U('oauth/index', array('mod'=>$val['code']))}" class="l_{$val.code}"></a>
+        </volist>
+    </div><div class="reg">还没有{:C('ftx_site_name')}帐号 <br><a href="{:U('user/register')}">立即注册</a></div>
+</div>

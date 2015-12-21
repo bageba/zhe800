@@ -1,0 +1,158 @@
+.mains .jiu_comment {
+background: white;
+width: 730px;
+padding: 15px;
+height: auto;
+overflow: hidden;
+}
+h3 {
+font-size: 14px;
+}
+.mains .jiu_comment h3 {
+color: gray;
+font-size: 18px;
+font-family: "Î¢ÈíÑÅºÚ","ËÎÌå";
+font-weight: normal;
+}
+.t_l {
+clear: both;
+padding: 0 15px;
+padding-bottom: 60px;
+}
+.t_l .t_f {
+padding: 20px 40px 20px 0;
+border-bottom: 1px solid #F2F2F2;
+height: auto;
+overflow: hidden;
+clear: both;
+}
+.t_l .t_f {
+border-bottom: 1px solid #F3F3F3;
+}
+.t_l .time {
+float: right;
+}
+.t_l .time .t {
+color: #CCC;
+float: left;
+}
+.t_l .hd {
+position: absolute;
+width: 54px;
+}
+.t_l .hd img {
+height: 54px;
+width: 54px;
+border: #E9E9E8 solid 1px;
+}
+.t_l .tk {
+padding: 0 0 0 70px;
+}
+.t_l .inf span {
+color: #999;
+white-space: nowrap;
+}
+.t_l .inf .username {
+font-size: 12px;
+font-weight: bold;
+padding-right: 5px;
+color: #FF7201;
+}
+.t_l .text {
+font-size: 12px;
+line-height: 22px;
+color: #727272;
+width: 620px;
+}
+.t_l .pic {
+font-size: 0;
+position: relative;
+width: 100%;
+overflow: hidden;
+padding-top: 7px;
+}
+.t_l .pic div {
+background-color: white;
+display: inline-block;
+margin: 0px 5px 5px 0;
+display: inline-block;
+position: relative;
+float: left;
+}
+.t_l .pic div img {
+border: #E9E9E8 solid 1px;
+cursor: url("http://s.xdimg.com/img/big.cur"), auto;
+}
+.t_l .pic .pic_s {
+overflow: hidden;
+height: auto;
+font-size: 12px;
+cursor: default;
+background: #FBFBFB;
+padding: 5px;
+}
+.t_l .pic_s p {
+padding: 0px 0 3px 8px;
+float: left;
+width: 330px;
+color: #727272;
+}
+.t_l .pic .pic_s .p_s_img {
+float: left;
+}
+.t_l .pic_s .nowrap {
+overflow: hidden;
+white-space: nowrap;
+}
+.blu {
+color: #0289CD;
+}
+.t_l .pic_s p span {
+color: #727272;
+}
+.t_l .pic_s p .org_p {
+color: #AAA;
+margin-left: 5px;
+}
+.t_l .pic_s p .org_p b {
+font-weight: normal;
+text-decoration: line-through;
+}
+.t_l .pic .pic_s .go_buy {
+height: 22px;
+width: 73px;
+display: block;
+position: absolute;
+right: 10px;
+bottom: 10px;
+color: white;
+text-align: center;
+line-height: 22px;
+font-size: 12px;
+background: url("image/new/img/jiu_item.gif") no-repeat scroll 0 -711px transparent;
+}
+.t_l .tl {
+clear: both;
+height: 20px;
+padding-top: 10px;
+text-align: right;
+}
+
+.t_l .tl a {
+background: url("image/new/img/total_icon.gif") no-repeat scroll 4px -276px transparent;
+color: #0289CD;
+padding: 3px 5px 0 20px;
+font-weight: 500;
+}
+.t_l .tl .fav {
+background: url("image/new/img/total_zone.gif") no-repeat scroll -87px -19px transparent;
+color: white;
+float: left;
+height: 18px;
+line-height: 16px;
+padding: 0 5px 0 0;
+width: 43px;
+}
+.t_l .tl .cmt {
+background-position: 4px -320px;
+}

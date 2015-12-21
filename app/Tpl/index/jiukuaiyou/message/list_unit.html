@@ -1,0 +1,14 @@
+<li class="m_l">
+    <div class="ml_pic">
+        <a href="{:U('space/index', array('uid'=>$info['from_id']))}" class="fl" target="_blank"><img alt="{$info.from_name}" src="{:avatar($info['from_id'], 48)}" class="r5" /></a>
+    </div>
+    <div class="dialogue">
+        <div class="r5 m_box">
+            <p class="u_text"><if condition="$info['from_id'] eq $visitor['id']">{:L('i')}<else/>Ta</if> ：{$info.info}</p>
+            <p class="u_time">
+                <span>{$info.add_time|fdate}</span>
+                <a href="javascript:;" class="ml_del">{:L('delete')}</a>
+            </p>
+        </div>
+    </div>
+</li>

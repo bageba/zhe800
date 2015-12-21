@@ -1,0 +1,132 @@
+.main
+.item_containt{background:#fff;margin-bottom:20px}.main
+.item_info{height:auto;width:730px;overflow:hidden}.main .item_info
+h3{height:30px;line-height:30px;font-weight:normal;padding:10px
+0px}.main .item_info h3
+.title{color:#808080;font-size:20px;font-family:"微软雅黑","宋体"}.main .item_info h3
+.more{color:#808080;font-size:12px;display:inline-block;float:right}.main .item_info
+.report_info{width:730px;background:#fff;height:auto;overflow:hidden;padding:0px
+15px 15px}.main .item_info .report_info
+li{float:left;margin-right:40px;width:345px;margin-top:15px;margin-bottom:15px}.main .item_info .report_info
+.no{margin-right:0px}.main .item_info .report_info
+.pic{border:#e9e9e8 solid 1px;height:160px;width:160px;float:left;position:relative}.main .item_info .report_info .pic a
+img{height:160px;overflow:hidden}.main .item_info .report_info .pic
+.header{height:34px;width:34px;overflow:hidden;position:absolute;bottom:-3px;right:-3px;border:#e9e9e8 solid 1px}.main .item_info .report_info .pic .header
+img{height:34px}.main .item_info .report_info
+.detail{width:170px;margin-left:13px;height:auto;overflow:hidden;float:left}.main .item_info .report_info .detail
+h3{padding:0px;font-weight:bold;line-height:20px;height:40px;overflow:hidden}.main .item_info .report_info .detail h3
+a{color:#727272}.main .item_info .report_info .detail h3 a:hover{text-decoration:underline}.main .item_info .report_info .detail
+.price{line-height:26px;border-bottom:#ccc dashed 1px;height:28px}.main .item_info .report_info .detail .price
+.cur_price{font-size:16px;color:#6db110;font-family:"微软雅黑","verdana";margin-right:3px}.main .item_info .report_info .detail .price
+.org_price{color:#999;text-decoration:line-through}.main .item_info .report_info .detail
+.report_by{line-height:22px;height:auto;overflow:hidden;margin-top:5px;color:#818181}.main .item_info .report_info .detail .report_by
+.name_by{color:#ff7201}.main .item_info .report_info .detail .report_by
+.details{color:#0289cd}.top_slide{height:255px;width:714px;position:relative;background:#fff;padding:8px}.top_slide
+.slide_img{height:255px;width:588px;position:relative;overflow:hidden;float:left}.top_slide
+.top_slide_img{width:588px;overflow:hidden}.top_slide .top_slide_img
+li.big_slide{height:255px;width:588px;position:absolute;top:0;left:0}.top_slide
+.slide_btn{height:255px;width:118px;overflow:hidden;float:left;margin-left:8px}.top_slide .slide_btn ul
+li{height:47px;width:118px;margin-bottom:5px;border-left:4px solid #fff;overflow:hidden}.top_slide .slide_btn ul
+li.active{border-left:#ee6217 solid 4px}.main
+.report_list{background:#fff;width:730px;height:auto;overflow:hidden;padding:20px
+0px 50px 0}.main .report_list ul
+li{width:700px;height:auto;clear:both;border-bottom:#f2f2f2 solid 1px;padding:20px
+30px;float:left}.main .report_list ul
+.no{border-bottom:none}.main .report_list
+.goods_info{width:162px;height:auto;overflow:hidden;float:left}.main .report_list
+.pic{width:160px;height:160px;overflow:hidden;border:#f3f3f3 solid 1px}.main .report_list
+.goodstitle{height:16px;overflow:hidden;margin:5px
+0}.main .report_list .goodstitle
+a{color:#666}.main .report_list
+.goodsprice{height:auto;overflow:hidden}.main .report_list .goodsprice
+.cur_price{font-size:16px;font-family:"微软雅黑","verdana";color:#ff7201;display:block;float:left}.main .report_list .goodsprice
+.org_price{display:block;float:right;color:#999;text-decoration:line-through}.main .report_list
+.detail{width:498px;float:left;height:auto;margin-left:40px}.main .report_list .detail .title
+a{font-size:16px;color:#ff7201;font-weight:bold}.main .report_list .detail
+.d_info{color:#727272;margin:5px
+0}.main .report_list .detail .d_info
+.arthor{color:#ff7201}.main .report_list .detail
+.d_con{color:#818181;line-height:20px}.main .report_list .detail .d_con
+a{color:#ff7201}.main .report_list .detail
+.pic{clear:both;height:auto;width:498px;margin-top:15px;float:left;border:none medium}.main .report_list .pic
+div{float:left;border:#e9e9e8 solid 1px;cursor:url("http://s.xdimg.com/img/big.cur"), auto;display:block;position:relative;margin-right:5px}.main .report_list
+.pic_b{clear:both;width:498px;overflow:hidden;height:auto}.main .report_list .pic_b
+.pic_b_f{border:1px
+solid #DADADA;margin:15px
+0;overflow:hidden;padding:3px;position:relative;width:448px;float:left}.main .report_list .pic_b .pic_b_f
+.c{background:url(/jky/w/new/img/total/total_zone.gif) no-repeat scroll -121px -41px transparent;float:right;height:30px;line-height:30px;margin-right:15px;padding-bottom:5px;padding-left:18px}.main .report_list .pic_b .pic_b_f .c
+a{color:#727272}.main .report_list .pic_b .pic_b_f .c a:hover{color:#ff6c0a;text-decoration:none}.main .report_list .pic_b .pic_b_f
+.p{text-align:center;cursor:url("http://s.xdimg.com/img/small.cur"), auto;margin-bottom:10px;clear:both}.main .report_list .detail
+.see_report{clear:both;float:right;margin-top:10px}.main .report_list .detail .see_report
+a{color:#0289cd}.jiu_bd
+.juandou_box{padding-bottom:5px}.jiu_bd .juandou_box
+.re_time{width:210px;background-color:rgba(73, 188, 13, 0.8);background-color:rgba(73, 188, 13, 0.7) \9;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#aa49BC0D,endColorstr=#aa49BC0D)}.jiu_bd .juandou_box
+.restate{position:absolute;background:url(../images/state.png) no-repeat;height:44px;width:44px;top:5px;left:5px;display:block}.jiu_bd .juandou_box .restate
+span{color:#fff;text-align:center;width:36px;display:block;margin-left:6px;margin-top:5px}.jiu_bd .juandou_box
+.ex_over{background:url(/jky/w/new/img/try/ex_over.png) no-repeat;height:76px;width:124px;display:block;position:absolute;bottom:20px;right:13px}.main .item_containt
+.try_goodsinfo{border-bottom:#f2f2f2 solid 1px}.main .item_containt .try_goodsinfo .goods_con .goods_detail .goods_juan
+.green{color:#6cae16;font-weight:bold}.main .item_containt .try_goodsinfo .goods_con .goods_detail .goods_juan
+.schedule{clear:both;height:10px;width:330px;overflow:hidden;margin:5px
+0px 5px 15px}.main .item_containt .try_goodsinfo .goods_con .goods_detail .goods_juan .see_report
+a{color:#0289cd}.main .item_containt .try_goodsinfo .goods_con .goods_detail .goods_juan .see_report a:hover{text-decoration:underline}.main .item_containt .try_goodsinfo .goods_con .goods_detail .goods_juan .schedule
+i{background:url(/jky/w/new/img/total/try_total.gif) no-repeat -7px -289px;width:9px;height:10px;display:block;float:left}.main .item_containt .try_goodsinfo .goods_con .goods_detail .goods_juan .schedule
+span{display:block;float:left;height:10px;background-color:#ff7c00}.main .item_containt .try_goodsinfo .goods_con .goods_detail
+.tag_wait{background-position:0 -739px}.main .item_containt .try_goodsinfo .goods_con .goods_detail .tag_wait
+a{background-position:-126px -855px;width:143px}.main .item_containt .try_goodsinfo .goods_con .goods_detail .tag_wait a:hover{background-position:-126px -907px}.main .item_containt .try_goodsinfo .goods_con .goods_detail
+.tag_buy{background-position:0 -598px}.main .item_containt .try_goodsinfo .goods_con .goods_detail .tag_buy
+a{background-position:0 -855px}.main .item_containt .try_goodsinfo .goods_con .goods_detail .tag_buy a:hover{background-position:0 -907px}.main .item_containt .try_goodsinfo .goods_con .goods_detail
+.tag_over{background-position:0 -795px}.main .item_containt .try_goodsinfo .goods_con .goods_detail .tag_over
+a{background-position:-275px -855px}.main .item_containt .try_goodsinfo .goods_con .goods_detail .tag_over a:hover{background-position:-275px -855px}.main .item_containt .try_goodsinfo .goods_con .goods_detail
+.apply_num{margin-top:20px;height:auto;overflow:hidden;width:347px}.main .item_containt .try_goodsinfo .goods_con .goods_detail .apply_num
+a{border:#e9e9e8 solid 1px;height:34px;width:34px;overflow:hidden;margin-right:3px;display:block;float:left}.main .item_containt .try_goodsinfo .goods_con .goods_detail .apply_num
+span{display:block;float:right;margin-top:8px;color:#8d8d8d}.main .item_containt .try_goodsinfo .goods_con .goods_detail .apply_num span
+b{color:#6cae16;font-size:16px;vertical-align:-2px}.main .item_containt
+.try_tips{color:#727272;font-size:14px;text-align:center;margin-top:80px;clear:both}.report_item{padding:10px
+20px 30px}.report_item
+h4{font-size:14px;color:#727272;font-weight:bold}.report_item
+.report_detail{padding:15px
+10px}.report_item .report_detail
+.title{font-size:20px;color:#000;font-family:"微软雅黑","宋体";font-weight:normal}.report_item .report_detail
+.report_con{margin-top:10px;height:auto;overflow:hidden;width:690px}.report_item .report_detail .report_con
+.pic{border:#e9e9e8 solid 1px;height:54px;width:54px;float:left}.report_item .report_detail .report_con
+.con_r{width:600px;float:left;height:auto;margin-left:18px}.report_item .report_detail .report_con .con_r .name
+a{color:#ff7201;font-size:14px;font-weight:bold}.report_item .report_detail .report_con .con_r
+.re_time{font-size:14px;color:#727272;margin-top:10px}.report_item .report_detail
+.report_txt{clear:both;height:auto;width:690px;line-height:28px;color:#727272;font-size:14px;margin-top:5px;overflow:hidden;float:left}.schedule_step{padding-bottom:0px}.schedule_step
+.steps{background:url(/jky/w/new/img/try/schedule.gif) no-repeat 0 0;width:477px;height:27px;margin:20px
+0}.schedule_step
+.steps_02{background-position:0 -30px}.schedule_step
+.steps_03{background-position:0 -60px}.schedule_step
+.steps_04{background-position:0 -92px}.main
+.per_content{width:auto}.main
+.try_per{padding-left:20px;margin-left:0px;border-top:#ccc dotted 1px}.main .try_per
+.tips{color:#727272;font-size:14px;font-weight:bold}.main .try_per
+.list_box{background:#fffdeb;padding-left:60px;width:655px;padding-top:10px;border-radius:10px;padding-bottom:30px;margin-top:20px}.main .try_per .bind-account-list{padding-bottom:0px}.main .try_per .bind-account-list
+li{width:300px}.main .try_per .info_over
+p{line-height:30px}.main .try_per .info_over
+.success_tips{font-size:16px;font-weight:bold;color:#6db110;margin-bottom:10px}.main .try_per .info_over
+.tips{line-height:20px;font-weight:normal;color:#727272;font-size:12px}.main .try_per .info_over .tips
+a{color:#0289cd}.main .try_per .info_over
+.other_try{margin-top:10px;height:auto;overflow:hidden}.main .try_per .info_over .other_try
+a{color:#0289cd}.main .try_per .try_box .pub_area
+.pub_txt{width:630px;height:110px}.main .deal_agree .box,.main .deal_agree .agree_txt,.main .deal_agree
+.btn{float:left;display:block}.main .deal_agree .box,.main .deal_agree
+.agree_txt{margin-top:12px}.main .deal_agree
+.box{margin-top:15px;*margin-top:9px;margin-right:3px;margin-left:250px}.main .deal_agree .agree_txt
+a{color:#0289cd}.main .deal_agree
+.btn{background:url(/jky/w/new/img/total/btn_total.gif) no-repeat 0 0;height:30px;left:30px;width:104px;display:block;color:#fff;font-size:14px;text-align:center;line-height:28px;font-weight:bold}.main .deal_agree .btn:hover{text-decoration:none;background-position:0 -34px}.main
+.btn01{background-position:0 -71px;color:#727272}.main .btn01:hover{background-position:0 -105px}.main
+.deal_btn{margin-top:20px}.main .deal_btn
+.btn{margin:0
+auto;background:url(/jky/w/new/img/total/btn_total.gif) no-repeat 0 0;height:30px;left:30px;width:104px;display:block;color:#fff;font-size:14px;text-align:center;line-height:28px;font-weight:bold}.main .deal_btn .btn:hover{text-decoration:none;background-position:0 -34px}.main .deal_btn
+.agree{margin:0
+auto}.per_content li
+.smt_file_normal{left:120px}.per_content .head_b
+.smt_normal{left:120px}.main
+.write_report{border:none medium}.main .write_report
+.title{margin-bottom:15px;height:auto;overflow:hidden}.main .write_report .title
+span{color:#727272;font-size:20px;font-family:"微软雅黑","宋体";display:block;float:left}.main .write_report .title
+.pic_tips{background:url(/jky/w/new/img/total/try_total.gif) no-repeat -387px -189px;height:12px;width:12px;display:block;float:left;margin-top:8px;margin-left:5px}.main .write_report
+.pub_area_bd{padding-left:5px}.main .exch_content
+.appay_list{padding:15px
+15px 0px;border-top:#edeee9 dashed 2px}.content-like{width:980px;margin-top:16px}

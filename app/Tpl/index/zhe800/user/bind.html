@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>{$page_seo.title}</title>
+<meta name="keywords" content="{$page_seo.keywords}" />
+<meta name="description" content="{$page_seo.description}" />
+<include file="public:head2" />
+
+<load href="__STATIC__/js/jquery/jquery.js" />
+<css file="__STATIC__/css/ftxia/user.css" />
+</head>
+<body>
+<include file="public:header" />
+
+<div class="mains">
+	<div class="piece jiu_goods">
+		<div class="piece_box">
+			<div class="jiu_info">
+				<div class="jiu_bd content_body fl">
+					<include file="user:left" />
+					<div class="per_content">
+						
+						<div class="account_bind_title">{:L('bind_title')}</div>
+						<ul id="J_List" class="bind-account-list">
+							<volist name="oauth_list" id="val">
+							<li>
+								<div class="account-item">
+									<span class="website-icon"><img src="__STATIC__/images/oauth/{$val.code}/bind.png" /></span>
+									<dl>
+										<dt>{$val.name}</dt>
+										<dd>{$val.desc}</dd>
+										<if condition="$val.isbind eq 1">
+											<dd class="operate">
+											<a href="{:U('oauth/index', array('type'=>'unbind', 'mod'=>$val['code']))}" class="J_bind"><span>{:L('unbind')}</span></a>
+										<else/>
+											<dd class="operate">
+											<a href="{:U('oauth/index', array('type'=>'bind', 'mod'=>$val['code']))}" class="J_bind"><span>{:L('gobind')}</span></a>
+										</if>
+										</dd>
+									</dl>
+								</div>
+							</li>
+							</volist>
+						</ul>
+					</div>
+				</div>
+				<div class="jiu_right fr">
+					 <include file="public:rightloginbar" />
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<include file="public:footer" />
+<script src="__STATIC__/js/setting.js"></script>
+</body>
+</html>

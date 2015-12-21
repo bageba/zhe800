@@ -1,0 +1,14 @@
+<div class="loading">
+共采集 [ <span class="blue">【{$allnum}】</span>个商品 ] -[去除【{$cf}】个已存在或信息不完整的商品]<hr/>
+
+<table style="border:1px solid gray; border-collapse: collapse;">
+<tr><td colspan='3'><h3>即将添加商品列表<h3></td></tr>
+<volist name='items' id='v' key='n'>
+  <tr>
+  <td style="border:1px solid gray;">第{$n}个</td>
+  <td style="border:1px solid gray;">{$v.type}店</td>
+  <td style="border:1px solid gray;">{$v.title}</td>
+  </tr>
+</volist>
+</table>
+</div>

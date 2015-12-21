@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<include file="public:head" />
+<css file="__STATIC__/css/ftxia/gift.css" />
+<css file="__STATIC__/css/ftxia/giftstyle.css" />
+</head>
+<body>
+<include file="public:header" />
+
+
+
+
+<div class="mains content">
+	<div class="piece jiu_goods">
+		<div class="piece jiu_goods">
+		<div class="jiu_info">
+        <div class="jiu_bd jiu_top exch_content fl">
+			<div class="item_containt">
+			<div class="jiu_goodsinfo">
+                                <h3><a data-type="0" data-itemid="{$item.num_iid}" data-tmplid="4" data-rd="1" href="javascript:void()" rel='nofollow' target="_blank" title="{$item.title}">{$item.title}</a></h3>			<div class="goods_con">
+				<div class="pic">
+                                        <a data-type="0" data-itemid="{$item.num_iid}" data-tmplid="4" data-rd="1" href="javascript:void()" rel='nofollow' target="_blank" title="{$item.title}"><img src="{:attach(str_replace('_s.'.array_pop(explode('.', $item['img'])), '_b.'.array_pop(explode('.', $item['img'])), $item['img']), 'score_item')}"></a>				</div>
+				<div class="goods_detail juan_detail">
+					<div class="price_tag tag_juandou">
+						<span><b>兑换：</b></span>
+                        <span class="nead_all">{$item.score}</span>
+						<span>{:L('exchange')}</span>
+						<a href="javascript:;" class="J_gift_btn" data-id="{$item.id}" data-num="#J_num_{$item.id}"></a>
+					</div>
+					<div class="goods_quan">
+						<div class="goods_juan">
+                                                        <p>剩余数量：{$item.stock}件</p>
+                            <p>兑换说明：每人限兑 <b>{$item.user_num}</b> 件</p>
+                            <p>开始时间：{$item.start_time|date="m月d日 h时s分",###}</p>
+						</div>
+						<div class="change_bottom">
+							<span>价格:</span>
+                            <span class="current_price">￥{$item.coupon_price}</span>
+                            <span class="org_price">￥{$item.price}</span>
+                            <span class="go_buy"><a data-type="0" data-itemid="{$item.num_iid}" data-tmplid="4" data-rd="1" href="javascript:void()" rel='nofollow' target="_blank" title="{$item.title}">去淘宝购买</a></span>
+						</div>
+					</div>
+					<div class="change_recommend">
+                        <p><span class="comm_name">推荐：</span>{$item.desc}</p>
+					</div>
+					<div class="shareto">
+						<div class="sharebaidu">
+							<!-- Baidu Button BEGIN -->
+							<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare">
+							<a class="bds_qzone" title="分享到QQ空间" href="#"></a>
+							<a class="bds_tsina" title="分享到新浪微博" href="#"></a>
+							<a class="bds_tqq" title="分享到腾讯微博" href="#"></a>
+							<a class="bds_renren" title="分享到人人网" href="#"></a>
+							<a class="bds_t163" title="分享到网易微博" href="#"></a>
+							<span class="bds_more">更多</span>
+							</div>
+							<script src="http://bdimg.share.baidu.com/static/js/bds_s_v2.js?cdnversion=376130" type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=0"></script>
+							<script src="http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=376130" type="text/javascript" id="bdshell_js"></script>
+							<script type="text/javascript">
+							document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+							</script>
+							<!-- Baidu Button END -->
+							<script src="http://bdimg.share.baidu.com/static/js/logger.js?cdnversion=375944"></script><script src="http://bdimg.share.baidu.com/static/js/logger.js?cdnversion=376130"></script>
+						</div>
+						<span class="share_txt">分享到：</span>
+					</div>
+				</div>
+			</div>
+			</div>
+
+            <div class="exchange_rule">
+				<h3>兑换礼品规则</h3>
+				<p>1、兑换开始后，所有会员均可点击“金币兑换”按钮进行宝贝兑换。</p>
+				<p>2、所有的宝贝兑换不收取任何费用，只要您兑换成功，我们帮你代付所有费用。</p>
+				<p>3、您也可以直接去淘宝购买该宝贝。</p>
+				<p>4、由于宝贝数量有限，每个宝贝每人仅能兑换1份。</p>
+			</div>			
+			<div class="exchange_rule">
+				<h3>注意事项</h3>
+				<p>1、本商品并非在{:C('ftx_site_name')}直接购买，是由{:C('ftx_site_name')}代付来完成交易，所以您需要先到淘宝下单，再来{:C('ftx_site_name')}申请兑换。</p>
+				<p>2、{:C('ftx_site_name')}会在1个工作日内完成代付操作，具体到货时间取决于宝贝的发货时间。</p>
+				<p>3、兑换和淘宝下单都有数量限制，兑换数量不足时，将无法申请兑换。</p>
+				<p>4、本宝贝是{:C('ftx_site_name')}与第三方网站合作完成兑换。如因购价格时常有些变动，{:C('ftx_site_name')}和会员双方均不需要作差价补偿。</p>
+			</div>
+
+            			</div>
+        </div>
+
+        <div class="jiu_right fr">
+			<include file="public:rightloginbar" />
+		</div>
+        </div>
+        </div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<include file="public:footer" />
+<script src="__STATIC__/js/gift.js"></script>
+</body>
+</html>

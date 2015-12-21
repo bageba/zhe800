@@ -1,0 +1,52 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=2.0">
+        <meta name="MobileOptimized" content="320">
+        <link rel="shortcut icon" type="image/x-icon" href="http://www.jiukuaiyou.com/favicon.ico" media="screen" />
+        <link href="http://s.juancdn.com/jky/wap/css/base.css?t=201305171649" rel="stylesheet" type="text/css" />
+        <link href="http://s.juancdn.com/jky/wap/css/index.css?t=201305171649" rel="stylesheet" type="text/css" />
+        <title>秒杀网触屏版</title>
+    </head>
+<body id="filter">
+    <div class="header">
+        <div class="left-box">
+            <a href="http://m.yangtata.com/"><label>首页</label></a>
+        </div>
+        <h1>筛选</h1>
+    </div>
+    <section id="search-box">
+        <form method="get" action="/index" id="search-form">
+            <input type="search" data-keyword="请输入宝贝名称的关键字..." x-webkit-speech="" value="" name="k" id="key">
+            <input type="submit" value="搜索">
+        </form>
+    </section>
+    <div class="category">
+        <section class="type-all"><div class="types-title"><span class="title"><a href="http://m.yangtata.com/">全部</a></span><label><span class="cur"></span></label></div></section>
+        <section class="type-all"><div class="types-title"><span class="title">宝贝分类</span></div>
+            <table><tbody>
+                    <tr>
+						<volist name="cate_list" id="item" mod="3">
+					<td>
+                        <a href="{:U('index/index',array('cid'=>$item['id']))}">{$item.name}</a>
+                    </td>
+					<eq name="mod" value="2"></tr><tr></eq>
+					</volist></tr>
+                </tbody></table>
+        </section>
+        
+    </div>
+<div class="foot">
+ 
+    <div class="nav">
+        <ul>
+            <li><a href="http://m.yangtata.com">首页</a></li>
+            <li class="no-border"><a href="http://www.yangtata.com"> PC版</a></li>
+        </ul></div>
+    <div class="copyright"><span class="copyright">&copy;2014华美秒杀网</span><p></p></div>
+</div>
+  
+</body>
+</html>

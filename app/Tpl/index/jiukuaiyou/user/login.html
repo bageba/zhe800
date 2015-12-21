@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<include file="public:head" />
+<load href="__STATIC__/ftxia/new/css/md-pagination.css" />
+<load href="__STATIC__/ftxia/new/css/md-goodslist.css" />
+<load href="__STATIC__/ftxia/new/css/loginreg.css" />
+</head>
+<body>
+<include file="public:header" />
+
+<div class="main">
+	<div class="white_top">
+		<div class="white_top_left"></div>
+		<div class="white_top_middle"></div>
+		<div class="white_top_right"></div>
+	</div>
+	<div class="white_bg wrap">
+		<div class="wrap_left  w_login">
+			<h1>{:L('login_title')}{:C('ftx_site_name')}</h1>
+			<form id="J_login_form" action="{:U('user/login')}" method="post">
+				<ul>
+					<li>
+						<span>{:L('username')}：</span>
+						<input type="text" height="20" name="username" class="usergray" id="J_name" value="用户名/邮箱" onfocus="if (this.value=='用户名/邮箱') {this.value=''; this.style.color='#000';}" size="25" tabindex="1">
+						<span style="display: none;" id="err_name" class="err_name">请输入登录名</span>
+					</li>
+					<li>
+						<span>{:L('password')}：</span>
+						<input type="password" height="20" name="password" class="usergray" id="J_pass" size="25" maxlength="32" tabindex="2">
+						<span style="display: none;" id="err_pass" class="err_pass">请输入密码</span>
+					</li>
+					<li class="fs12">
+                        <input type="checkbox" value="1" name="remember" class="checkbox" checked="checked">
+                        <span>{:L('rememberme')}</span>
+					</li>
+					<li>
+						<input type="submit" name="imageField" id="submits" value="登　录" class="smt">
+						<input type="hidden" name="action" id="login" value="login" />
+						<font class="forget1"> <a href="{:U('forget/index')}">{:L('forget_password')}</a></font>
+					</li>
+				</ul>
+			</form>
+		</div>
+		<div class="wrap_right">
+			<p>还没有{:C('ftx_site_name')}账号？赶紧注册吧</p>
+			<p><a href="{:U('user/register')}">注 册</a></p>
+			<p>您也可以用站外账号登录：</p>
+			<div class="union">
+
+			<volist name="oauth_list" id="val">
+            <a class="{$val.code}" href="{:U('oauth/index', array('mod'=>$val['code']))}"></a>
+			</volist>
+			</div>
+		</div>
+	</div>
+
+	<div class="white_bottom">
+		<div class="white_bottom_left"></div>
+		<div class="white_bottom_middle"></div>
+		<div class="white_bottom_right"></div>
+	</div>
+</div>
+
+<include file="public:footer" />
+<script>
+$(function(){
+    $.ftxia.user.login_validate($('#J_login_form')); //登陆验证
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<include file="public:header" />
+<link rel="stylesheet" type="text/css" href="__STATIC__/js/calendar/calendar-blue.css"/>
+<script type="text/javascript" src="__STATIC__/js/calendar/calendar.js"></script>
+
+<div class="subnav">
+    <h1 class="title_2 line_x">数据清空 - 删除后不可恢复 请慎重！</h1>
+</div>
+<div class="pad_lr_10" >
+
+
+<form action="{:u('items/clear')}" method="post" name="searchform" id="info_form">
+                <table width="100%" cellspacing="0" class="table_form">
+				<tbody>
+	                <tr>
+						<th width="120">清空所有宝贝:</th>
+						<td> 
+							<input type="hidden" name="action" value="clear" />
+							<input type="submit" name="dosubmit" class="smt mr10" value="清空" id="dosubmit"/>
+							 
+						</td>
+					</tr>
+				</tbody>
+                </table>           
+</form>
+
+<form action="{:u('items/clear')}" method="post" name="searchform" id="info_form">
+                <table width="100%" cellspacing="0" class="table_form">
+				<tbody>
+	                <tr>
+						<th width="120">清空已过期宝贝:</th>
+						<td> 
+							<input type="hidden" name="action" value="outtime" />
+							<input type="submit" name="dosubmit" class="smt mr10" value="清空" id="dosubmit"/>
+						 
+						</td>
+					</tr>
+				</tbody>
+                </table>           
+</form>
+
+<form action="{:u('items/clear')}" method="post" name="searchform" id="info_form">
+                <table width="100%" cellspacing="0" class="table_form">
+				<tbody>
+	                <tr>
+						<th width="120">清空未审核宝贝:</th>
+						<td> 
+							<input type="hidden" name="action" value="notpass" />
+							<input type="submit" name="dosubmit" class="smt mr10" value="清空" id="dosubmit"/>
+							 
+						</td>
+					</tr>
+				</tbody>
+                </table>           
+</form>
+</div>
+<include file="public:footer" />
+</body></html>

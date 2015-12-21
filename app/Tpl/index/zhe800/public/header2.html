@@ -1,0 +1,115 @@
+<div id="toolbar">
+	<div class="toolbar area">
+		<div class="l">
+      <a target="_blank" href="__ROOT__">{:C('ftx_site_name')}</a>
+      <a href=http://app.zhui.cn/Soft/Down/Last/2170254/new.aspx target="_blank">手机版</a>
+      <div class="dropdown  web-focus">
+        <a class="" href="javascript:void(0)">
+          关注<i class="icon-arrow arrow-down"></i>
+        </a>
+        <ul class="dropdown-menu">
+          <li><iframe src="http://follow.v.t.qq.com/index.php?c=follow&a=quick&appkey=801478380&sign=2dc2edf5&v=2&name=fly1362428&style=5&t=1392448729382&f=1" frameborder="0" scrolling="auto" width="178" height="24" marginwidth="0" marginheight="0" allowtransparency="true" style="width:115px;height:24px;border:none;overflow:hidden;margin-top:10px"></iframe></li>
+          <li><iframe width="130" scrolling="no" height="24" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0" border="0" src="http://widget.weibo.com/relationship/followbutton.php?%20width=67&amp;height=24&amp;uid=1923307203&amp;style=2&amp;btn=light&amp;dpc=1"></iframe></li>
+          <li><a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)"><i class="icon-mid icon-clt"></i>加入收藏</a></li>
+        </ul>
+      </div>
+
+		</div>
+		<div class="right flow">
+    | <a href="{:U('goods/goods_add')}" target="_blank">卖家报名</a>
+		</div>
+		 
+
+		<div class="right" id="login">
+		<notempty name="visitor">
+		
+		 <a href="{:U('user/index')}" class="user">{$visitor.username}</a>，{:L('welcome')}！
+		 <a class="icon-level level0"></a>
+		 <div class="zhe_intro dropdown">
+		 <a href="{:U('user/index')}" target="_blank" class="trigger">个人中心<i class="icon-arrow arrow-down"></i><i class="line"></i></a>
+		  <ul class="dropdown-menu">
+		 <li><a href="{:U('score/index')}" class="trigger">{:L('my_gift')}</a></li>
+		 <li><a href="{:U('union/index')}" class="trigger">{:L('my_union')}</a></li>
+		 <li><a href="{:U('score/index')}" class="trigger">{:L('user_score')}</a></li>		 
+		 <li><a href="{:U('user/logout')}" class="trigger">{:L('logout')}</a></li></ul></div>
+		 <else/>
+		 <volist name="oauth_list" id="val">
+					 <a href="{:U('oauth/index', array('mod'=>$val['code']))}" class="{$val['code']}" title="{$val.name}"><i></i>{$val.name}</a>
+                    </volist>
+		 
+		<a href="{:U('user/login')}">{:L('login')}</a> 
+		<a href="{:U('user/register')}">{:L('register')}</a> <span></span>
+		
+		 </notempty>		
+			</div><div class="hidden"></div>
+		
+	</div>
+</div>
+<div class="header">
+  <div class="area">
+    <h1 class="l">
+      <a href="{:C('ftx_site_url')}"><img src="/static/img/v1/ju/index/img/new_logo3.png"></a>
+      <br>
+      折800，精选每日优质淘品 </h1>
+  </div>
+</div>
+<div id="head_nav">
+  <div class="head_nav area">
+    <div class="l" style="text-align:center;">
+	
+	
+				
+				<a <empty name="cid"> class="on"</empty> href="{:U('index/index')}">首页<i></i></a>
+	<ftx:nav type="lists" style="top">
+			<volist name="data" id="val">
+				
+				<a href="{$val.link}" <if condition="$val.target eq 1">class="on" target="_blank"</if>>{$val.name}<i></i></a><!--后台添加的顶部导航-->
+				
+			</volist>
+			</ftx:nav>
+				
+			
+      
+      <span class="n"></span>
+    </div>
+    <div class="r_con">
+      <a href="{:U('index/cate', array('cid'=>11))}" class="yg">精选预告
+        <i class="icon-mini"></i>
+        <i class="line"></i>
+      </a>
+      <div class="zhe_intro dropdown">
+        <a target="_blank " class="trigger" href="{:U('article/index')}">玩家攻略<i class="icon-arrow arrow-down"></i><i class="line"></i></a>
+        <ul class="dropdown-menu">
+          <ftx:article type="lists" cateid="1">
+		<volist name="data" id="val"> 
+				<li>
+					<a href="{:U('article/read',array('id'=>$val['id']))}" target="_blank" title="{$val.title}" ><?php $val['title'] = strip_tags($val['title'],'');
+      $val['title'] = mb_substr($val['title'],0,5,'utf-8');
+      echo $val['title']; ?></a>
+				</li>
+			 
+		</volist>
+		</ftx:article>
+        </ul>
+      </div>
+
+      <div class="dropdown sign_panel">
+	  <a href="javascript:;" class="signIn_btn"><i></i>{:L('sign_out')}</a>
+	  <div class="dropdown-menu"><dl class=""><dt>连续签到：<?php echo $num = round($visitor['score']/5,0);?>天<br>签到即可获得<b> 2 </b>分</dt><dd><p><span>我的积分：</span>
+	  <a target="_blank" href="{:U('union/index')}"><b>{$visitor.score}</b></a> | 
+	  <a target="_blank" href="{:U('union/index')}">积分攻略</a></p>
+	  <p><span>邀请访问+20分，</span>
+	  <a target="_blank" href="{:U('union/index')}">马上领取</a></p>
+	  <p><span>邀请注册+100分，</span>
+	  <a target="_blank" href="{:U('union/index')}">马上领取</a></p>
+	  </dd>
+	  </dl>
+	  </div>
+	  </div>
+    </div>
+  </div>
+</div>
+
+
+
+   

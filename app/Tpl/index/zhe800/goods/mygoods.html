@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<title>{$page_seo.title}</title>
+<meta name="keywords" content="{$page_seo.keywords}" />
+<meta name="description" content="{$page_seo.description}" />
+<include file="public:head2" />
+<css file="__STATIC__/css/ftxia/user.css" />
+<css file="__STATIC__/css/ftxia/goods.css" />
+</head>
+<body>
+<include file="public:header" />
+
+<div class="mains">
+<div class="contain register_con">
+	<div class="left_con fl">
+	<ul class="left_nav">
+			<li><a href="{:U('goods/goods_add')}">报名新宝贝</a></li>
+			<li class="cur">
+				<a href="{:U('goods/mygoods')}">已报名宝贝</a>
+			</li>
+			</ul>
+</div>	
+
+	<div class="right_con fr">
+		<div class="c_b_menu">
+			<ul>
+                <li <if condition="$type eq 'all' "> class="cur"</if>><a href="{:U('goods/mygoods')}"><span>全部</span></a></li>
+				<li <if condition="$type eq 'pass'"> class="cur"</if>><a href="{:U('goods/mygoods',array('type'=>pass))}"><span>通过审核</span></a></li>
+				<li <if condition="$type eq 'wait'"> class="cur"</if>><a href="{:U('goods/mygoods',array('type'=>wait))}"><span>等待审核</span></a></li>
+				<li <if condition="$type eq 'fail'"> class="cur"</if>><a href="{:U('goods/mygoods',array('type'=>fail))}"><span>未通过</span></a></li>
+			</ul>
+		</div>
+
+		<div class="re_content sign_con">
+			<div class="userjoin">
+				<ul class="userjoin_show">
+					<li class="userjoin_t">
+						<span class="t_info">已报名宝贝</span>
+						<span class="t_pay">报名价格</span>
+						<span class="t_type">分类</span>
+						<span class="t_time">时间</span>
+						<span class="t_state">状态</span>
+					</li>
+					<notempty name="goods_list">
+					<volist name="goods_list" id="val">
+					<li>
+						<div class="o_name"><a href="javascript:"  data-id="{$val.id}" class="mygoods_id">{$val.title}</a></div>
+						<div class="o_pay">{$val.coupon_price}</div>
+						<div class="o_type"><b>{$cate_list[$val['cate_id']]}</b></div>
+						<div class="o_time">{$val.add_time|frienddate}</div>
+						<div class="o_state"><span>
+							<a href="javascript:" data-id="{$val.id}" class="mygoods_id">
+								<if condition="$val.pass eq 1">通过
+								<elseif condition="$val.pass eq 0" />
+									<if condition="$val.status eq 'fail'">未通过<else/>审核中</if>
+								</if>
+							</a></span></div>
+					</li>
+					</volist>
+					 <div class="page"><div class="pageNav"> {$page_bar}</div></div> 
+					<else/>
+					<li class="no_goods"><div class="without_goods">您还没有报名宝贝哦，请先到<a href="{:U('goods/goods_add')}">报名新宝贝</a>去报名~</div></li>
+					</notempty>
+					
+
+                   </ul>
+			</div> <!-- end of userjoin -->
+            		</div> <!-- end of re_content -->
+	</div> <!-- end of right_con -->
+</div> <!-- end of contain -->
+</div>
+<!--主部结束-->
+<include file="public:footer" />
+<script src="__STATIC__/js/goods.js"></script>
+</body>
+</html>

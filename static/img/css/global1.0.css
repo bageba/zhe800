@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 全局CSS定义 */
+body{margin:0 auto;padding:0;background:#FFF;color:#666;font:12px '';text-align:center;}
+body > div{margin-right:auto;margin-left:auto;text-align:center; } 
+div,form,ul,ol,li,span,p,dl,dt,dd,img{margin:0;padding:0;border:0;text-align:left;}
+h1,h2,h3,h4,h5,h6{margin:0;padding:0;font-size:12px;font-weight:normal;text-align:left;}
+ul,ol,li{list-style:none}
+table,td,input,textarea{font-size:12px}
+/* 链接颜色 */
+a{color:#333;text-decoration:none;}
+a:hover{color:#C00;text-decoration:underline;}
+/* 标题 */
+h2{text-align:right;}
+h2 span{float:left;font-weight: bold;}
+
+.clear,.area,.pp,.pt{zoom:1}
+.show{display:block;}
+.hidden{display:none;}
+.pp,.pt,.list12 ul,.list14 ul,.area{width:100%;margin:0 auto;}
+.pp:after,.pt:after,.area:after,.clear:after{content:".";display:block;visibility:hidden;height:0;clear:both;}
+.pp{text-align:center;}
+.pp img{display:block;margin:0 auto;}	/*组图内图片属性*/
+.pp span{display:block;}
+.pt{color:#666;line-height:20px;text-align:left;}
+.pt div{float:left;margin:0 10px 0 0;}			/*图文混排*/
+.pt p{clear:none}
+/* 文字列表属性 */
+.list14 li,.list12 li{padding:3px 0;color:#333;font-size:12px;line-height:16px;text-align:left;}
+.list14 li{padding:4px 0;font-size:14px;}
+/* 浮动属性 */
+.left,.center,.l,.right,.r{display:inline;float:left;}
+.right,.r{float:right;}
+.fontArial{font-family:'Arial'}
+.b{font-weight:bold;}/* 加粗 */
+.blank5,.blank8{height:5px;font-size:1px;}
+.blank8{height:8px;}
+.more{text-align:right;}/* 更多 */
+.area{width:980px;}/*页面属性 */
+li.nodot{background:none!important;padding-left:0px!important;}/* 去掉列表前缀 */
+
+/* 标准底 */
+#foot{width:980px;margin:5px auto 0;padding:5px 0 10px;line-height:22px;}

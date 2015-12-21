@@ -1,0 +1,111 @@
+<div class="exchange_info theysays apply_list">
+	<h3>
+		<span>0元兑换</span><a class="more" target="_blank" href="{:U('gift/index')}">更多&gt;&gt;</a>
+	</h3>
+	<div class="goods_info">
+		<div class="pic" id="pics">
+			<ul style="margin-left: 0px; ">
+			<ftx:gift type="show"   >
+				<volist name="data" id="val" key="i" mod="4">
+				<li>
+						<a target="_blank" href="{:U('gift/detail', array('id'=>$val['id']))}"> 
+						<img src="{:attach($val['img'], 'score_item')}" alt="{$val.title}"></a>
+				</li>
+				</volist>
+			</ftx:gift>			
+			</ul>
+		</div>
+			
+		<p class="title" id="free_title">
+			<ftx:gift type="show"   >
+				<volist name="data" id="val" key="i" mod="4">
+				<a target="_blank" href="{:U('gift/detail', array('id'=>$val['id']))}" style="display: inline; ">{$val.title}</a>
+				</volist>
+			</ftx:gift>
+		</p>
+		<ul class="switch">
+			<ftx:gift type="show"   >
+				<volist name="data" id="val" key="i" mod="4">
+				<li <eq name="mod" value="0"> class="active"</eq>><a href="javascript:;"></a></li>
+				</volist>
+			</ftx:gift>
+		</ul>
+		<div class="top_slide_desc">					
+			<ftx:gift type="show"   >
+				<volist name="data" id="val" key="i" mod="4">
+				<p class="detail juan-detail  c_p_{$i}" <eq name="i" value="1">style="display: block; "<else />style="display: none; "</eq>>
+					<span class="number"><em>{$val.score}</em>金币</span>
+				</p>
+				<p class="infos  c_p_{$i}" <eq name="i" value="1">style="display: block; "<else />style="display: none; "</eq>>
+					<span class="price">价格：{$val.coupon_price}元</span>
+					<span class="popularity">数量：{$val.stock}件以下</span>
+				</p>
+				</volist>
+			</ftx:gift>
+		</div>
+		<div style="clear:both;"></div>
+	</div> 
+</div>
+
+<div class="exchange_info theysays apply_list">
+	<h3>
+		<span>值得买</span>
+	</h3>
+	<ftx:item type="zhi" cid="$item['cate_id']">
+								<volist name="data" id="val" mod="2">
+	<div class="goods_info">
+	
+		<div class="pic">
+			<ul style="margin-left: 0px; ">
+			
+				<li>
+						<a target="_blank" href="{:U('item/index',array('id'=>$val['id']))}"> 
+						<img src="{:attach(get_thumb($val['pic_url'], '_m'),'item')}" alt="{$val.title}"></a>
+				</li>
+						
+			</ul>
+		</div>
+			
+		<p class="title">
+			
+				<a target="_blank" href="{:U('item/index',array('id'=>$val['id']))}" style="display: inline; ">{$val.title}</a>
+				
+		</p>
+		
+		<div class="top_slide_desc">					
+			
+				<p class="detail juan-detail" style="display:block;">
+					<span class="number"><em>{$val.coupon_price}</em>元</span>
+				</p>
+				<p class="infos" style="display:block;">
+					<span class="price">时间：{$val.coupon_start_time|date="d日 H:i",###}</span>
+					<span class="popularity">销量：{$val.volume}件</span>
+				</p>
+				
+		</div>
+		
+		<div style="clear:both;"></div>
+		
+	</div> </volist>
+			</ftx:gift>
+</div>
+
+
+<div style="display:none;">
+<div class="exchange_info theysays worth_buy">
+					<h3><span>值得买</span><a target="_blank" class="more" href="{:U('index/index')}">更多&gt;&gt;</a></h3>
+					<div class="worth_buy_goods">
+						<ul>
+							<ftx:item type="zhi" cid="$item['cate_id']">
+								<volist name="data" id="val" mod="2">
+									<li <eq name="mod" value="1"> class="no"</eq>>
+										<div class="goodsimg">
+											<a href="{:U('item/index',array('id'=>$val['id']))}" target="_blank">
+											<img src="{:attach(get_thumb($val['pic_url'], '_m'),'item')}" style="display:inline;" width="230" width="230"><span style="float:right">￥{$val.coupon_price}</span></a>
+										</div>
+									</li>
+								</volist>
+							</ftx:item>
+						</ul>
+					</div>
+				</div></div>

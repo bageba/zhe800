@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<include file="public:head" />
+<load href="__STATIC__/ftxia/css/tmall.css" />
+</head>
+<body>
+<include file="public:header" />
+
+
+<div class="mains">
+        <div class="contain">
+            <div class="sort-by">
+                <span class="title fl">排序顺序 ：</span>
+                <ul class="types fl">
+                    <li <if condition="'top' eq $sort"> class="active"</if> ><a href="{:U('tmall/index',array('sort'=>'top'))}">置顶推荐</a></li>
+                    <li class="cur"></li>
+                    <li <if condition="'new' eq $sort"> class="active"</if> ><a href="{:U('tmall/index',array('sort'=>'new'))}">按时间排序</a></li>
+                </ul>
+                <p class="double-tips fr">双11超值商品由资深买家收集而来，每隔2小时更新一次，亲可以提前收藏起来啦~！</p>
+            </div>
+			<present name="items">
+            <ul class="product-list">
+			<volist name="items" id="item" key="i" mod="3">
+                <li <eq name="mod" value="2">class="mr0"</eq>>
+                    <div class="list-good">
+					<h3><if condition="$item.shop_type eq 'C' "><i class="tao_n" title="淘宝网"></i></if><if condition="$item.shop_type eq 'B' "><i class="tao_t" title="天猫商城"></i></if> <a href="{:U('jump/index',array('iid'=>$item['num_iid']))}"  target="_blank" title="{$item.title}">{$item.title}</a></h3>
+                        <div class="pic"><a href="{:U('jump/index',array('iid'=>$item['num_iid']))}"  target="_blank"><img src="{$item.pic_url}_310x310.jpg" height="260" width="290"></a></div>
+                        <div class="buy-action">
+                            <span class="price"><em>￥</em>{$item.coupon_price}</span>
+                            <span class="oldprice"><em>¥</em>{$item.price}</span>                            <span class="by">/包邮</span> 
+                            <a href="{:U('jump/index',array('iid'=>$item['num_iid']))}"  target="_blank" class="links "></a>
+                        </div>
+                      
+                    </div>
+                </li>
+				</volist>
+				</ul>
+				  </present>
+            <div class="clear"></div>
+            <div class="page"><em></em><div>{$page}</div></div>
+        </div>
+    </div>
+
+	
+
+
+<script src="__STATIC__/js/jquery.min.js" type="text/javascript"></script>
+<script src="__STATIC__/js/gclick_ftxia.js" type="text/javascript"></script>
+
+<include file="public:footer" />
+</body>
+</html>

@@ -1,0 +1,23 @@
+<div class="loading">
+[添加成功  <span class="blue">{$suc}</span>个商品 ] -[添加失败{$err}个商品]<hr/>
+
+<table style="border:1px solid gray; border-collapse: collapse;">
+<tr><td colspan='3'><h3>商品添加状态如下<h3></td></tr>
+<volist name='items' id='v' key='n'>
+  <tr>
+  <td style="border:1px solid gray;">第{$n}个</td>
+  <td style="border:1px solid gray;">{$v.type}店</td>
+  <td style="border:1px solid gray;">{$v.title}</td>
+  <td style="border:1px solid gray;">
+  	<if condition="$v['status'] eq 1">
+  	<font color='green'>成功</font>
+  	<elseif condition="$v['status'] eq 0"/>
+  		<font color='red'>失败</font>
+  		<else/>
+  		<font color='gary'>未知</font>
+</if>
+  </td>
+  </tr>
+</volist>
+</table>
+</div>

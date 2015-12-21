@@ -1,0 +1,29 @@
+<div class="dialog_login clearfix">
+    <form id="J_dlogin_form" action="{:U('user/login')}" method="post">
+    <p id="J_login_fail" class="login_fail">{:L('username_require')}</p>
+    <div class="login_form">
+        <dl>
+            <dd>{:L('username')}：</dd>
+            <dt><input type="text" class="J_username text" name="username"></dt>
+            <dd>{:L('password')}：</dd>
+            <dt><input type="password" class="J_password text" name="password"></dt>
+            <dd>&nbsp;</dd>
+            <dt><label><input type="checkbox" checked="" class="checkbox" name="remember">{:L('rememberme')}</label></dt>
+            <dd>&nbsp;</dd>
+            <dt>
+                <input type="submit" class="smt" value="{:L('login')}"> 
+                <a href="{:U('forget/index')}">{:L('forget_password')}</a>
+            </dt>
+        </dl>
+    </div>
+    </form>
+    <div class="reg_or_oauth">
+        <span>{:L('other_login_model')}：</span>
+        <ul class="oauth_list mb20">
+            <volist name="oauth_list" id="val">
+            <li><a href="{:U('oauth/index', array('mod'=>$val['code']))}" class="o_icon"><img src="__STATIC__/images/oauth/{$val.code}/icon.png" />{$val.name}</a></li>
+            </volist>
+        </ul>
+		<div class="reg"><a href="{:U('user/register')}">{:L('relaxed_register')}{:C('ftx_site_name')}{:L('account')}</a></div>
+    </div>
+</div>

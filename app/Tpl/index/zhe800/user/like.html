@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<include file="public:head" />
+<load href="__STATIC__/ftxia/new/css/md-pagination.css" />
+<load href="__STATIC__/ftxia/new/css/md-nav-good.css" />
+<load href="__STATIC__/ftxia/new/css/md-public.css" />
+<load href="__STATIC__/ftxia/new/css/pg-zone.css" />
+<load href="__STATIC__/ftxia/css/list.css" />
+<css file="__STATIC__/css/ftxia/user.css" />
+ <css file="__STATIC__/css/ftxia/giftstyle.css" />
+</head>
+<body>
+<include file="public:header" />
+
+<div style="margin:0 auto">
+<div class="mains">
+	<div class="piece jiu_goods">
+		<div class="piece_box">
+			<div class="jiu_info">
+				<div class="jiu_bd jiu_top content_body content-like">
+					<include file="user:left" />
+					<p style="text-align:center" class="like-title">Tips：亲，您所喜欢的宝贝记得速度抢购哦，五天后将面临抢光了或已结束状态。So，若是真爱我，就速度下单吧！</p>
+					<ul class="goods-list" id="ulheight">
+					<volist name="items" id="item" key="i" mod="3">
+		<li class="item  <eq name="mod" value="2"> last</eq>">
+			<div class="list-good goods_box todayDb">
+				
+				<div class="good-pic">
+					<div class="pic-img">
+						<a href="{:U('jump/index',array('id'=>$item['id']))}" target="_blank">
+							<img src="{:attach(get_thumb($item['pic_url'], '_b'),'item')}" width="290px" height="290px">
+						</a>
+					</div>
+				</div>
+				<h5 class="good-title">
+					<if condition="$item.shop_type eq 'C' "><i class="tao_n" title="淘宝网"></i></if>
+					<if condition="$item.shop_type eq 'B' "><i class="tao_t" title="天猫商城"></i></if>
+					<a target="_blank" href="{:U('jump/index',array('id'=>$item['id']))}" class="title">{$item.title}</a>
+				</h5>
+				<div class="title-tips">
+                            <span style="width:170px;float:left;">原价{$item.price}元 现价{$item.coupon_price}元</span>
+							<div class="like-state" style="width:60px;float:left;">
+						<div class="like-num">
+							<dl class="J_scrollUp" style="top: 0px;">
+								<dd class="cur-num">{$item.likes}</dd>
+								<dd class="add-num">+1</dd>
+							</dl>
+						</div>
+						<a title="喜欢" data-pid="{$item.id}" class="like" href="javascript:;"><em></em></a>
+					</div>
+							<notempty name="visitor">
+				<if condition="$visitor['username'] eq C('ftx_index_admin')">
+				<span class="show" style="margin-bottom:15px;right:10px;position: absolute;width: 30px;" data-id="{$item.id}"><a title="不显示" href="javascript:void(0);" data-id="{$item.id}">取消</a></span>
+				</if>
+				</notempty>
+                    </div>
+					
+					 <div class="good-price">
+            <span class="price-current"><em>￥</em>{$item.coupon_price}</span>
+            <span class="des-other">
+            <span class="price-old"><em>成交</em>{$item.volume}<em>笔</em></span>
+            <span class="discount"><b><?php echo round(($item['coupon_price']/$item['price']*10),2);?></b>折 <if condition="$item.ems eq '1' "><font color="#008000">包邮</font></if>
+					<if condition="$item.ems eq '0' "><font color="#008000" style="text-decoration:line-through;">包邮</font></if></span>
+            </span>
+                                    <div>
+                                <a class="btn {$item.class}" href="{:U('item/index',array('id'=>$item['id']))}" title="{$item.title}" target="_blank">
+                 </a>
+            </div>
+                                </div>
+				
+				
+			</div>
+		</li>
+		</volist>
+					</ul>
+					<div class="clearfix"></div>
+					<div class="page"><div class="pageNav">{$page}</div></div>
+				</div><div class="jiu_right fr">
+					<include file="public:rightloginbar" />
+				</div>
+				
+			</div>
+			
+		</div>
+	</div> 
+</div>
+</div>
+
+ 
+
+<include file="public:footer" />
+<script src="__STATIC__/js/setting.js"></script>
+<script src="__STATIC__/k8/js/user_mycol.js"></script>
+</body>
+</html>

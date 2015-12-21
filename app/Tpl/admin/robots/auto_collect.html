@@ -1,0 +1,15 @@
+<div class="dialog_content pad_10">
+	<div class="loading">
+		共有采集器[ <b class="red">{$robots_count}</b> ] 个， 当前第[ <b class="red">{$rids}</b> ]个采集器使用 <if condition="$date['http_mode'] eq 0"> API采集 <else/> 淘宝网采集 </if><br />
+		正在采集：【{$date.name}】,共[ <b class="red">{$date.page}</b> ]页,正在采集第 [ <b class="blue">{$result_data.p}</b> ] 页，<br />
+ 
+		本页共查询到 {$result_data.totalnum} 条数据，已成功入库 【<span class="blue">{$result_data.thiscount}</span> 】个商品
+	</div>
+	<notempty name="msg">
+	 
+	</notempty>
+	<center>【{$date.name}】分类本次共采集  <?php echo ($result_data['thiscount']*$result_data['p']);?>个商品</center>
+	<div align="center">
+	<font color="red">采集中请勿关闭本窗口...</font>
+	</div>
+</div>

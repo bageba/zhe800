@@ -1,0 +1,115 @@
+<!doctype html public "-//w3c//dtd html 4.01 transitional//en" "http://www.w3.org/tr/html4/loose.dtd">
+<html>
+ <head>
+  <title> U站采集页面</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <load href="__STATIC__/js/jquery/jquery.js" />
+  <script type="text/javascript">
+   var curl = '{:U('admin/cai/zhe')}';
+   var curlbegin ='{:U('admin/onecai/begin')}';
+   var curladditems ='{:U('admin/onecai/additems')}';
+  </script>
+  <style type="text/css">
+  h2{display: block;background: #CCE8CF;border: 1px solid green;text-align: center;}
+  #main{
+    width: 100%;height: 402px;border: 1px solid green;
+    margin: 10px auto;background: #CCE8CF;
+  }
+  #ben{width: 25%;height: 400px;border-right: 1px solid green;float: left;}
+  #ben table{border: 1px solid pink;border-collapse: collapse;}
+  #ben table tr{float: left;border: 1px solid pink;}
+  #zhe{width: 25%;height: 400px;float: left;border-right: 1px solid green;}
+  #zhe table{border: 1px solid pink;border-collapse: collapse;}
+  #zhe table td{border: 1px solid pink;}
+  #info{
+    width: 49%;height: 400px;
+    float: right;border-left: 1px solid green;overflow:  hidden;
+  }
+   #cont{
+    width: 100%;height: 86%;display: block;
+    font-size: 15px;float: right;border-top: 1px solid green;overflow:  auto;
+  }
+  #footer{width:100%;height: 32px;border: 1px dotted pink;text-align: center;margin-top: 5px;}
+  #caiji{
+    display: block;width: 100px;height: 30px;background-color:  #FF8901;
+    border-radius: 15px;text-align: center; line-height: 30px;
+    color: #fff;font-size: 20px;font-weight: bold;float: left;margin-left: 35%;cursor: pointer;
+  }
+    #add{
+    display: block;width: 150px;height: 30px;background-color:  #FF8901;
+    border-radius: 15px;text-align: center; line-height: 30px;
+    color: #fff;font-size: 20px;font-weight: bold;float: right;margin-right: 35%;cursor: pointer;
+  }
+  p{width: 100%;height: 5%;border-bottom:1px solid green;font-weight: bolder;}
+  </style>
+  </head>
+
+  <body>
+  <div id="main">
+  <form method="post" action="#" id="myForm">
+  <div id="ben">
+  <p>你的分类信息:</p>
+  <table>
+    <volist name="cates" id='v'>
+    <tr><td>{$v.name}</td><td><input type="radio" name="cates" value={$v.id}></td></tr>
+    </volist>
+  </table>
+  </div>
+
+  <div id="zhe">
+   <p>折800分类信息:</p>
+   <table>
+     <tr>
+       <td>女装</td><td>化妆品</td><td>鞋包</td><td>数码家电</td><td>美食</td>
+       <td>居家</td><td>母婴</td><td>文体</td><td>男装</td><td>配饰:</td>
+     </tr>
+     <tr>
+       <td><input type="radio" name="zh" value=2></td>
+       <td><input type="radio" name="zh" value=3></td>
+       <td><input type="radio" name="zh" value=4></td>
+       <td><input type="radio" name="zh" value=5></td>
+       <td><input type="radio" name="zh" value=6></td>
+       <td><input type="radio" name="zh" value=7></td>
+       <td><input type="radio" name="zh" value=8></td>
+       <td><input type="radio" name="zh" value=9></td>
+       <td><input type="radio" name="zh" value=11></td>
+       <td><input type="radio" name="zh" value=12></td>
+     </tr>
+   </table>
+   <p>卷皮尺分类信息:</p>
+  <table>
+       <tr>
+         <td>女装</td><td>美妆</td><td>鞋包配饰</td><td>数码电器</td><td>美食</td>
+         <td>居家</td><td>母婴</td><td>文体</td><td>男装</td>
+       </tr>
+       <tr>
+         <td><input type="radio" name="zh" value='nvzhuang'></td>
+         <td><input type="radio" name="zh" value='meizhuang'></td>
+         <td><input type="radio" name="zh" value='xiebaopeishi'></td>
+         <td><input type="radio" name="zh" value='shuma'></td>
+         <td><input type="radio" name="zh" value='meishi'></td>
+         <td><input type="radio" name="zh" value='jujia'></td>
+         <td><input type="radio" name="zh" value='muying'></td>
+         <td><input type="radio" name="zh" value='wenti'></td>
+         <td><input type="radio" name="zh" value='nanzhuang'></td>
+       </tr>
+     </table>
+  </div>
+  <div id='info'>
+    <p id="tsxx">信息提示</p>
+    <div id="cont"></div>
+  </div>
+  </form>
+</div>
+<div id="footer">
+<span id='caiji' onclick="begin()">开始采集</span>
+<span id='add' onclick="add()">添加到数据库</span>
+</div>
+<div id="sm">
+<p>更新:<a target="_blank" href="http://blog.tejiashare.com/archives/213.html">查看</a></p>
+</div>
+  </body>
+  <load href="__STATIC__/ftxia/js/onecai.js" />
+</html>

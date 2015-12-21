@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+.aboutbg{ background:#fff; margin:20px auto}
+/*service_terms*/
+.tao_fwtk{font-size: 14px;line-height: 25px;padding:20px;text-align: left;width:940px}
+.tao_fwtk p{text-indent: 2em;}
+.tao_fwtk h2 {font-size: 20px; height:50px; line-height:30px;text-align: center;color:#000}
+.tao_fwtk strong {display: block;padding-top: 25px;color:#000}
+.tao_fwtk p a {color: #005ED9;}
+p.phei {color: #000;padding-top: 10px;}
+/*feedback*/
+.m_tao_fk{background: url(../v1/2012/images/tao800_fk_ico.png) no-repeat scroll 20px 14px;overflow: hidden;padding-left: 46px;width: 934px;padding-top:10px}
+.m_tao_fk p.top_content {float: left;font-size: 14px;line-height: 24px;text-align: left;width: 934px;color:#000}
+.m_tao_fk .fkemail {color: #666;float: left;line-height: 30px;padding: 10px 0;text-align: left;width: 934px;}
+.m_tao_fk .fkemail span {color: #000;display: inline-block;font-size: 14px;width: 40px;}
+.m_tao_fk .jianyitext {border: 1px solid #E2E3EA;font-size: 12px;width:502px;height:96px}
+
+/*business_cooperation*/
+.static_page {font-size: 14px;line-height: 25px;text-align: left; padding:20px;width:940px;color:#000}
+.sphz_h2 { padding: 10px 0; text-align:left;font-size:14px;}
+.static_page table {font-size: 14px;background:#fff;border: 1px solid #ccc;border-collapse: collapse;margin-bottom: 4px;margin-top: 10px;width: 100%;}
+.static_page h2{ text-align:left;font-size:14px; font-weight:bold}
+.static_page th {background: #eee;padding: 4px 4px 4px 14px;text-align: left;white-space: nowrap;}
+.static_page td, .static_page th {border-bottom: 1px solid #ccc;border-right: 1px solid #ccc;padding: 0 3px;}
+.sphz_p {padding-bottom: 20px;}
+.sphz_span {display: block;overflow: hidden;}
+.static_content a{color: #005ED9;text-decoration: underline;}
+.static_content img{vertical-align: middle}
+.static_page_tab th{text-align:center;}
+.static_page_tab td{text-indent:10px;} 
+.sphz_p_er span{display:block;padding-left:2em;}
+.sphz_p_linx .sphz_span strong{width:80px;text-align:right;display:inline-block;}
+.sphz_p_linx .sphz_span img{vertical-align: text-bottom;}
+
+/*friendly_links*/
+.f_links_nav {font-size: 14px;line-height: 35px;padding:20px;text-align: left;width:940px}
+.f_links {text-align: left;width:940px; margin:0 auto}
+.f_links p {display: block;font-weight: bold;height: 40px;line-height: 40px;padding-left: 12px;}
+.f_links ul {background: url(../v1/2012/images/tuan_navlist_bg.png) repeat scroll left top transparent;overflow: hidden;padding-bottom: 20px;width: 940px;}
+.f_links li {float: left;height: 35px;line-height: 35px;overflow: hidden;padding-left: 10px;width: 178px;}
+.f_links a {color: #666;}
+.f_links a:hover{color: #06C;}
+
+
+.faq .left{padding-top:0}
+.faq .left .tab_faq{height:40px; border-bottom:2px solid #ccc}
+.faq .left .tab_faq span{font:14px/40px "";margin:0 10px}
+.faq .left .tab_faq span.on a{color:#c00; font-weight:bold}
+#faqid{padding-top:20px}
+/*novice*/
+#novice{background:#fff}
+#novice div strong{position:absolute; top:20px;left:0; font:30px/30px "微软雅黑";color:#e22a10}
+#novice div span{position:absolute; top:20px;left:40px;font:18px/30px "微软雅黑";color:#000}
+#novice div p{position:absolute; top:60px; left:40px; text-align:left; font:14px/20px "";width:300px}
+#novice div img{border:3px solid #ccc; width:308px; height:326px; position: absolute; top:20px;right:0}
+#novice div{width:680px; clear:left; margin:0 auto; position:relative; height:400px;overflow:hidden;padding-top:20px}

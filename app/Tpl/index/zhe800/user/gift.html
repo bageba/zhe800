@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<include file="public:head" />
+<load href="__STATIC__/ftxia/new/css/md-pagination.css" />
+<load href="__STATIC__/ftxia/new/css/md-goodslist.css" />
+<load href="__STATIC__/ftxia/new/css/md-public.css" />
+<load href="__STATIC__/ftxia/new/css/pg-zone.css" />
+</head>
+<body>
+<include file="public:header" />
+<div class="main">
+	<div class="piece jiu_goods">
+		<div class="piece_box">
+			<div class="jiu_info">
+				<div class="jiu_bd jiu_top content_body fl">
+					<div class="nav_con">
+						<div class="top_nav">
+							<ul>
+								<li class="other_normal "><a href="{:U('share/index')}">动态</a></li>
+								<li class="other_normal other_active"><a href="{:U('user/gift')}">我的礼品</a></li>
+								<li class="other_normal "><a href="{:U('user/like')}">我的喜欢</a></li>
+								<li class="other_normal "><a href="{:U('user/index')}">账号设置</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="content_left">
+						<ul id="zone_tab" class="zone_tab clear">
+							<li class="zt_f c"><a href="{:U('user/gift')}">金币兑换</a></li>
+						</ul>
+						<div class="c_b_body">
+							<table width="100%" cellpadding="0" cellspacing="0" border="0">
+								<tbody>
+									<tr>
+										<th>{:L('order_sn')}</th>
+										<th>{:L('order_item')}</th>
+										<th>{:L('order_score')}</th>
+										<th>{:L('order_time')}</th>
+										<th>{:L('order_status')}</th>
+									</tr>
+								<notempty name="order_list">
+									<volist name="order_list" id="val">
+									<tr>
+										<td>{$val.order_sn}</td>
+										<td><a href="{:U('gift/detail', array('id'=>$val['item_id']))}" target="_blank">{$val.item_name}</a></td>
+										<td align="right"><if condition="$val['order_score'] gt 0">{$val.order_score}<else/>{$val.order_score}</if></td>
+										<td class="r_order_time">{$val.add_time|frienddate}</td>
+										<td class="r_order_status"><if condition="$val['status'] eq 1">{:L('order_status_1')}<else/>{:L('order_status_0')}</if></td>
+									</tr>
+									</volist>
+								<else/>
+								<tr>
+									<td colspan="5">
+										<div class="find_gift">
+											<p>您还没有<a href="{:U('gift/index')}" target="_blank">兑换礼品</a>哦，赶快兑取你喜欢的礼品吧~</p>
+										</div>
+									</td>
+								</tr>
+								</notempty>
+								</tbody>
+							</table>
+							<div class="page"><div class="pageNav">{$page}</div></div>
+						</div>
+					</div>
+				</div>
+				<div class="jiu_right fr">
+					<include file="public:exchange_info" />
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--主部结束-->
+<include file="public:footer" />
+<link rel="stylesheet" type="text/css" href="__STATIC__/js/calendar/calendar-blue.css"/>
+<script src="__STATIC__/js/calendar/calendar.js"></script>
+<script src="__STATIC__/js/setting.js"></script>
+<script src="__STATIC__/js/minicity.js"></script>
+<script>
+$(function(){
+    $.minicity( "#J_province", "#J_city", "<?php echo $info['province'];?>", "<?php echo $info['city'];?>");
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+<include file="public:head" />
+<load href="__STATIC__/ftxia/new/css/md-goodslist.css" />
+<load href="__STATIC__/ftxia/new/css/md-public.css" />
+<load href="__STATIC__/ftxia/new/css/pg-item.css" />
+<load href="__STATIC__/ftxia/new/css/pg-page.css" />
+<load href="__STATIC__/ftxia/css/item.css" />
+</head>
+<body>
+<include file="public:header" />
+<!--商品详细-->
+
+<div class="main">
+	<div class="piece jiu_goods">
+		<div class="piece_box">
+			<div class="jiu_bd jiu_top exch_content fl">
+				<div class="item_containt">  
+					<div class="jiu_goodsinfo">
+						<a name="goods"></a>
+						<a name="goods"></a>
+						<div znid="11p64v" class="goods_con">
+     
+							<div class="pic" data-res="">
+								<img src="{:attach(get_thumb($item['pic_url'], '_b'),'item')}">
+							</div>
+							<div class="goods_detail">
+      							<div class="buy_state">
+									<p class="title">
+										<if condition="$item.shop_type eq 'C' "><a  target="_blank" class="source tao_n" title="淘宝网"></a></if>
+										<if condition="$item.shop_type eq 'B' "><a  target="_blank" class="source tao_t" title="天猫商城"></a></if>
+										<a href="{:U('jump/index',array('id'=>$item['id']))}"  rel="nofollow"  target="_blank" title="{$item.title}">{$item.title}</a>
+									</p>
+         							<a znid="{$item.id}" title="{$item.title}" class="buy_ed" href="javascript:;">举报</a>
+								</div>
+         
+								<div class="deal">
+									<p class="shoot_time">      
+	             						<a class="begin_buy" href="" target="_blank">开抢提醒</a>
+									</p>
+        							<p class="begin_time">开抢时间：{$item.coupon_start_time|date="m月d日 H:i",###}</p>
+									<p class="other_action">
+										<volist name="tags" id="tag"> 
+											<a class="keyword" href="{:U('tag/'.$tag)}" target="_blank"><em></em>{$tag}</a>&nbsp; 
+										</volist>
+									</p>
+								</div>
+								<p class="m-price">市场价：￥{$item.price}</p>
+								<p class="quan_title"><span class="price"><i>￥</i>{$item.coupon_price}</span></p>
+								<p class="buy-action"><a href="{:U('jump/index',array('id'=>$item['id']))}"  rel="nofollow" target="_blank" class="{$item.class}"></a></p>
+								<div class="shareto">
+									<div class="sharebaidu">
+										<!-- Baidu Button BEGIN -->
+										<div  id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+										<a class="bds_tsina" title="分享到新浪微博" href="#"></a>
+										<a class="bds_sqq" title="分享到QQ好友" href="#"></a>
+										<a class="bds_qzone" title="分享到QQ空间" href="#"></a>
+										</div>
+										<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=375944" src="http://bdimg.share.baidu.com/static/js/bds_s_v2.js?cdnversion=384831"></script>
+										<script type="text/javascript">
+										document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+										var title = $(".goods_detail .title a").html();
+										if(title.indexOf("原价") <= 0 ){
+											title = title +"原价："+$(".goods_detail .m-price").html().replace(/市场价：/,"")+"  现价："+$(".goods_detail .quan_title .price").html().replace(/<[^>]+>/g,"");
+										}
+										var url = location.href;
+										var pic = $(".goods_con").find(".pic img").attr("src");
+										var comment = $(".goods_con").find(".pic").data("res");
+										var data = "{'text':'"+title+"','comment':'"+comment+"','desc':'一句话证明你在玩【秒杀网】！我先来：全场九块九包邮，每天给你九块九的小幸福！','url':'"+url+"','pic':'"+pic+"'}";
+										$(".shareto #bdshare").attr("data",data);
+										</script>
+										<!-- Baidu Button END -->
+									</div>
+									<span class="share_txt">分享到：</span>
+									<div class="like-state">
+										<a title="喜欢" data-pid="{$item.id}" class="like no-like" href="javascript:;"><em></em></a>
+										<div class="like-num">
+											<dl class="J_scrollUp" style="top: 0px;">
+												<dd class="cur-num">{$item.likes}</dd>
+												<dd class="add-num">+1</dd>
+											</dl>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div name="page_location" id="page_location" class="nav_exchange">
+						<ul>
+							<li class="active"><a onclick="return false;" id="comment_nav1" href="#page_location">评论</a></li>				
+						</ul>
+					</div>	
+					<div name="jiu_comment" id="jiu_comment" class="jiu_comment">
+						<div class="pub_box">      
+							<div class="pub_area"  id="pub_area"  data-id="{$item.id}"  name="pub_area" >
+								<textarea id="pub_content" class="pub_txt" def-val="你也可以顺便说点什么 O(∩_∩)O">你也可以顺便说点什么 O(∩_∩)O</textarea>
+								<div class="pub_area_ft">
+								<a href="javascript:;" class="pub_btn" id="pub_submit">确 定</a>
+								</div> 
+							</div>
+						</div>
+						<div id="pub_say_say">
+							<div class="pub_img_box"></div>
+						</div>
+						<div class="note_comment note_comment_warp t_f" style="padding-bottom: 0;">
+							<ul class="c_l cf_show" id="note_comment_list">
+								<volist name="comment_list" id="val">
+								<li uid="{$val.id}" class="c_f">
+									<span><img class="J_card avt fl r3" src="{:avatar($val['uid'], '32')}" data-uid="{$val.uid}" alt="{$val.uname}"/></span>
+									<p class="sms"><span class="n icard J_card n" data-uid="{$val.uid}">{$val.uname}</span></p>
+									<p class="sms">{$val.info}</p>
+									<div><span>{$val.add_time|frienddate}</span></div>
+								</li>
+								</volist>
+							</ul>
+							<div id="J_cmt_page" class="page">{$page_bar}</div>
+						</div>
+	
+					</div>
+
+
+					<div class="jiu_shi jiu_item">
+		
+						<h3>您可能还喜欢</h3>
+						<ul class="shijiu_list">
+
+							<ftx:item type="orlike"   >
+								<volist name="data" id="val" key="i" mod="4">
+									<li <eq name="mod" value="0"> style="margin-left:0px;"</eq>>
+										<a target="_blank" href="{:U('item/index',array('id'=>$val['id']))}" class="pic">
+										<img src="{:attach(get_thumb($val['pic_url'], '_b'),'item')}" style="display: inline;"></a>
+										<p class="title_name"><a target="_blank" href="{:U('item/index',array('id'=>$val['id']))}">{$val.titme}</a></p>
+										<p class="detail"><span class="price">￥{$val.coupon_price}</span><a class="go_action" target="_blank" href="{:U('jump/index',array('id'=>$val['id']))}">去抢购&gt;&gt;</a></p>
+									</li>
+								</volist>
+							</ftx:item>
+
+
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="jiu_right normal_right fr">
+				<include file="public:exchange_info" />
+			</div>
+		</div>
+	</div>
+</div>
+<load href="__STATIC__/ftxia/js/report.js" />
+<include file="public:footer" />
+</body>
+</html>

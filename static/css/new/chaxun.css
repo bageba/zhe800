@@ -1,0 +1,20 @@
+.pad-10{padding:10px; overflow:hidden}
+.search-form{ margin-bottom:10px}
+table {border-collapse:collapse;border-spacing:0;}
+.explain-col{ border:1px solid #ffbe7a;zoom:1; background: #fffced; padding:8px 10px; line-height:20px}
+a{text-decoration:none; color:#444;}
+.table_form tbody td,.table_form tbody th{border-bottom:1px solid #eee; }
+.table_form td,.table_form th{padding:8px 0 8px 8px}
+.table_form th{font-weight:normal; text-align:right;padding-right:10px; color:#777}
+.table_form td{padding-left:12px}
+.input-text,.measure-input,textarea,input.date,input.endDate,.input-focus{border:1px solid #A7A6AA;height:18px;margin:0 5px 0 0;padding:2px 0 2px 5px;border: 1px solid #d0d0d0;background: #FFF url(images/input.png) repeat-x; 
+font-family: Verdana, Geneva, sans-serif,"宋体";font-size:12px;}
+button, input, select, textarea {font-size:100%;}
+body, button, input, select, textarea {font:12px/1.5 tahoma, arial, Verdana, sans-serif;}
+select{ vertical-align:middle;background:none repeat scroll 0 0 #F9F9F9;border-color:#666666 #CCCCCC #CCCCCC #666666;border-style:solid;border-width:1px;color:#333;padding:2px;}
+.table_form td label{ vertical-align:middle}
+.submit {background:url(images/s1.png) -115px 0px no-repeat;width:53px;height:29px;border:0px;color: #222;cursor: pointer;font-size:12px;line-height:20px;text-align:center;}
+.style1{margin: 0padding: 0;}
+.style2{vertical-align: middle;margin: 0;padding: 0;}
+.style3{width: 300px;vertical-align: middle;margin: 0;padding: 0;}
+.style5{height: 30px;line-height: 30px;padding-left: 12px;padding-right: 12px;padding-top: 6px;padding-bottom: 0;background: #f6f6f6;}

@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+<include file="public:head" />
+<style>
+.content .list {
+	width: 1000px;
+	margin-top: 15px;
+}
+.buy {
+	width: 243px;
+}
+.buy span.li_bg {
+	margin-left: 70px;
+}
+</style>
+</head>
+<body>
+<include file="public:header" />
+ 
+<div class="wrapper">
+	<div class="content">
+		<div class="white_dh">
+			<div class="daohang">
+				<div class="h_center">
+					<div class="jiu_hd">
+						<div class="jiu_dao">
+							<h3>分类：</h3>
+							<ul id="nav">
+								<li <empty name="cid"> class="selected"</empty>><a href="{:U('index/index')}">全部</a></li>
+								<volist name="cate_list['p']" id="bcate">
+								<li <if condition="$cid eq $bcate['id']">class="selected"</if>><a href="{:U('index/cate', array('cid'=>$bcate['id']))}">{$bcate.name}</a></li>
+								</volist>
+							</ul>
+						</div>
+					</div>
+					<div class="jiu_show">
+						<div class="type_show"><span>筛选：</span></div>
+						<div class="type_detail">共<font color="#fa6400" style="font-weight:bold;"> {$total_item} </font>个宝贝<notempty name="today_item">，今日上新<span ><font color="#fa6400" style="font-weight:bold;"> {$today_item} </font><em class="new_em"></em></span><span class="textspan">个</span></notempty></div>
+						
+						<div class="type_page">{$page_pre_next}</div>
+						<div class="old_see" id="orderid">
+								<a class="old_see_a" href="javascript:;">
+								<span>最新</span></a>
+								<div class="zhuangtai">
+									<ul>
+										<li class="last"><a href="{:U('index/index',array('sort'=>'new','status'=>$index_info['status'],'p'=>$index_info['p']))}">最新</a></li>
+										<li class="last " ><a href="{:U('index/index',array('sort'=>'price','status'=>$index_info['status'],'p'=>$index_info['p']))}">折扣</a></li>
+									</ul>
+								</div>
+						</div>
+						<div class="old_see" id="stateid"><a class="old_see_a" href="javascript:;"><span>状态</span></a>
+								<div class="zhuangtai">
+									<ul>
+										<li class="last"><a href="{:U('index/index',array('sort'=>$index_info['sort'],'status'=>'all','p'=>$index_info['p']))}">全部</a></li>
+										<li ><a href="{:U('index/index',array('sort'=>$index_info['sort'],'status'=>'underway','p'=>$index_info['p']))}">进行中</a></li>
+										<li ><a href="{:U('index/index',array('sort'=>$index_info['sort'],'status'=>'sellout','p'=>$index_info['p']))}">抢光了</a></li>
+									</ul>
+								</div>
+						</div>
+
+					</div>
+				</div>
+				<a href="javascript:;" class="filter-fold" id="fold"></a>
+				<div class="bar_line"></div>
+			</div>
+		</div>
+	
+ <present name="items_list">		 
+		<div class="list">
+		<ul>
+		<volist name="items_list" id="item" key="i">
+				<li class="buy">
+				<p><if condition="$item.shop_type eq 'C' "><i class="tao_n" title="淘宝网"></i></if><if condition="$item.shop_type eq 'B' "><i class="tao_t" title="天猫商城"></i></if><a href="{:U('item/index',array('id'=>$item['id']))}" target="_blank" data-item="<{$item.id}>">{$item.title}</a></p>
+				<div class="buy_cen">
+					<a href="{:U('jump/index',array('id'=>$item['id']))}"  rel="nofollow"  target="_blank"  data-item="{$item.id}"><img  alt="{$item.title}" src="{:attach(get_thumb($item['pic_url'], '_m'),'item')}" /></a>
+					<div class="buy_state">
+						<span class="begin_time">开始：{$item.coupon_start_time|date="m月d日H时i分",###}</del></span>
+						<span class="buy_ed"><strong>{$item.zk}</strong>折</span>
+					</div>
+					
+				</div>
+				<a href="{:U('jump/index',array('id'=>$item['id']))}"  rel="nofollow"  class="buy_bt tag_buy"  target="_blank"  data-item="{$item.id}"><span class="one">￥</span><span class="two">{$item.coupon_price}</span><span class="one"></span><span class="three">￥{$item.price}</span></a>
+				<span class="li_bg"></span>
+		   </li>		
+		</volist>
+		</ul>
+		</div>
+  </present>
+
+
+
+
+
+		<div class="clr"></div>
+
+		<div class="page"><div class="pageNav">{$page}</div></div>
+ 
+
+
+</div>
+
+
+
+	<!--Link Start-->
+	<div class="link">
+		<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="border:#e6e6e6 solid 1px;">
+			<tbody>
+				<tr>
+				<td valign="top">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tbody>
+							<tr>
+								<td width="90" height="30" align="center"><div class="STYLE3" style="font-size:14px;font-weight:bold; margin-top:4px;">友情链接</div></td>
+								<td align="left" style="color:#555"><div style="font-size:12px;margin-top:6px;">(申请友情链接请联系QQ：{:C('ftx_qq')})</div></td>
+							</tr>
+						</tbody>
+					</table>
+					<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tbody>
+							<tr>
+								<td height="2" bgcolor="#CF4429"></td>
+							</tr>
+						</tbody>
+					</table>
+					<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tbody>
+							<tr>
+								<td align="left" class="td3" style="padding:8px 8px 4px 10px; line-height:20px;">
+								<ftx:link type="lists" >
+									<volist name="data" id="val">
+									<a href="{$val.url}" target="_blank">{$val.name}</a>&nbsp;&nbsp; 
+									</volist>
+								</ftx:link>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+				</tr>
+			</tbody>
+		</table>
+		<table width="200" border="0" align="center" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td height="6"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!--Link End-->
+
+
+
+
+
+
+</div>
+<include file="public:footer" />
+</body>
+</html>

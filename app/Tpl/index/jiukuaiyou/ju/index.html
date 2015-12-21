@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<include file="public:head" />
+<link rel="stylesheet" href="http://static2.51fanli.net/static/taobao-common-css-v3.css?201311221_9931193964" />
+<link rel="stylesheet" href="http://static2.51fanli.net/taobao/css/taobao-ju.css?201311221_9931193964">
+<link rel="stylesheet" href="http://g.tbcdn.cn/ju/common/1.0.18/global-min.css" />
+<link rel="stylesheet" href="http://g.tbcdn.cn/ju/??home/1.0.19/common/home-min.css,juseek/1.0.3/v1/seek-min.css,judt/1.0.1/gold/v1/home-min.css" />
+<load href="__STATIC__/ftxia/css/tmall.css" />
+<style>
+.ju-filter {width: 980px;position: relative;margin-top: 20px;z-index:1;}
+
+#content {width: 980px;margin: 0 auto;}
+#content {padding-left: 0px;padding-right: 2px;}
+.ju-itemlist ul {width: 1020px;}
+.ju-itemlist li {margin: 0px 38px 38px 0;-webkit-animation-fill-mode: forwards;animation-fill-mode: forwards;}
+li.brand {display:none;}
+.pages {float: center;}
+.clearfix {clear: both;display: block;height: auto;overflow: hidden;visibility: visible;width: auto;}
+.btn {padding: 0 0em;border-width: 0px;border-radius: 0.0em;-webkit-box-shadow: 0px 0px 0px;-moz-box-shadow: 0px 0px 0px;box-shadow: 0px 0px 0px;}
+
+</style>
+
+</head>
+<body>
+<include file="public:header" />
+
+
+
+<div class="container ju-filter">
+	<div class="ju-category">
+		<div class="filter-cat clearfix">
+			<ul class="clearfix">
+				<li <if condition="$cid eq 0"> class="on"</if> ><a href="/ju">全部</a></li>
+				<volist name="cats" id="vol"> 
+				<li <if condition="$cid eq $vol['cid']"> class="on"</if> ><a href="{:U('ju/index',array('cid'=>$vol['cid']))}">{$vol.name}</a></li>
+				</volist>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+	<div id="content" class="container ju-container">
+		<div class="ju-itemlist J_JuHomeList">
+		{$html}
+		</div>
+	</div>
+
+	<div class="page"><em></em><div>{$page}</div></div>
+
+	
+	 
+ 
+<include file="public:footer" />
+</body>
+</html>

@@ -1,0 +1,8 @@
+@charset "gb2312";
+/* CSS Document */
+
+.hide {display: none;}
+.red { color: Red; }
+.dialog_protocol {padding: 12px;width: 700px;height: 380px;word-wrap: break-word;overflow-y: scroll;z-index:999999999}
+/*表单验证*/
+

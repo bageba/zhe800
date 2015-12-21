@@ -1,0 +1,152 @@
+<notempty name="visitor">
+<if condition="$visitor['username'] eq C('ftx_index_admin')">
+<script type="text/javascript">
+	function noshow(id){
+		if(!$.ftxia.dialog.islogin()) return ;
+		$(this).html('<img src="/static/ftxia/images/loading.gif" />');
+		$.ajax({
+			url: FTXIAER.root + '/?m=item&a=noshow',
+				type: 'POST',
+				data: {
+					id: id
+				},
+			dataType: 'json',
+			success: function(result){
+				if(result.status == 1){
+					$.ftxia.tip({content:result.msg, icon:'success'});
+				}else{
+					$.ftxia.tip({content:result.msg, icon:'error'});
+				}
+			}
+		});
+	}
+
+	$(".show a").click(function() {
+		id = $(this).attr("data-id");
+		if(!$.ftxia.dialog.islogin()) return ;
+		$(this).html('<img src="/static/ftxia/images/loading.gif" />');
+		$.ajax({
+			url: FTXIAER.root + '/?m=item&a=noshow',
+				type: 'POST',
+				data: {
+					id: id
+				},
+			dataType: 'json',
+			success: function(result){
+				if(result.status == 1){
+					$(this).html('成功');
+					$.ftxia.tip({content:result.msg, icon:'success'});
+				}else{
+					$(this).html('已取消');
+					$.ftxia.tip({content:result.msg, icon:'error'});
+				}
+			}
+		});
+	});  
+</script>
+</if>
+</notempty>
+<div class="foot">
+	<div class="white_bg">
+		<div class="xd_info">
+			<div class="jky-info fl">
+				<h2></h2>
+				<div class="attentionlist">
+					<a class="sina" href="http://weibo.com/" target="_blank" rel="nofollow">新浪微博</a> 
+					<a class="zone" href="http://422677261.qzone.qq.com" target="_blank" rel="nofollow">QQ空间</a> 
+					<a class="tt" href="http://t.qq.com/422677261" target="_blank" rel="nofollow">腾讯微博</a>
+				</div>
+			</div>
+			<div class="linkslist fl">
+				<div class="about">
+					<ul>
+						<li class="tit">关于我们</li>
+						<li><a href="{:U('help/read',array('id'=>3))}">联系我们</a></li>
+						<li><a href="{:U('help/read',array('id'=>1))}">关于我们</a></li>
+					</ul>
+				</div>
+				<div class="hezuo">
+					<ul>
+						<li class="tit">商务合作</li>
+						<li><a rel="nofollow" href="{:U('goods/goods_add')}" target="_blank">商家报名</a></li>
+						<li><a href="{:U('help/read',array('id'=>4))}">商家合作</a></li>
+					</ul>
+				</div>
+				<div class="help">
+					<ul>
+						<li class="tit">用户帮助</li>
+						<li><a href="{:U('help/read',array('id'=>5))}">免责声明</a></li>
+					</ul>
+				</div>
+			</div>			
+			<div class="wechat">
+				<div class="slide-img">
+					<ul id="box">
+						<li>
+							<div class="pic fl"></div>
+							<p class="img fr"></p>
+						</li>
+						<li>
+							<div class="tao-pic fl"></div>
+							<p class="tao-img fr"></p>
+						</li>
+					</ul>
+				</div>
+				<div class="slide-btn" id="boxbtn">
+					<b class="left-cur" href=""></b><b class="right-cur" href=""></b>
+				</div>
+			</div>
+			<div class="links">
+				<span>友情链接：</span>
+				<div class="links_list_box">
+					<ul class="links_list">
+			    	<li>
+			    		<ftx:link type="lists" >
+			    		<volist name="data" id="val" mod="11">
+							<eq name="mod" value="10"></li><li></eq>
+			    			<a href="{$val.url}" target="_blank">{$val.name}</a>
+						</volist>
+						</ftx:link>	
+			      </li>
+			    </ul>
+				</div>
+				<a href="{:U('help/read',array('id'=>'6'))}">更多&gt;&gt;</a>
+			</div>	
+		</div>
+		<p class="f_miibeian">
+		2010-2014 138gzs.com V5.0 正式版 all Rights Reserved <a href="http://www.138gzs.com/" target="_blank">华美网络正式授权版</a> (<a href="http://www.miibeian.gov.cn" class="tdu clr6" target="_blank">{:C('ftx_site_icp')}</a>) <script language="javascript" type="text/javascript" src="http://js.users.51.la/1615175.js"></script>{:C('ftx_statistics_code')}</p>
+	</div>
+</div>
+<!--淘点金代码开始-->
+<script type="text/javascript">
+    (function(win,doc){
+        var s = doc.createElement("script"), h = doc.getElementsByTagName("head")[0];
+        if (!win.alimamatk_show) {
+            s.charset = "gbk";
+            s.async = true;
+            s.src = "http://a.alimama.cn/tkapi.js";
+            h.insertBefore(s, h.firstChild);
+        };
+        var o = {
+            pid: "{:C('ftx_taojindian_html')}",/*推广单元ID，用于区分不同的推广渠道*/
+            appkey: "",/*通过TOP平台申请的appkey，设置后引导成交会关联appkey*/
+            unid: "",/*自定义统计字段*/
+			plugins:[{name:"keyword"}]/*需要加载的插件：内文关键字插件*/
+        };
+        win.alimamatk_onload = win.alimamatk_onload || [];
+        win.alimamatk_onload.push(o);
+    })(window,document);
+</script>
+<!--淘点金代码结束-->
+<script type="text/javascript">
+var FTXIAER = {
+    root: "__ROOT__",
+	site: "{:C('ftx_site_url')}",
+    uid: "<?php echo $visitor['id'];?>", 
+	chaxunurl: "{:U('ajax/check_item')}",
+    url: {}
+};
+var lang = {};
+<volist name=":L('js_lang')" id="val">lang.{$key} = "{$val}";</volist>
+</script>
+<ftx:load type="js" href="__STATIC__/js/jquery/plugins/jquery.tools.min.js,__STATIC__/js/jquery/plugins/jquery.masonry.js,__STATIC__/js/jquery/plugins/formvalidator.js,__STATIC__/js/fileuploader.js,__STATIC__/js/ftxia.js,__STATIC__/js/front.js,__STATIC__/js/goback.js,__STATIC__/js/dialog.js,__STATIC__/js/item.js,__STATIC__/js/user.js,__STATIC__/js/comment.js,__STATIC__/js/comm.js" />

@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>{$page_seo.title}</title>
+<meta name="keywords" content="{$page_seo.keywords}" />
+<meta name="description" content="{$page_seo.description}" />
+<include file="public:head2" />
+
+<load href="__STATIC__/js/jquery/jquery.js" />
+<css file="__STATIC__/css/ftxia/user.css" />
+</head>
+<body>
+<include file="public:header" />
+
+
+
+<div class="mains">
+	<div class="piece jiu_goods">
+		<div class="piece_box">
+			<div class="jiu_info">
+				<div class="jiu_bd content_body fl">
+					<include file="user:left" />
+					<div class="c_b_body">
+						<div class="order">
+						<notempty name="union_list">
+							<ul class="order_l">
+								<li class="tit">
+									<span class="r_union_cate">{:L('union_cate')}</span>
+									<span class="r_union_username" align="right">{:L('union_username')}</span>
+									<span class="r_union_score" align="right">{:L('union_score')}</span>
+									<span class="r_union_time">{:L('union_time')}</span>
+								</li>
+								 <volist name="union_list" id="val">
+								 <li>
+									<span class="r_union_cate" align="center"><if condition="$val['ousername']">邀请注册<else/>邀请访问</if></span>
+									<span class="r_union_username" align="right"><if condition="$val['ousername']">{$val.ousername}<else/>{$val.ip}</if></span>
+									<span class="r_union_score" align="right">{$val.score}</span>
+									<span class="r_union_time">{$val.add_time|frienddate}</span>
+								 </li>
+								</volist>
+							</ul>
+						<else/>
+						<div class="find_gift">
+							<p>还没有好友通过您的邀请注册哦！</p>
+							<p>邀请好友，得金币！<a target="_blank" href="{:U('union/index')}">赶快行动吧！</a></p>
+						</div>
+						</notempty>
+						</div>
+						
+
+ 
+					</div>
+				</div>
+				<div class="jiu_right fr">
+					<include file="public:rightloginbar" />
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<include file="public:footer" />
+<script src="__STATIC__/js/setting.js"></script>
+</body>
+</html>

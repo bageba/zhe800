@@ -1,0 +1,116 @@
+<!doctype html public "-//w3c//dtd html 4.01 transitional//en" "http://www.w3.org/tr/html4/loose.dtd">
+<html>
+ <head>
+  <title>U站采集页面</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <load href="__STATIC__/js/jquery/jquery.js" />
+  <script type="text/javascript">
+   var curl = '{:U('admin/cai/zhe')}';
+   var curlonezhe = '{:U('admin/onecai/zhe')}';
+   var curlqxbd ='{:U('admin/cai/qxbd')}';
+   var curlauto_cai = '{:U('admin/cai/auto_begin')}';
+   var curlfirst ='{:U('admin/cai/first')}';
+   var curladditems ='{:U('admin/cai/additems')}';
+   var curlbind ='{:U('admin/cai/bind')}';
+   var curlbindcx ='{:U('admin/cai/bindcx')}';
+   var curlxgbind ='{:U('admin/cai/xgbind')}';
+  </script>
+  <style type="text/css"></style>
+  </head>
+
+  <body>
+  <div id="main">
+  <form method="post" action="#" id="myForm">
+  <div id="ben">
+  <p>你的分类信息:</p>
+  <table>
+    <volist name="nodebd" id='v'>
+    <tr>
+      <td><span class='flname'>{$v.name}</span></td>
+      <td>
+        <span <if condition="$v['bded']==0"> class='bd'<else/> class='xgbd'</if> name="{$v.id}">
+          <if condition="$v['bded']==0">绑定<else/>修改已绑定</if>
+        </span>
+      </td>
+      <td>
+        <span class='qxbd' name="{$v.id}">
+          <if condition="$v['bded']==1">取消绑定</if>
+        </span>
+      </td>
+    </tr>
+    <volist name="v['child']" id='vv'>
+    <tr>
+      <td><span class='flname'>{$vv.name}</span></td>
+      <td>
+        <span <if condition="$vv['bded']==0"> class='bd'<else/>class='xgbd'</if> name="{$vv.id}">
+              <if condition="$vv['bded']==0">绑定<else/>修改已绑定</if>
+        </span>
+      </td>
+        <td>
+        <span class='qxbd' name="{$vv.id}">
+          <if condition="$vv['bded']==1">取消绑定</if>
+        </span>
+      </td>
+    </tr>
+    </volist>
+    </volist>
+  </table>
+  </div>
+
+  <div id="zhe">
+   <p>折800分类信息:</p>
+   <table>
+     <tr>
+       <td>女装</td><td>化妆品</td><td>鞋包</td><td>数码家电</td><td>美食</td>
+       <td>居家</td><td>母婴</td><td>文体</td><td>男装</td><td>配饰:</td>
+     </tr>
+     <tr>
+       <td><input type="checkbox" name="zhe800_2" value=2></td>
+       <td><input type="checkbox" name="zhe800_3" value=3></td>
+       <td><input type="checkbox" name="zhe800_4" value=4></td>
+       <td><input type="checkbox" name="zhe800_5" value=5></td>
+       <td><input type="checkbox" name="zhe800_6" value=6></td>
+       <td><input type="checkbox" name="zhe800_7" value=7></td>
+       <td><input type="checkbox" name="zhe800_8" value=8></td>
+       <td><input type="checkbox" name="zhe800_9" value=9></td>
+       <td><input type="checkbox" name="zhe800_11" value=11></td>
+       <td><input type="checkbox" name="zhe800_12" value=12></td>
+     </tr>
+   </table>
+   <p>卷皮尺分类信息:</p>
+  <table>
+       <tr>
+         <td>女装</td><td>美妆</td><td>鞋包配饰</td><td>数码电器</td><td>美食</td>
+         <td>居家</td><td>母婴</td><td>文体</td><td>男装</td>
+       </tr>
+       <tr>
+         <td><input type="checkbox" name="juanpi_nvzhuang" value='nvzhuang'></td>
+         <td><input type="checkbox" name="juanpi_meizhuang" value='meizhuang'></td>
+         <td><input type="checkbox" name="juanpi_xiebaopeishi" value='xiebaopeishi'></td>
+         <td><input type="checkbox" name="juanpi_shuma" value='shuma'></td>
+         <td><input type="checkbox" name="juanpi_meishi" value='meishi'></td>
+         <td><input type="checkbox" name="juanpi_jujia" value='jujia'></td>
+         <td><input type="checkbox" name="juanpi_muying" value='muying'></td>
+         <td><input type="checkbox" name="juanpi_wenti" value='wenti'></td>
+         <td><input type="checkbox" name="juanpi_nanzhuang" value='nanzhuang'></td>
+       </tr>
+     </table>
+     <div id='bd'><span>绑定</span><span>修改绑定</span></div>
+     <div id='ubd'><span>X</span></div>
+  </div>
+  <div id='info'>
+    <p id="tsxx">信息提示</p>
+    <div id="cont"></div>
+  </div>
+  </form>
+</div>
+<div id="footer">
+<span id='caiji' onclick="begin()">一键采集</span><span id='qh' onclick="qh()">切换到单类采集</span>
+</div>
+<p>更新:<a target="_blank" href="http://blog.tejiashare.com/archives/213.html">查看</a></p>
+  </body>
+  <load href="__STATIC__/ftxia/css/cai.css"/>
+  <load href="__STATIC__/ftxia/js/cai.js" />
+</html>

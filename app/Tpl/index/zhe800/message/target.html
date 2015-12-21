@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<title>{$page_seo.title}</title>
+<meta name="keywords" content="{$page_seo.keywords}" />
+<meta name="description" content="{$page_seo.description}" />
+<include file="public:head2" />
+<css file="__STATIC__/css/ftxia/user.css" />
+</head>
+<body>
+<include file="public:header" />
+<div class="main_wrap">
+    <div class="personal clearfix">
+        <include file="user:left" />
+        <div class="mess_box fl">
+            <h3 class="title">
+                <i>{:L('send_message')}</i>
+                <a href="{:U('message/index')}" class="fr fh">{:L('return_message_list')}</a>
+            </h3>
+            <div class="mes_friendly">
+                <h4>{:L('recent_contacts')}</h4>
+                <ul class="list_name">
+                    <volist name="last_user" id="val">
+                    <li>
+                        <a href="{:U('message/write', array('to_id'=>$val['uid']))}"><img src="{:avatar($val['uid'], 64)}" class="fl r3">{$val.uname}</a>
+                    </li>
+                    </volist>
+                </ul>
+            </div>
+            <div class="mes_friendly">
+                <h4>{:L('other_contacts')}</h4>
+                <div class="search_n">
+                    <input type="text" id="J_search_uname" class="fl r5">
+                    <a href="javascript:;" id="J_search_target" class="btn fl ml5">{:L('search')}</a>
+                </div>
+                <div id="J_search_list"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<include file="public:footer" />
+<script src="__STATIC__/js/setting.js"></script>
+</body>
+</html>

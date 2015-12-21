@@ -1,0 +1,76 @@
+
+      <div class="foot_bg">
+  <div class="area about">
+    <div class="mid">
+      <dl class="dl1">
+        {:R('advert/index', array(1), 'Widget')}
+      </dl>
+      <dl class="dl2">
+        {:R('advert/index', array(2), 'Widget')}
+      </dl>
+      <dl class="dl2">
+        {:R('advert/index', array(3), 'Widget')}
+    </dl>
+    <dl class="dl4">
+      {:R('advert/index', array(4), 'Widget')}
+    </dl>
+    <dl class="dl5">
+      <dt>友情链接：</dt>
+      <ftx:link type="lists" >
+									<volist name="data" id="val">
+									<a href="{$val.url}" target="_blank">{$val.name}</a>&nbsp;&nbsp; 
+									</volist>
+								</ftx:link>
+    </dl>
+    <dl class="dl3">
+      <dt>手机客户端</dt>
+      <dd class="device clear">
+      <a target="_blank" class="ios" href=http://app.zhui.cn/Soft/Down/Last/2170253/new.aspx></a>
+      <a target="_blank" class="android" href=http://app.zhui.cn/Soft/Down/Last/2170254/new.aspx></a>
+      <a target="_blank" class="wp" href=http://app.zhui.cn/Soft/Down/Last/2170264/new.aspx></a>
+      <a target="_blank" class="wap" href="#"></a>
+
+      </dd>
+      <dd class="sub">
+      <img alt="" src="/static/img/v1/ju/index/img/wxcode.png">
+      <div class="info">
+        <p>关注大连高峰，秒杀早知道</p>
+        <p>如何关注？</p>
+        <p>1) 查找微信号“<em>大连高峰</em>”<br>
+        2) 用微信扫描左侧二维码</p>
+      </div>
+      </dd>
+    </dl>
+  </div>
+</div>
+  </div>
+  <div class="area footer">Copyright @ 2010-2014 {:C('ftx_site_url')} all Rights Reserved <a href="{:C('ftx_site_url')}" target="_blank">{:C('ftx_site_name')}</a> (<a href="http://www.miibeian.gov.cn" class="tdu clr6" target="_blank">{:C}</a>) <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1000224515'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1000224515' type='text/javascript'%3E%3C/script%3E"));</script> </div>
+
+<script>
+var FTXIAER = {
+    root: "__ROOT__",
+    uid: "<?php echo $visitor['id'];?>", 
+	chaxunurl: "{:U('ajax/check_item')}",
+    url: {}
+};
+var lang = {};
+<volist name=":L('js_lang')" id="val">lang.{$key} = "{$val}";</volist>
+</script>
+<ftx:load type="js" href="__STATIC__/js/jquery/plugins/jquery.tools.min.js,__STATIC__/js/jquery/plugins/jquery.masonry.js,__STATIC__/js/jquery/plugins/formvalidator.js,__STATIC__/js/fileuploader.js,__STATIC__/js/ftxia.js,__STATIC__/js/front.js,__STATIC__/js/dialog.js,__STATIC__/js/item.js,__STATIC__/js/user.js,__STATIC__/js/comm.js" />
+
+<script type="text/javascript" language="javascript">
+        function AddFavorite(sURL, sTitle) {
+            sURL = encodeURI(sURL); 
+        try{   
+            window.external.addFavorite(sURL, sTitle);  
+        }catch(e) {   
+            try{   
+                window.sidebar.addPanel(sTitle, sURL, "");   
+            }catch (e) {   
+                alert("加入收藏失败，请使用Ctrl+D进行添加,或手动在浏览器里进行设置.");
+            }   
+        } 
+    }   
+</script>
+
+

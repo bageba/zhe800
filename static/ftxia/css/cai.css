@@ -1,0 +1,43 @@
+body{margin: 0;padding: 3px;border: 0;}
+  h2{display: block;background: #CCE8CF;border: 1px solid green;text-align: center;}
+  #main{
+    width: 100%;height: 422px;border: 1px solid green;
+    margin: 10px auto;background: #CCE8CF;
+  }
+  #ben{width: 35%;height: 420px;border-right: 1px solid green;float: left;position: absolute;z-index:999;overflow:  auto;}
+  #ben table{border: 1px solid pink;border-collapse: collapse;}
+  #ben table tr{border: 1px solid pink;}
+  #ben .bd{background-color: #ccc;display: inline-block;border-radius: 5px;width: 60px;text-align: center;color: blue;cursor: pointer;}
+  #ben .xgbd{background-color: #ccc;display: inline-block;border-radius: 5px;width: 100px;text-align: center;color: blue;cursor: pointer;}
+  #ben .qxbd{background-color: #ccc;display: inline-block;border-radius: 5px;width: 100px;text-align: center;color: blue;cursor: pointer;}  
+  #ben .flname{background-color: green;display: inline-block;border-radius: 5px;width: 100px;text-align: center;color: #fff;cursor: pointer;}  
+  #zhe{width: 35%;height: 300px;float: left;border-right: 1px solid green;display: none;position: absolute;z-index:1001;background-color: pink;border-radius: 10px;}
+  #zhe table{border: 1px solid green;border-collapse: collapse;margin: 0 auto;}
+  #zhe table td{border: 1px solid green;}
+  #zhe #bd{margin: 20px auto;width: 70px;}
+  #zhe #bd span:first-child{display:inline-block;width: 70px; font-size: 25px;background-color: orange;text-align: center;border-radius: 10px;
+  font-weight: bolder;color: #fff;cursor: pointer;}
+  #zhe #bd span:last-child{display:inline-block;width: 140px; font-size: 25px;background-color: orange;text-align: center;border-radius: 10px;
+  font-weight: bolder;color: #fff;cursor: pointer;display: none;}
+  #ubd{width: 20px;height: 20px;background: #fff;position: absolute;top: 10px;right: 10px;text-align: center;line-height: 20px;}
+  #ubd span:first-child{cursor: pointer;display: block;width: 20px;height: 20px;border-radius: 5px; }
+  #info{
+    width: 64%;height: 420px;
+    float: right;border-left: 1px solid green;overflow:  hidden;
+  }
+   #cont{
+    width: 100%;height: 86%;display: block;
+    font-size: 15px;float: right;border-top: 1px solid green;overflow:  auto;
+  }
+  #footer{width:100%;height: 32px;border: 1px dotted pink;text-align: center;margin-top: 5px;}
+  #caiji{
+    display: block;width: 100px;height: 30px;background-color:  #FF8901;
+    border-radius: 15px;text-align: center; line-height: 30px;
+    color: #fff;font-size: 20px;font-weight: bold;float: left;margin-left: 35%;cursor: pointer;
+  }
+    #qh{
+    display: block;width: 150px;height: 30px;background-color:  #FF8901;
+    border-radius: 15px;text-align: center; line-height: 30px;
+    color: #fff;font-size: 20px;font-weight: bold;float: right;margin-right: 35%;cursor: pointer;
+  }
+  p{width: 100%;height: 7%;border-bottom:1px solid green;font-weight: bolder;}

@@ -1,0 +1,22 @@
+<div id="J_check_item" class="dialog_check_item clearfix">
+	<div class="clearfix">
+    	<input type="text" def-val="{:L('chaxun_url_title')}" value="{:L('chaxun_url_title')}" class="item_url fl">
+        <input type="button" value="{:L('ok')}" class="J_check_btn smt">
+    </div>
+
+	<div class="cx">
+		<div class="explain-col">
+		{:L('chaxun_url_msg')}
+		<font color="red"><b>http://item.taobao.com/item.htm?id=20143572911</b></font>
+		</div>
+	</div>
+
+
+   <notempty name="msg">
+	<div class="cx">
+		<div class="explain-col">
+		<font color="red"><b>{$msg}</b></font>
+		</div>
+	</div>
+   </notempty>
+</div>

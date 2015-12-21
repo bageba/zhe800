@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<title>个人中心 - {:C('ftx_site_name')}</title>
+<meta name="keywords" content="{$page_seo.keywords}" />
+<meta name="description" content="{$page_seo.description}" />
+<include file="public:head2" />
+<css file="__STATIC__/css/ftxia/user.css" />
+</head>
+<body>
+<include file="public:header" />
+
+<div style="margin:0 auto">
+<div class="mains">
+	<div class="piece jiu_goods">
+		<div class="piece_box">
+			<div class="jiu_info">
+				<div class="jiu_bd content_body fl">
+					<include file="user:left" />
+					<div class="per_content">
+						<form id="J_basic_form" action="{:U('user/index')}" method="post">
+							<ul>
+								  <li class="head_b">
+									  <label>头像预览：</label>
+									  <div class="fl"><img  id="J_avatar" src="{:avatar($info['id'], 100)}" class="r5" ></div>
+									   <a id="J_upload_avatar" class="upload_btn smt_file_fake ">{:L('upload_avatar')}</a>
+								  </li>
+								  <li>
+									  <label>{:L('username')}：</label>
+									  <input type="text" disabled="disabled" value="{$info.username}" size="30" id="username" name="username" class="text">
+								  </li>
+								  <li>
+									  <label>{:L('email')}：</label>
+									  <input type="text" disabled="disabled" value="{$info.email}" size="30" id="email" name="email" class="text">
+								  </li>
+								  <li>
+									  <label>{:L('gender')}：</label>
+									  <input name="gender" value="0" type="radio" <if condition="$info['gender'] eq '0'">checked</if>>{:L('female')}
+									  <input name="gender" value="1" type="radio" <if condition="$info['gender'] eq '1'">checked</if>>{:L('male')}		
+								  </li>
+								  <li>
+								  <label>{:L('location')}：</label>
+								  <select id="J_province" name="province"></select> <select id="J_city" name="city"></select>
+								  </li>
+								  <li>
+									  <label>{:L('birthday')}：</label>
+									  <input type="text" name="birthday" id="J_birthday" readonly class="gray_text" size="12" value="{$info.byear}-{$info.bmonth}-{$info.bday}">
+								  </li>
+								   <li>
+									  <label>{:L('my_intro')}：</label>
+									  <textarea name="intro" id="intro" rows="10">{$info.intro}</textarea>
+								  </li>
+								  <li>
+									  <label></label>
+									  <input class="smt" type="submit" value="{:L('confirm_edit')}">
+								  </li>
+							</ul>
+						</form>
+					</div>
+				</div>
+				<div class="jiu_right fr">
+					<include file="public:rightloginbar" />
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<!--主部结束-->
+<include file="public:footer" />
+<link rel="stylesheet" type="text/css" href="__STATIC__/js/calendar/calendar-blue.css"/>
+<script src="__STATIC__/js/calendar/calendar.js"></script>
+<script src="__STATIC__/js/setting.js"></script>
+<script src="__STATIC__/js/minicity.js"></script>
+<script>
+$(function(){
+    $.minicity( "#J_province", "#J_city", "<?php echo $info['province'];?>", "<?php echo $info['city'];?>");
+});
+</script>
+
+</body>
+</html>

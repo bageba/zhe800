@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, div, dl, dt, dd, ul, ol, li,
+h1, h2, h3, h4, h5, h6, pre, code,
+form, fieldset, legend, input, button,
+textarea, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+}
+
+/*gbael*/
+body{ text-align:center; background:#fff;}
+.content{  background:url(images/content-bj.jpg) no-repeat;  width:833px; height:623px; margin:0 auto; position:relative; }
+.global{ width:509px; height:193px;position:relative; position:absolute; top:155px; left:158px; }
+.a-tb-logo{ width:84px; height:24px; background:url(images/a-tb.png) no-repeat; position:absolute; top:42px; right:56px;}
+/*jky-tb*/
+.jky .logo{ background:url(images/logo-jky.png) no-repeat; width:84px; height:28px; position:absolute; top:42px; left:60px;}
+/*jp-tb*/
+.jp .logo{ background:url(images/logo-juanpi.png) no-repeat; width:84px; height:28px; position:absolute; top:42px; left:60px;}
+
+ .fly{ width:212px; height:28px; position:absolute; top:38px; left:152px;  } 
+ .fly .fly-f{ position:absolute;  bottom:0px; left:7px; background:url(images/car.png) no-repeat; width:38px; height:19px; display:block; overflow:hidden;}
+ .title{ width:370px; font-size:14px; color:#333333; position:absolute; top:99px; left:74px; left:60px\0;}
+ .title a{ color:#ff101e; text-decoration:none; font-weight:bold;}
+ .click{ width:230px; position:absolute; top:144px; left:50%; margin-left:-115px;font-size:12px; color:#ababab;}
+ .click a{ color:#0289cd; text-decoration:underline;}
+ .btn{ position:absolute; left:127px;  bottom:-80px; background:url(images/btn.gif) no-repeat; width:88px; height:24px; display:block;}
+ .kuang{position:absolute; top:227px; left:115px;}

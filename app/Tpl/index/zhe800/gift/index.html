@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<include file="public:head" />
+<css file="__STATIC__/css/ftxia/gift.css" />
+<css file="__STATIC__/css/ftxia/giftstyle.css" />
+</head>
+<body>
+<include file="public:header" />
+
+
+<div class="mains content">
+
+	<div class="piece jiu_goods">
+
+		<div class="jiu_info">
+        <div class="jiu_bd jiu_top fl">
+			<div class="daohang" style="top: 0px; margin-top: 0px; ">
+				<div class="h_center">
+					<div class="jiu_hd">
+						<div class="jiu_dao">
+							<ul id="nav">
+								<li <if condition="$cid eq ''">class="current"</if>><a href="{:U('gift/index')}">{:L('cate')}</a></li>
+								<volist name="cate_list" id="cate">
+								<li <if condition="$cid eq $cate['id']">class="current"</if>><a href="{:U('gift/index',array('cid'=>$cate['id']))}" title="{$cate.name}">{$cate.name}</a></li>
+								</volist>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<ul> 
+			 <volist name="item_list" id="item" mod="3">
+				<li class="goods_box juandou_box <eq name="mod" value="2">goods_box_l</eq>">
+					<div class="inner_box tag_buy">
+                        <h3>
+                            <span class="green"></span>
+                            <a target="_blank" href="{:U('gift/detail', array('id'=>$item['id']))}" class="inform_title">{$item.title}</a>
+                        </h3>
+						<div class="pic">
+                            <a target="_blank" href="{:U('gift/detail', array('id'=>$item['id']))}"><img   src="{:attach($item['img'], 'score_item')}" alt="{$item.title}" style="display: inline; "></a>
+                            <div class="remain"><div class="remain_num cheng_num">{$item.stock}件 </div></div>
+						</div>
+						<div class="juan_detail">
+                            <span class="current_price"><b>￥</b>{$item.coupon_price}</span>
+                            <span class="original_pirce">￥{$item.price}</span>
+                            <div class="juan_price">
+                                <span class="all_juandou">{$item.score}</span>
+                                <span class="normal">&nbsp;{:L('exchange')}</span>
+                            </div>
+						</div>
+					</div>
+					<span class="li_bg"></span>
+				</li>
+				</volist>
+			</ul>
+        </div>
+
+        <div class="jiu_right fr">
+			<include file="public:rightloginbar" />
+		</div>
+        </div>
+        <div class="page"><div class="pageNav"> {$page_bar}</div></div>        </div>
+	</div>
+ 
+
+
+<include file="public:footer" />
+</body>
+</html>

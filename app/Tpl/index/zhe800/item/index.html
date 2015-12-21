@@ -1,0 +1,256 @@
+<!doctype html>
+<html>
+<head>
+<include file="public:head" />
+<css file="__STATIC__/css/ftxia/item.css" />
+</head>
+<body>
+<include file="public:header" />
+<!--商品详细-->
+<div id="junav">
+  <div class="area">
+    <div class="left">
+	<a href="{:U('index/index')}" <empty name="cid"> class="on"</empty>><em>全部</em></a>
+	  <empty name="cate_list['s'][$cid]">
+									<empty name="cate_list['s'][$cinfo['pid']]">
+										
+										<volist name="cate_list['p']" id="bcate">
+										<a href="{:U('index/cate', array('cid'=>$bcate['id']))}" <if condition="$cid eq $bcate['id']">class="on"</if>><em>{$bcate.name}</em></a>
+										</volist>
+									<else />
+										<volist name="cate_list['s'][$cinfo['pid']]" id="bcate">
+										<a href="{:U('index/cate', array('cid'=>$bcate['id']))}" <if condition="$cid eq $bcate['id']">class="on"</if>><em>{$bcate.name}</em></a>
+										</volist>
+									</empty>
+								<else />
+									<empty name="cate_list['s'][$cinfo['pid']]">
+										<volist name="cate_list['s'][$cid]" id="bcate">
+										<a href="{:U('index/cate', array('cid'=>$bcate['id']))}" <if condition="$cid eq $bcate['id']">class="on"</if>><em>{$bcate.name}</em></a>
+										</volist>
+									<else />
+										<volist name="cate_list['s'][$cinfo['pid']]" id="bcate">
+										<a href="{:U('index/cate', array('cid'=>$bcate['id']))}" <if condition="$cid eq $bcate['id']">class="on"</if>><em>{$bcate.name}</em></a>
+										</volist>
+									</empty>
+								</empty>
+	
+	
+	
+      
+        
+    </div>
+    <div class="right">
+      排序：<a href="{:U('index/index',array('sort'=>'new','status'=>$index_info['status'],'p'=>$index_info['p']))}">最新</a>
+            <a href="{:U('index/index',array('sort'=>'hot','status'=>$index_info['status'],'p'=>$index_info['p']))}">最热</a>
+    </div>
+  </div>
+</div>
+
+<div class="mains">
+	<div class="piece jiu_goods">
+		<div class="piece_box">
+			<div class="jiu_bd jiu_top fl">
+				<div class="item_containt">
+					<div class="jiu_goodsinfo">
+						
+						<a name="goods"></a>
+						<if condition="$item.class eq 'tag_wait' ">
+							<h3><a href="javascript:void()"   title="{$item.title}">{$item.title}</a></h3>
+						<else />
+							<h3><a href="{:U('jump/index',array('id'=>$item['id']))}" rel='nofollow' target="_blank" title="{$item.title}">{$item.title}</a></h3>
+						</if>
+<div class="goods_con" znid="101z3l">
+	<div class="pic">
+	<if condition="$item.class eq 'tag_wait' ">
+		<a href="javascript:void()"  >
+	<else />
+		<a href="{:U('jump/index',array('id'=>$item['id']))}" rel='nofollow' target="_blank" title="{$item.title}">
+	</if>
+	<img src="{:attach(get_thumb($item['pic_url'], '_b'),'item')}" width="310px" height="310px">
+	</a>
+	</div>
+	<div class="goods_detail">
+		<div class="price_tag  {$item.class}">
+			<i>￥</i>{$item.coupon_price}<span class="ori_price">￥{$item.price}</span>
+			<if condition="$item.class eq 'tag_wait' ">
+				<a href="javascript:void()" ></a>
+			<else />
+				<a href="{:U('jump/index',array('id'=>$item['id']))}" rel='nofollow' target="_blank" title="{$item.title}"></a>
+			</if>
+			
+		</div>
+
+		<if condition="$item.class eq 'tag_wait' ">
+			<div class="item-like"><strong>即将开团</strong>，敬请期待！</div>
+			<dl class="item-last-time">
+					<dt>将于{$item.coupon_start_time|date="m月d日H点",###}开团，离开团还剩：</dt>
+					<dd class="timer" id="end_date_0" data-time="{$item.coupon_start_time}"></dd>
+			</dl>
+		<else />
+			<if condition="$item.class eq 'tag_end' ">
+				<dl class="item-last-time">
+						<dt>团购已经结束！</dt>
+						<dd class="timer" id="end_date_0" data-time="{$item.coupon_start_time}"></dd>
+				</dl>
+			<else />
+			<div class="item-like">已有 <strong>{$item.volume}</strong> 人在抢购该商品</div>
+				<dl class="item-last-time">
+						<dt>离抢购结束还剩：</dt>
+						<dd class="timer" id="end_date_0" data-time="{$item.coupon_end_time}"></dd>
+				</dl>
+			</if>
+		</if>
+
+		
+商品标签：<volist name="tags" id="tag"> 
+											<a class="keyword" href="{:U('index/so', array('k'=>$tag))}" target="_blank"><em></em>{$tag}</a>&nbsp; 
+										</volist>
+
+		<div class="shareto">
+			<div class="sharebaidu">
+				<!-- Baidu Button BEGIN -->
+				<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare">
+					<a class="bds_qzone" title="分享到QQ空间" href="#"></a>
+					<a class="bds_tsina" title="分享到新浪微博" href="#"></a>
+					<a class="bds_tqq" title="分享到腾讯微博" href="#"></a>
+					<a class="bds_renren" title="分享到人人网" href="#"></a>
+					<a class="bds_t163" title="分享到网易微博" href="#"></a>
+					<span class="bds_more">更多</span>
+				</div>
+				<script data="type=tools&amp;uid=0" id="bdshare_js" type="text/javascript" src="http://bdimg.share.baidu.com/static/js/bds_s_v2.js?cdnversion=375944"></script>
+				<script id="bdshell_js" type="text/javascript" src="http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=375944"></script>
+				<script type="text/javascript">
+				document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+				</script>
+				<!-- Baidu Button END -->
+				<script src="http://bdimg.share.baidu.com/static/js/logger.js?cdnversion=375944"></script>
+			</div>
+			<span class="share_txt">分享到：</span>
+		</div>
+	</div>
+</div>
+					</div>
+					<div class="jiu_comment">
+						
+						<h4><a name="comm"></a>宝贝评价</h4>
+<div class="note_comment_warp t_f">
+	<div class="note_comment">
+		<ul class="c_l cf_show" id="note_comment_list">
+		<volist name="comment_list" id="val">
+		<li uid="{$val.id}" class="c_f">
+			<span><img class="J_card avt fl r3" src="{:avatar($val['uid'], '32')}" data-uid="{$val.uid}" alt="{$val.uname}"/></span>
+			<p class="sms"><span class="n icard J_card n" data-uid="{$val.uid}">{$val.uname}</span></p>
+			<p class="sms">{$val.info}</p>
+			<div><span>{$val.add_time|frienddate}</span></div>
+		</li>
+		</volist>
+		</ul>
+		 <div id="J_cmt_page" class="page">{$page_bar}</div>
+	</div>
+		<div class="pub_area" id="pub_area" data-id="{$item.id}" name="pub_area">
+		<div class="pub_area_bd">
+			<textarea id="pub_content" class="pub_txt" def-val="你也可以顺便说点什么 O(∩_∩)O">你也可以顺便说点什么 O(∩_∩)O</textarea>
+		</div>
+		<div class="pub_area_ft">
+			<a href="javascript:;" class="pub_btn" id="pub_submit">确定</a>
+			<div class="pub_out fr">				
+			</div>
+		</div>
+		
+	</div>
+</div>
+					</div>
+						<div class="jiu_shi jiu_item">
+							
+							<h3>您还会喜欢...</h3>
+							<ul class="shijiu_list">
+							<a data-type="10" biz-itemid="{$item.num_iid}" data-tmpl="720x220" data-tmplid="143" data-rd="1" data-style="2" data-border="1" href="#"></a>
+								<ftx:item type="orlike" cid="$item['cate_id']" >
+								<volist name="data" id="val" key="i">
+									<li <eq name="key" value="0"> style="margin-left:0px;"</eq>>
+										<a target="_blank" href="{:U('item/index',array('id'=>$val['id']))}" class="pic">
+										<img src="{$val['pic_url']}" style="display: inline;"></a>
+										<p class="title_name"><a target="_blank" href="{:U('item/index',array('id'=>$val['id']))}">{$val.titme}</a></p>
+										<p class="detail"><span class="price">￥{$val.coupon_price}</span><a class="go_action" target="_blank" href="{:U('item/index',array('id'=>$val['id']))}">去抢购&gt;&gt;</a></p>
+									</li>
+								</volist>
+								</ftx:item>
+							</ul>
+						</div>
+				</div>
+			</div>
+			<div class="jiu_right fr">
+				
+<include file="public:rightloginbar" />
+				
+				
+				<div class="exchange_info theysays worth_buy">
+					<h3><span>值得买</span><a target="_blank" class="more" href="{:U('index/index')}">更多&gt;&gt;</a></h3>
+					<div class="worth_buy_goods">
+						<ul>
+							<ftx:item type="zhi" cid="$item['cate_id']">
+								<volist name="data" id="val" mod="2">
+									<li <eq name="mod" value="1"> class="no"</eq>>
+										<div class="goodsimg">
+											<a href="{:U('item/index',array('id'=>$val['id']))}" target="_blank">
+											<img src="{$val['pic_url']}" style="display:inline;" width="100" width="100"><span>￥{$val.coupon_price}</span></a>
+										</div>
+									</li>
+								</volist>
+							</ftx:item>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<include file="public:footer" />
+<script src="__STATIC__/js/comment.js"></script>
+<script type="text/javascript">
+function show_date_time(end,style,id){
+    today=new Date(); 
+	timeold=((end)*1000-today.getTime()); 
+	if (timeold < 0) {
+        return;
+    }
+    setTimeout("show_date_time("+end+','+style+','+id+")", 100); 
+    sectimeold=timeold/1000;
+	secondsold=Math.floor(sectimeold); 
+	msPerDay=24*60*60*1000;
+	e_daysold=timeold/msPerDay;
+	daysold=Math.floor(e_daysold); 
+	e_hrsold=(e_daysold-daysold)*24;
+	hrsold=Math.floor(e_hrsold); 
+	e_minsold=(e_hrsold-hrsold)*60;
+	minsold=Math.floor((e_hrsold-hrsold)*60); 
+	e_seconds = (e_minsold-minsold)*60;
+	seconds=Math.floor((e_minsold-minsold)*60); 
+	ms = e_seconds-seconds;
+	ms = new String(ms);
+	ms1 = ms.substr(2,1);
+	ms2 = ms.substr(2,2);
+	hrsold1=daysold*24+hrsold;
+	if(style == 1){
+		$("#end_date_"+id).html('<em>'+(hrsold1<10?'0'+hrsold1:hrsold1)+"</em>小时<em>"+(minsold<10?'0'+minsold:minsold)+"</em>分<em>"+(seconds<10?'0'+seconds:seconds)+"</em>秒");
+	}else if(style == 2){
+		$("#end_date_"+id).html('<em>'+daysold+"</em>天<em>"+(hrsold<10?'0'+hrsold:hrsold)+"</em>时<em>"+(minsold<10?'0'+minsold:minsold)+"</em>分<em>"+(seconds<10?'0'+seconds:seconds)+"</em>秒");
+	}else if(style == 3){
+		$("#end_date_"+id).html("<em>"+(hrsold1<10?'0'+hrsold1:hrsold1)+"</em>小时<em>"+(minsold<10?'0'+minsold:minsold)+"</em>分<em>"+(seconds<10?'0'+seconds:seconds)+"."+ms1+"</em>秒");
+	}else{
+		$("#end_date_"+id).html(daysold+"天"+(hrsold<10?'0'+hrsold:hrsold)+"小 时"+(minsold<10?'0'+minsold:minsold)+"分"+(seconds<10?'0'+seconds:seconds)+"秒."+ms2);
+	}
+}
+$(".timer").each(function() {
+        var reg = /^[0-9]+$/;
+        var timer = $(this).attr('data-time');
+        if (reg.test(timer)) {
+            show_date_time(timer, 3, 0);
+        }
+	});
+</script>
+</body>
+</html>

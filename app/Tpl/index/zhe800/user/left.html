@@ -1,0 +1,9 @@
+<div class="c_b_menu">
+	<ul>
+	<volist name="user_menu_list" id="menu">
+    	<volist name="menu['submenu']" id="smenu">
+    	<li <if condition="$user_menu_curr eq $key"> class="cur"</if>><a href="{$smenu.url}"><span>{$smenu.text}</span></a></li>
+    	</volist>
+    </volist>
+	</ul>
+</div>

@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0px; padding:0px;}
+body{background:#FFF;font-family:微软雅黑,Helvetica,Tahoma,sans-serif;font-size:14px;line-height:1.5;color:#555}
+body,ul,ol,li,form{margin:0;padding:0;-webkit-text-size-adjust:none}
+ul,ol{list-style:none}
+em,i{ font-style:normal;}
+img{border:0}
+h1,h2,h3,div,li,p,menu{margin:0;padding:0;font-size:100%;font-weight:normal;-webkit-tap-highlight-color:transparent}
+a{color:#5e5e5e;text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}

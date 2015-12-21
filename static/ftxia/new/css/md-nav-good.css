@@ -1,0 +1,363 @@
+.sad{display:none}.jiu-nav{position:relative;width:100%;margin-bottom:15px;border-top:0 solid #E2E2E2;z-index:18}.jiu-nav
+i{display:inline-block;position:relative;top:4px;*top:0;left:-2px;width:16px;height:16px;background:url(../images/jiu-spirit.png) no-repeat;_background:url(../images/jiu-spirit.gif) no-repeat}.jiu-nav
+i.dress{background-position:-4px -4px;top:6px;*top:4px}.jiu-nav
+i.s_b{background-position:-4px -22px}.jiu-nav
+i.fashion{background-position:-4px -40px}.jiu-nav
+i.cate{background-position:-4px -60px}.jiu-nav
+i.l_h{background-position:-4px -80px}.jiu-nav
+i.other{background-position:-4px -100px;top:6px;*top:4px}.jiu-nav
+i.online{background-position:-4px -120px;top:6px;*top:4px}.jiu-nav
+i.business{background-position:-4px -160px;top:6px;*top:4px}.jiu-nav
+i.torrow{margin-right:2px;background-position:-4px -141px;_background-position:-4px -139px}.jiu-nav
+i.on{background-position:-4px -180px;top:3px;left:-3px;*top:0}.jiu-nav
+i.off{background-position:-24px -180px;top:3px;left:-3px}.jiu-nav
+i.null{background-position:-24px -180px;width:0;height:0}.nav-classify{width:974px;margin:0
+auto;padding:0
+2px;border:1px
+solid #E2E2E2;border-top:#CFCFCF;border-bottom:#FFF;background:#FFF}.nav-classify
+li{position:relative;float:left;width:82px;height:36px;line-height:36px;text-align:center;z-index:20}.nav-classify li
+i{position:absolute;top:5px;*top:4px;left:7px}.nav-classify li
+p{display:none;position:absolute;top:39px;left:10px;width:125px;margin-bottom:20px;padding:5px;border:1px
+solid #F96;background:#FFF;font-size:12px;box-shadow:1px 2px 3px rgba(0,0,0,0.05);z-index:25}.nav-classify li p
+em{display:block;position:absolute;top:-9px;left:32px;width:17px;height:9px;background:url(/jky/w/new/img/jiu/top-cur.gif) no-repeat}.nav-classify li p
+a{display:inline-block;float:left;height:24px;padding:0px
+4px;line-height:24px;color:#919191;white-space:nowrap}.nav-classify li p a:hover{color:#ee6217;text-decoration:none}.nav-classify li a.classify-a{display:inline-block;position:relative;width:65px;height:26px;margin-top:5px;padding-left:1px;background:#fff;line-height:24px;border-radius:13px;color:#a3370f;font-size:14px;text-indent:18px}.nav-classify li a.classify-a.active,.classify-a.hover{background:#ee6217;color:#FFF;text-decoration:none}.nav-classify li a.classify-a:hover{background:#ee6217;color:#FFF;text-decoration:none}.jiu-nav .nav-classify li a.classify-a.hover i.dress,.jiu-nav .nav-classify li a.classify-a:hover i.dress,.jiu-nav .nav-classify li a.classify-a.active
+i.dress{background-position:-24px -4px}.jiu-nav .nav-classify li a.classify-a.hover i.s_b,.jiu-nav .nav-classify li a.classify-a:hover i.s_b,.jiu-nav .nav-classify li a.classify-a.active
+i.s_b{background-position:-24px -22px}.jiu-nav .nav-classify li a.classify-a.hover i.fashion,.jiu-nav .nav-classify li a.classify-a:hover i.fashion,.jiu-nav .nav-classify li a.classify-a.active
+i.fashion{background-position:-24px -40px}.jiu-nav .nav-classify li a.classify-a.hover i.cate,.jiu-nav .nav-classify li a.classify-a:hover i.cate,.jiu-nav .nav-classify li a.classify-a.active
+i.cate{background-position:-24px -60px}.jiu-nav .nav-classify li a.classify-a.hover i.l_h,.jiu-nav .nav-classify li a.classify-a:hover i.l_h,.jiu-nav .nav-classify li a.classify-a.active
+i.l_h{background-position:-24px -80px}.jiu-nav .nav-classify li a.classify-a.hover i.other,.jiu-nav .nav-classify li a.classify-a:hover i.other,.jiu-nav .nav-classify li a.classify-a.active
+i.other{background-position:-24px -100px}.nav-classify
+li.last{float:right;width:195px;*width:200px;_width:195px;margin-right:8px}.nav-classify li.last
+a.online{display:inline-block;position:relative;width:76px;height:26px;margin-top:5px;color:#919191;background:#fff;line-height:26px;font-size:12px;text-indent:28px;border-radius:0}.nav-classify li.last a.online:hover{color:#ee6217;text-decoration:none}.nav-classify li.last a.online:hover
+i.online{background-position:-24px -120px}.nav-classify li.last
+a.business{display:inline-block;position:relative;color:#919191;width:76px;height:26px;margin:5px
+0 0 10px;background:#fff;line-height:26px;font-size:12px;text-indent:28px;border-radius:0}.nav-classify li.last a.business:hover{color:#ee6217;text-decoration:none}.nav-classify li.last a.business:hover
+i.business{background-position:-24px -160px}.nav-classify
+li.app{width:70px;height:auto;margin-left:200px;*margin-left:190px}.nav-classify li.app
+.phone{display:block;width:70px;height:19px;margin:8px
+0 0 0;background:url(../images/jiu-spirit.png) no-repeat -37px -249px;line-height:18px;*line-height:22px;_line-height:18px;color:#ee6217;font-size:12px;filter:alpha(opacity=80);opacity: .8;border-radius:0}.nav-classify li.app .phone:hover{background:url(../images/jiu-spirit.png) no-repeat -37px -249px;color:#ee6217;filter:alpha(opacity=100);opacity:1}.nav-classify li.app
+.tips{position:absolute;top:-40px;left:-120px;width:102px;padding:7px
+0 12px;border:#f96 solid 1px;background:#fff}.nav-classify li.app .tips
+.close{position:absolute;top:-5px;right:-5px;width:14px;height:14px;margin:0;padding:0;background:url(../images/close.png) no-repeat;cursor:pointer}.nav-classify li.app .tips
+span{display:block;text-align:center}.nav-classify li.app .tips
+.txt{margin-bottom:10px;line-height:18px;color:#919191}.nav-classify li.app .tips
+.kik{width:75px;height:76px;margin:0
+auto;background:url(/jky/w/new/img/jiu/kik-web01.png) no-repeat}.nav-classify li.app .tips
+em{position:absolute;top:50px;right:-9px;left:auto;width:9px;height:17px;background:url(/jky/w/new/img/jiu/right-cur.gif) no-repeat}.nav-channel{width:978px;margin:0
+auto;border:1px
+solid #E2E2E2;border-top:#FFF;background:#FFF;font-size:14px}.nav-channel
+li{float:left;width:310px;height:30px;margin-left:9px;line-height:30px;text-align:center}.nav-channel li
+a{display:block;display:inline;float:left;_width:92px;min-width:92px;_height:25px;_padding-top:9px;background:#f9f9f9;background:#FFF}.nav-channel li a:hover{color:#EE6217;text-decoration:none}.nav-channel li
+a.all{width:96px;color:#ee6217}.nav-channel.type li
+a.all{width:140px;font-size:12px;border-radius:15px}.nav-channel
+li.notice{display:none;width:336px;background:#efefef;font-size:12px}.nav-channel
+li.last{float:right;width:250px;margin-right:12px}.nav-channel li.last
+a{position:relative;width:116px}.nav-channel li.last a
+em{display:block;position:absolute;top:-7px;left:12px;height:14px;padding:0
+2px;background:#F20;color:#FFF;font:normal 10px/14px Arial;border-radius:5px}.nav-channel li.last
+a.today{width:116px;_height:25px;margin-left:19px;padding-left:5px;_line-height:20px;_overflow:hidden}.nav-channel li.last
+a.torrow{width:100px;margin-left:1px;padding-right:5px}.nav-channel li.last
+a.today.active{color:#EE6217}.nav-channel li.last
+a.torrow.active{color:#EE6217}.nav-channel li.last a.torrow.active
+.torrow{background-position:-24px -141px}.nav-channel li.last a.torrow:hover
+i{background-position:-24px -141px}.nav-channel{margin-top:12px;border:0
+solid #E2E2E2;background:none}.nav-channel
+li{margin-left:0}.nav-channel li
+a{border:0
+solid #E2E2E2}.nav-channel li
+a.all{margin-right:1px;border-radius:15px 0 0 15px}.nav-channel.type li
+a.all{border-radius:15px}.nav-channel li
+a.three{border-radius:0 15px 15px 0}.nav-channel
+li.notice{display:block;width:336px;margin-left:35px;border:none;background:#efefef;background:url(../images/jiu-spirit.png) no-repeat;*background:url(../images/jiu-spirit.png) no-repeat;background-position:-8px -366px;color:#a3370f;font-size:12px}.nav-channel li.notice
+a{display:inline-block;width:250px;height:30px;margin-left:50px;border:none;background:none;color:#a3370f;text-align:left;cursor:pointer;overflow:hidden}.nav-channel li.notice a:hover{border:none;color:#a3370f;text-decoration:underline}.nav-channel
+li.last{display:inline-block;width:250px;margin-right:0}.nav-channel li.last
+a.today{width:116px;border-radius:15px 0 0 15px}.nav-channel li.last
+a.torrow{width:100px;border-radius:0 15px 15px 0 }.nav-channel{margin-top:12px;border:0
+solid #E2E2E2;background:none}.nav-channel
+li{margin-left:0}.nav-channel li
+a{padding-left:5px;border:1px
+solid #E2E2E2}.nav-channel li
+a.all{border-radius:15px 0 0 15px}.nav-channel li
+a.right{margin-left:-7px;padding-right:7px;border-left:none;border-radius:0 15px 15px 0px}.nav-channel.type li
+a.all{border-radius:15px}.nav-channel li
+a.three{border-radius:0 15px 15px 0}.nav-channel
+li.notice{display:block;width:336px;margin-left:35px;background:#efefef;background:url(../images/jiu-spirit.png) no-repeat;_background:url(../images/jiu-spirit.gif) no-repeat;background-position:-8px -366px;color:#a3370f;font-size:12px}.nav-channel li.notice a:hover{color:#a3370f;text-decoration:underline}.nav-channel
+li.last{display:inline-block;width:255px;margin-right:0}.nav-channel li.last
+a.today{width:116px;padding-left:5px;border-radius:15px 0 0 15px}.nav-channel li.last
+a.torrow{width:100px;border-radius:0 15px 15px 0;padding-right:5px}.nav-channel{margin-top:12px;border:0
+solid #E2E2E2;background:none}.widescreen .nav-channel
+li{margin-left:0}.widescreen .nav-channel li
+a{padding-left:5px;border:1px
+solid #E2E2E2}.widescreen .nav-channel li.notice
+a{padding-left:5px;border:none}.widescreen .nav-channel li
+a.all{border-radius:15px 0 0 15px}.widescreen .nav-channel li
+a.right{margin-left:-7px;padding-right:7px;border-radius:0 15px 15px 0px;border-left:none}.widescreen .nav-channel.type li
+a.all{border-radius:15px}.widescreen .nav-channel li
+a.three{border-radius:0 15px 15px 0}.widescreen .nav-channel
+li.notice{display:block;width:336px;margin-left:35px;background:#efefef;background:url(../images/jiu-spirit.png) no-repeat;_background:url(../images/jiu-spirit.gif) no-repeat;background-position:-8px -366px;color:#a3370f;font-size:12px}.widescreen .nav-channel li.notice a:hover{text-decoration:underline;color:#a3370f}.widescreen .nav-channel
+li.last{display:inline-block;width:255px;margin-right:0}.widescreen .nav-channel li.last
+a.today{width:116px;padding-left:5px;border-radius:15px 0 0 15px}@media \0screen{.widescreen{border-top:0}.widescreen .nav-classify{position:absolute;top:57px;right:50%;float:none;width:83px;height:auto;margin-right:500px;border:1px
+solid #E2E2E2;background:url(../images/navbg.gif)}.widescreen .nav-classify.fixed{position:fixed;top:1px;z-index:9999}.widescreen .nav-classify
+li{width:83px;height:42px;line-height:42px}.widescreen .nav-classify li
+p{top:0;left:83px;width:125px;z-index:12}.widescreen .nav-classify li p
+em{top:12px;left:-9px;width:9px;height:17px;background:url(/jky/w/new/img/jiu/left-cur.gif) no-repeat}.widescreen .nav-classify li a.classify-a{background:none}.widescreen .nav-classify li a.classify-a.first{margin-top:8px}.widescreen .nav-classify li a.classify-a.active,.classify-a.hover{background:#ee6217;color:#FFF;text-decoration:none}.widescreen .nav-classify li a.classify-a:hover{background:#ee6217;color:#FFF;text-decoration:none}.widescreen .nav-classify
+li.last{position:relative;float:right;width:82px;height:73px;margin:8px
+2px 0 0;background:#f9f9f9}.widescreen .nav-classify li.last
+a.online{display:block;position:absolute;background:none}.widescreen .nav-classify li.last
+a.business{position:absolute;display:block;top:40px;background:none;margin:-5px 0 0 0}.widescreen .nav-classify li.last a.online:hover{background:none;color:#ee6217;text-decoration:none}.widescreen .nav-classify li.last a.online:hover
+i.online{background-position:-24px -120px}.widescreen .nav-classify li.last a.business:hover{background:none;color:#ee6217;text-decoration:none}.widescreen .nav-classify li.last a.business:hover
+i.business{background-position:-24px -160px}.widescreen .nav-classify
+li.app{height:auto;margin-left:0}.widescreen .nav-classify li.app
+.phone{display:block;width:37px;height:55px;margin:10px
+0 0 21px;background:url(../images/jiu-spirit.png) no-repeat 0 -213px;text-indent:-99px;overflow:hidden;border-radius:0;filter:alpha(opacity=80);opacity: .8}.widescreen .nav-classify li.app .phone:hover{background:url("../images/jiu-spirit.png") no-repeat scroll 0 -213px transparent;filter:alpha(opacity=100);opacity:1}.widescreen .nav-classify li.app
+.tips{position:absolute;top:-7px;left:auto;right:-120px;width:auto;padding:10px;border:1px
+solid #f96;background:#fff}.widescreen .nav-classify li.app .tips
+.close{position:absolute;top:-5px;right:-5px;width:14px;height:14px;margin:0px;background:url(../images/close.png) no-repeat;cursor:pointer}.widescreen .nav-classify li.app .tips
+span{display:block;clear:both;text-align:center}.widescreen .nav-classify li.app .tips
+.txt{margin-bottom:10px;line-height:18px;color:#919191}.widescreen .nav-classify li.app .tips
+.kik{width:95px;height:95px;background:url(../images/kik-web.png) no-repeat}.widescreen .nav-classify li.app .tips
+em{position:absolute;top:50px;left:-9px;width:9px;height:17px;background:url(../images/left-cur.gif) no-repeat}}@media screen and (min-width: 1220px){.widescreen{border-top:0}.widescreen .nav-classify{position:absolute;top:57px;right:50%;float:none;width:83px;height:auto;margin-right:500px;border:1px
+solid #E2E2E2;background:url(../images/navbg.gif)}.widescreen .nav-classify.fixed{position:fixed;top:1px;z-index:9999}.widescreen .nav-classify
+li{width:83px;height:42px;line-height:42px}.widescreen .nav-classify li
+p{top:0;left:83px;width:125px;z-index:12}.widescreen .nav-classify li p
+em{position:absolute;top:12px;left:-9px;width:9px;height:17px;background:url(../images/left-cur.gif) no-repeat}.widescreen .nav-classify li a.classify-a{background:none}.widescreen .nav-classify li a.classify-a.first{margin-top:8px}.widescreen .nav-classify li a.classify-a.active{background:#ee6217;color:#FFF;text-decoration:none}.widescreen .nav-classify li a.classify-a.hover{background:#ee6217;color:#FFF;text-decoration:none}.widescreen .nav-classify li a.classify-a:hover{background:#ee6217;color:#FFF;text-decoration:none}.widescreen .nav-classify
+li.last{float:right;width:82px;height:73px;position:relative;margin:8px
+2px 0 0}.widescreen .nav-classify li.last
+a.online{display:block;position:absolute;background:none}.widescreen .nav-classify li.last
+a.business{display:block;position:absolute;top:40px;background:none;margin:-5px 0 0 0}.widescreen .nav-classify li.last a.online:hover{background:none;color:#ee6217;text-decoration:none}.widescreen .nav-classify li.last a.online:hover
+i.online{background-position:-24px -120px}.widescreen .nav-classify li.last a.business:hover{background:none;color:#ee6217;text-decoration:none}.widescreen .nav-classify li.last a.business:hover
+i.business{background-position:-24px -160px}.widescreen .nav-classify
+li.app{height:auto;margin-left:0}.widescreen .nav-classify li.app
+.phone{display:block;width:37px;height:55px;margin:10px
+0 0 21px;background:url(../images/jiu-spirit.png) no-repeat 0 -213px;text-indent:-99px;overflow:hidden;border-radius:0;filter:alpha(opacity=80);opacity: .8}.widescreen .nav-classify li.app .phone:hover{background:url("../images/jiu-spirit.png") no-repeat scroll 0 -213px transparent;filter:alpha(opacity=100);opacity:1}.widescreen .nav-classify li.app
+.tips{position:absolute;top:-7px;left:auto;right:-120px;width:auto;padding:10px;border:1px
+solid #f96;background:#fff}.widescreen .nav-classify li.app .tips
+.close{position:absolute;top:-5px;right:-5px;width:14px;height:14px;margin:0px;background:url(../images/close.png) no-repeat;cursor:pointer}.widescreen .nav-classify li.app .tips
+span{display:block;clear:both;text-align:center}.widescreen .nav-classify li.app .tips
+.txt{margin-bottom:10px;line-height:18px;color:#919191}.widescreen .nav-classify li.app .tips
+.kik{width:95px;height:95px;background:url(../images/kik-web.png) no-repeat}.widescreen .nav-classify li.app .tips
+em{position:absolute;top:50px;left:-9px;width:9px;height:17px;background:url(../images/left-cur.gif) no-repeat}}.main{margin:0
+auto;overflow:visible}.goods-list
+li{float:left;width:312px;height:314px;margin:0
+19px 19px 0;border:1px
+solid #FFF;background:#FFF;box-shadow:1px 1px 3px #e2e2e2}.goods-list
+li.last{margin-right:0 !important}.goods-list
+li.active{border:1px
+solid #d4d4d4;z-index:10}.goods-list
+li.fill.active{border:none;box-shadow:none}.goods-list
+.fill{width:314px;border:1px
+solid #f9f9f5;border:none;box-shadow:none}.goods-list
+.fill.active{border:1px
+solid #f9f9f5;box-shadow:none}.goods-list .fill
+div{width:316px;height:316px;border:none;background:url(../images/fill.gif) no-repeat #fafaf9}.goods-list .fill
+span.active{border:none;z-index:10}.goods-list .fill
+span{display:block;position:absolute;width:314px;height:18px;margin-top:200px;color:#a3370f;font:500 18px/18px "微软雅黑";text-align:center}.goods-list .add-white{border:none}.goods-list .add-white
+div{background:url(../images/background_bg.png) repeat}.list-good{position:relative}
+.good-title{width:290px;height:32px;padding-top:15px;margin:0 auto;color:#888;font:500 14px/36px Tahoma,Helvetica,Arial,'宋体',sans-serif;overflow:hidden}
+.good-title .title{display:inline-block;float:right;width:270px;color:#888;white-space:nowrap;overflow:hidden;room:1}
+.title-tips{ width:290px; margin:0 auto 20px; color:#919191;}
+.good-title .icon{float:left;margin:11px 2px 0 0px;padding-top:2px;background:url(../images/jiu-spirit.png) no-repeat;_background:url(../images/jiu-spirit.gif) no-repeat}
+.tao_n {float:left;margin:11px 2px 0 0px;padding-top:2px;background: url(../images/jiu-spirit.png) no-repeat -482px -40px;width:14px;height:14px;display: inline-block;vertical-align: -4px;margin-right: 5px;}
+.tao_t {float:left;margin:11px 2px 0 0px;padding-top:2px;background: url(../images/jiu-spirit.png) no-repeat -482px -4px;width:14px;height:14px;display: inline-block;vertical-align: -2px;margin-right: 5px;}
+.good-title .icon .tao-t{background-position:-482px -4px;width:14px;height:14px}
+.good-title .icon .tao-n{background-position:-482px -40px;width:14px;height:14px}
+.good-title .icon .tao-v{background-position:-475px -22px;width:21px;height:14px}
+.good-title .icon .tao-gai{background-position:-471px -58px;width:25px;height:14px}
+.good-pic{position:relative;width:290px;margin:0
+auto}
+.good-pic .go-quan{position:absolute;top:60px;left:95px;width:100px;height:71px;z-index:12;cursor:pointer;text-decoration:none;background:url(../images/quan_tag_wait.png) no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop',
+src="http://s.juancdn.com/jky/w/new/img/cover/quan_tag_wait.png")}.good-pic .go-quan-red{background:url(../images/quan_tag_buy.png) no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop',
+src="http://s.juancdn.com/jky/w/new/img/cover/quan_tag_buy.png")}.good-pic .go-quan-gray{background:url(../images/quan_tag_end.png) no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop',
+src="http://s.juancdn.com/jky/w/new/img/cover/quan_tag_end.png")}.good-pic .go-quan
+em.three{top:12px;font-size:14px}.good-pic .go-quan-red em.three,.go-quan-gray
+em.three{top:12px;font-size:14px}.good-pic .go-quan:hover,.go-quan-red:hover,.go-quan-gray:hover{opacity:1;filter:alpha(opacity=100)}.good-pic .go-quan
+em{position:absolute;top:6px;left:10px;width:40px;height:30px;font-size:20px;color:#fff;font-family:"微软雅黑","verdana";overflow:hidden}.good-pic .go-quan em.go-quan-time{width:80px;top:45px;font:600 15px "宋体","verdana";text-align:center}.good-pic .go-quan em.go-quan-time
+i{font:normal 16px "微软雅黑","verdana"}.good-pic .go-quan em
+i{font-size:15px;font-style:normal}.good-pic .mask-bg{display:none;position:absolute;top:0;left:0;left:0 \9;*left:0;width:280px;height:184px;height:18px;z-index:10;background:#000;opacity: .3;filter:alpha(opacity=30)}.good-pic .go-quan{display:none}.active .good-pic .go-quan{display:block}.good-pic .mask-bg{display:block}.good-pic .wait-quan{display:none;position:absolute;bottom:0px;_bottom:0px;left:0px;width:284px;height:20px;padding:0px
+2px;border:1px
+solid #ffba75;background:#fffbef;color:#666;font-size:14px;z-index:9}.good-pic .wait-quan
+p{height:20px;padding-left:3px;line-height:18px;font-weight:normal;font-size:12px;white-space:nowrap}.good-pic .wait_quan
+em{position:absolute;bottom:-5px;left:25px;_bottom:-15px;width:9px;height:6px;background:url(../images/bottom_cur.gif) no-repeat}.good-pic .wait-quan p
+b{color:#f50;font-size:16px}.good-pic .wait-quan p
+a{margin-left:1px;color:#0289cd}.good-pic .wait-quan p a:hover{text-decoration:underline}.pic-img{width:290px;height:290px;padding-top:10px}.brand_kill{position:absolute;top:-3px;right:5px;width:43px;height:43px;background:url(../images/jiu-spirit.png) no-repeat;_background:url(../images/jiu-spirit.gif);background-position:-327px -437px}.session-icon{position:absolute;top:-3px;right:5px;width:34px;height:41px;padding:2px
+0 0 12px;background:url(../images/session-icon.png) no-repeat}.session-icon
+span{line-height:18px;color:#fff;font-size:12px;letter-spacing:2px}
+.good-price {width:290px; height:36px;line-height:36px; position: relative; margin:27px auto;}
+.good-price .des-other{margin-left:5px;}
+.good-price .des-other span{ clear:both; height:18px; line-height:18px; display:block;}
+.good-price .des-other .price-old {color: #999; margin-top:-3px; font-size:11px;}
+.good-price .des-other .price-old em{ font-family:"微软雅黑","verdana";}
+.good-price .des-other .discount {font-size: 12px; color: #999; margin-top:-2px;}
+.good-price .des-other .discount b{ font-family:Arial;font-size:14px; vertical-align:-1px;}
+.good-price .price-current,.good-price .des-other{ display:block; float:left;}
+.good-price .price-current {font-size:32px; color:#FF6600; font-family:Arial;}
+.good-price .price-current em {font-size: 14px; font-family:"微软雅黑","verdana"; vertical-align:1px; margin-left:1px;}
+.price-discount{font-size:14px;color:#CCC;text-decoration:line-through}
+.price-baoyou{font-size:12px;color:#CCC}
+
+.list-good.pic-des{position: absolute; bottom:-41px;left:-1px; z-index: 5;width:290px; height:30px; line-height:28px; background:#f5ffe4; font-size: 12px;  color: #acc87c; display:none; padding:0 9px; border-color:#d3d3d3; border-width:1px; border-style:none solid solid solid;box-shadow:1px 0px 0px rgba(212, 212, 212, 0.8);}
+.list-good.des-report{ color:#ababab;}
+.list-good.des-state span{ width: 240px;}
+.list-good.des-state .des-report{text-decoration:underline;}
+.list-good.des-state .des-report:hover {text-decoration:none; color:#acc87c;}
+.good-price .btn .hover-wait-buy{display:none;width:120px;height:40px;z-index:999}
+.good-price .btn .wait-buy,.wait-buy-begin{position:absolute;bottom:-30px;right:0;width:112px;height:20px;padding:3px 8px;border:1px solid #ffba75;background:#fffbef;color:#dc7d21;font-size:14px;z-index:999;z-index:10}
+.good-price .btn .wait-buy p,.wait-buy-begin
+p{height:20px;padding-left:20px;background:url(../images/tips.gif) no-repeat 0 0;line-height:18px;font-size:12px;font-weight:normal}
+.good-price .btn .wait-buy em,.wait-buy-begin em{position:absolute;top:-5px;right:20px;width:9px;height:6px;background:url(../images/top_cur.gif) no-repeat}
+.good-price .btn .wait-buy p a,.wait-buy-begin p a{margin-left:1px;color:#0289cd}.good-price .btn .wait-buy p a:hover,.wait-buy-begin p a:hover{text-decoration:underline}
+.wait-buy-begin{width:102px}
+.good-price .btn:hover .hover-wait-buy{display:block}
+.good-price .btn{position:absolute;right:0;width:100px;height:35px;background:url(../images/jiu-spirit.gif) no-repeat -4px -461px;line-height:35px;color:#FFF;font-size:16px;font-weight:500;vertical-align:middle;text-align:center;cursor:pointer;z-index:10}.good-price
+.btn.buy_miao{background:url(../images/miao.gif) no-repeat}.good-price .btn.buy_miao:hover{background:url(../images/miao_up.gif) no-repeat}.good-price
+.btn.buy{background-position:-212px -462px}.good-price
+.btn.end{background-position:-108px -462px}.good-price
+.btn.gone{background-position:-396px -422px}.good-price
+.btn.begin{background-position:-396px -376px}.good-price
+.btn.begin_10{background-position:-4px -462px}.good-price
+.btn.begin_11{background-position:-4px -323px}.good-price .btn.buy:hover{background-position:-212px -421px}.good-price .btn.end:hover{background-position:-108px -421px}.good-price .btn.gone:hover{background-position:-396px -462px}.good-price .btn.begin:hover{background-position:-396px -332px}.good-price .btn.begin_10:hover{background-position:-4px -421px}.good-price .btn.begin_11:hover{background-position:-4px -284px}.good-des{position:relative;width:290px;height:18px;margin:0
+auto;color:#ababab}.good-des a.title:hover{color:#ababab;text-decoration:underline}.good-des
+a.icon{display:block;float:left}.good-des a.icon.tao-du{background:url(../images/dujia.jpg) no-repeat;width:31px;height:18px;margin-right:5px}.good-des
+a.icon.category{height:16px;padding:0px
+2px;border:1px
+solid #e2e2e2;line-height:14px;line-height:18px\9\0;*line-height:18px;color:#c6c6c6;text-align:center}.good-des a.icon.category:hover{color:#888;text-decoration:underline}.good-said{position:relative;width:310px;_width:314px;height:54px;margin:0
+auto;border-top:1px dashed #aaa;background:#FFF;color:#ababab}.said-head{width:290px;height:30px;margin:0
+auto;line-height:30px}.said-head
+a{display:block;float:left}.said-head
+img{width:20px;height:20px;margin:5px
+8px 0 0}.said-info{width:290px;height:24px;margin:0
+auto;line-height:24px}
+.like-comment{position:relative;top:0;right:80px;float:right;width:50px;margin-left:28px}
+.like-comment a:hover span{color:#EE6217}
+.like-comment em{display:block;float:right;width:12px;height:12px;margin-top:5px;background:url(../images/jiu-spirit.gif) no-repeat -482px -144px}.like-comment
+span{display:block;float:right;margin-left:4px;color:#c6c6c6}
+.like-state{ top:0px;right:0;width:60px}
+.like-state .like{display:block;float:right;line-height:14px;color:#f5433e;cursor:pointer}
+.like-state .like em{display:block;float:left;width:12px;height:12px;margin-top:2px;background:url(../images/zhe-spirit.png) no-repeat -288px 3px;_background:url(../images/zhe-spirit.png)}
+.like-state .like span{display:block;float:right;margin-left:4px}
+.like-state .no-like em{background-position:-288px -54px}
+.like-state .no-like em.focus{background-position:-288px 3px}
+.like-state .no-like:hover em{background-position:-288px 3px}
+.like-state .no-like span{color:#ababab}
+.like-state .no-like:hover span{color:#F5433E}
+.like-state .like-num{_display:inline-block;position:relative;float:right;*width:28px;height:20px;padding-left:5px;overflow:hidden;text-align:left}
+.like-state .like-num dl{position:relative;float:right}
+.like-state .like-num dl dd{width:auto;*width:28px;height:20px}
+.like-state .like-num dl dd:first-child{color:#f14242}
+.like-state .like-num dl .add-num{color:#F5433E}
+.like-state .like-num dl .active-num{color:#F5433E}
+.like-tips{display:none;position:absolute;right:-1px;bottom:-75px;width:314px;height:66px;border:1px
+solid #eae5e1;background:#FFF;border-top:1px solid #e2e2e2;z-index:11;box-shadow:1px 2px 5px rgba(0, 0, 0, 0.15)}
+.like-tips.active .like-tips{display:block}
+.like-tips .top-cur{position:absolute;top:-8px;right:90px;_right:90px;width:16px;height:8px;background:url(../images/top-cur.gif) no-repeat 0 0}
+.like-tips .like-con{width:315px;height:35px;margin-right:0}
+.like-tips .liked{display:inline-block;float:left;margin:8px 0 0 15px;padding-left:20px;background:url(../images/jiu-spirit.gif) no-repeat scroll -478px -122px transparent;color:#f5433e;font-size:14px}
+.like-tips .go-see{display:inline-block;float:right;*width:110px;margin:10px 15px 0 0;color:#06F}
+.like-tips .go-see:hover{text-decoration:underline}
+.like-tips .shareto{height:24px;background:#FFF;vertical-align:middle;z-index:99}
+.like-tips .shareto .share_txt{float:left;margin:0 5px 0 15px;line-height:24px;color:#919191}
+.like-tips .shareto .sharebaidu{float:left;margin-top:0}
+.goods-list li.split-line{float:none;clear:both;width:950px;height:32px;margin:0 auto;margin:5px 0 10px 25px;border:none;background:url(../images/split-bg.gif) no-repeat;box-shadow:none}.goods-list li.split-line:hover{border:none}.goods-list li.split-line .white-bg{width:370px;height:32px;margin:0
+auto;padding-top:5px;background:url(../images/background_bg.png) no-repeat;color:#919191;font-size:14px;text-align:center}.goods-list li.split-line .white-bg
+a{color:#0289cd;text-decoration:underline}.goods-list li.split-line .white-bg a:hover{text-decoration:none}.backToTop{display:none;position:fixed;_position:absolute;left:50%;margin-left:510px;bottom:-12px;_bottom:"auto";width:95px;height:130px;padding:5px
+0;background:url(../images/backtotop.png) no-repeat;_background:url(../images/backtotop.gif) no-repeat;background-position:0 -20px;text-align:center;cursor:pointer}.newtoday{clear:both;width:380px;height:90px;margin:0
+auto;background:url(../images/newtoday.png) no-repeat;line-height:90px;text-align:center}.newtoday
+a{display:block;float:left;width:352px;height:45px;margin-top:20px;line-height:44px;color:#8d8d8d;font-size:12px}.newtoday a:hover{color:#EE6217;text-decoration:none}.nav-new{height:28px;line-height:28px;font-size:12px;background:#fafaf9;width:980px;margin:15px
+auto 0;text-align:center;background:url(../images/newtitle.png) no-repeat;_background:url(../images/newtitle.gif) no-repeat}.nav-new
+a{color:#a3370f}.nav-new a:hover{color:#a3370f;text-decoration:underline}
+.good-price.btn.start{background:url(../images/begin-time.gif) no-repeat}.good-price .btn.start-0{background-position:0 0}.good-price .btn.start-1{background-position:-101px 0}.good-price .btn.start-2{background-position:-202px 0}.good-price .btn.start-3{background-position:-303px 0}.good-price .btn.start-4{background-position:0 -75px}.good-price .btn.start-5{background-position:-101px -75px}.good-price .btn.start-6{background-position:-202px -75px}.good-price .btn.start-7{background-position:0 -149px}.good-price .btn.start-8{background-position:-303px -75px}.good-price .btn.start-9{background-position:-101px -149px}.good-price .btn.start-10{background-position:-202px -149px}.good-price .btn.start-11{background-position:-303px -149px}.good-price .btn.start-12{background-position:0 -224px}.good-price .btn.start-13{background-position:-101px -224px}.good-price .btn.start-14{background-position:-202px -224px}.good-price .btn.start-15{background-position:-303px -224px}.good-price .btn.start-16{background-position:0 -297px}.good-price .btn.start-17{background-position:-101px -297px}.good-price .btn.start-18{background-position:-202px -297px}.good-price .btn.start-19{background-position:-303px -297px}.good-price .btn.start-20{background-position:0 -371px}.good-price .btn.start-21{background-position:-101px -371px}.good-price .btn.start-22{background-position:-202px -371px}.good-price .btn.start-23{background-position:-303px -371px}.good-price .btn.start-24{background-position:0 -445px}.good-price .btn.start-0:hover{background-position:0 -38px}.good-price .btn.start-1:hover{background-position:-101px -38px}.good-price .btn.start-2:hover{background-position:-202px -38px}.good-price .btn.start-3:hover{background-position:-303px -38px}.good-price .btn.start-4:hover{background-position:0 -113px}.good-price .btn.start-5:hover{background-position:-101px -113px}.good-price .btn.start-6:hover{background-position:-202px -113px}.good-price .btn.start-7:hover{background-position:0 -187px}.good-price .btn.start-8:hover{background-position:-303px -113px}.good-price .btn.start-9:hover{background-position:-101px -187px}.good-price .btn.start-10:hover{background-position:-202px -187px}.good-price .btn.start-11:hover{background-position:-303px -187px}.good-price .btn.start-12:hover{background-position:0 -262px}.good-price .btn.start-13:hover{background-position:-101px -262px}.good-price .btn.start-14:hover{background-position:-202px -262px}.good-price .btn.start-15:hover{background-position:-303px -262px}.good-price .btn.start-16:hover{background-position:0 -335px}.good-price .btn.start-17:hover{background-position:-101px -335px}.good-price .btn.start-18:hover{background-position:-202px -335px}.good-price .btn.start-19:hover{background-position:-303px -335px}.good-price .btn.start-20:hover{background-position:0 -408px}.good-price .btn.start-21:hover{background-position:-101px -408px}.good-price .btn.start-22:hover{background-position:-202px -408px}.good-price .btn.start-23:hover{background-position:-303px -408px}.good-price .btn.start-24:hover{background-position:0 -482px}
+
+.jiu-side-nav {
+    left: 50%;
+    margin-left:-630px;
+    position: absolute;
+    text-align: left;
+    top:216px;
+    width: 120px;
+    z-index: 999;
+}
+.jiu-side-nav.fixed {
+    position: fixed;
+    top:0;
+}.jiu-side-nav .logo {
+    width: 124px;
+	height:60px;
+	background:url(../images/jiu-logo.gif) no-repeat;
+	border-bottom:#b04904 solid 1px;
+	margin-left:-2px;
+    display: none;
+}
+.jiu-side-nav.fixed .logo {
+    display: block;
+}
+.jiu-side-nav .content{
+    background:#fff;
+}
+.jiu-side-nav .hd {
+	background:url(../images/hd-title-bg.gif) no-repeat #ffebd2;
+	width:126px;
+	height:34px;
+	margin-left:-4px;
+	color: #a3370f;
+	line-height:30px;
+	text-align:center;
+
+}
+.jiu-side-nav .hd h3{font-weight:normal;}
+.jiu-side-nav .hd a {
+    color: #a3370f;
+}
+.jiu-side-nav .bd{
+    box-shadow: 1px 1px 0px rgba(212, 212, 212, 0.8);
+}
+
+.jiu-side-nav .bd ul {
+    padding:10px 0 5px 8px;
+	zoom:1;
+}
+.jiu-side-nav .bd ul:after {
+    clear: both;
+    content: "";
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+.jiu-side-nav .bd li {
+	float: left;
+	width: 50%;
+	line-height: 24px;
+	margin-bottom:5px;
+}
+.jiu-side-nav .bd li a{
+	color:#666;
+	display: inline-block;
+	text-decoration: none;
+	padding: 3px 4px;
+	line-height: 18px;
+	border-radius: 2px;
+}
+.jiu-side-nav .bd li a.on, .jiu-side-nav .bd li a.on:hover {
+    background:#ff6600;
+    color: #FFF;
+}
+.jiu-side-nav .bd li a:hover {
+    background:#f6ebde;
+}
+.jiu-side-nav .bd li a.out{ color:#38980d;}
+.jiu-side-nav .bd li a.out:hover{ text-decoration:underline; background:none;}
+.jiu-side-nav .bd .bd-other{ padding-left:0;}
+.jiu-side-nav .bd .bd-other li{ width:100%; text-align:center;}
+.jiu-side-nav .bd .bd-web{ border-top:#f6ebde solid 1px;}
+.jiu-side-nav .bottom {
+	position:absolute; bottom:-20px; left:-2px;
+	background:url(../images/bottom-bg.gif) no-repeat; width:124px;height:24px;
+}
+.affix {
+    position: fixed;
+    top: 0;
+}
+.jiu-side-nav.affix {
+    padding-top: 70px;
+}

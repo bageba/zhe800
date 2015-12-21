@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-CN">
+<head>
+<include file="public:head" />
+
+</head>
+
+<body data-version="0">
+          
+<include file="public:header" />
+
+
+ <div id="junav">
+  <div class="area">
+    <div class="left">
+	<a href="{:C('ftx_site_url')}" <empty name="cid"> class="on"</empty>><em>全部</em></a>
+	  <empty name="cate_list['s'][$cid]">
+									<empty name="cate_list['s'][$cinfo['pid']]">
+										
+										<volist name="cate_list['p']" id="bcate">
+										<a href="{:U('index/cate', array('cid'=>$bcate['id']))}" <if condition="$cid eq $bcate['id']">class="on"</if>><em>{$bcate.name}</em></a>
+										</volist>
+									<else />
+										<volist name="cate_list['s'][$cinfo['pid']]" id="bcate">
+										<a href="{:U('index/cate', array('cid'=>$bcate['id']))}" <if condition="$cid eq $bcate['id']">class="on"</if>><em>{$bcate.name}</em></a>
+										</volist>
+									</empty>
+								<else />
+									<empty name="cate_list['s'][$cinfo['pid']]">
+										<volist name="cate_list['s'][$cid]" id="bcate">
+										<a href="{:U('index/cate', array('cid'=>$bcate['id']))}" <if condition="$cid eq $bcate['id']">class="on"</if>><em>{$bcate.name}</em></a>
+										</volist>
+									<else />
+										<volist name="cate_list['s'][$cinfo['pid']]" id="bcate">
+										<a href="{:U('index/cate', array('cid'=>$bcate['id']))}" <if condition="$cid eq $bcate['id']">class="on"</if>><em>{$bcate.name}</em></a>
+										</volist>
+									</empty>
+								</empty>
+	
+	
+	
+      
+        
+    </div>
+
+    <div class="right">
+      排序：<a href="{:U('index/cate',array('cid'=>$cid,'sort'=>'hot'))}" class="ju_nav <if condition="$index_info['sort'] eq 'hot'"> on </if>">最新</a>
+            <a href="{:U('index/cate',array('cid'=>$cid,'sort'=>'new'))}" class="ju_nav <if condition="$index_info['sort'] eq 'new'"> on </if>">最热</a>
+    </div>
+  </div>
+</div> 
+ 
+ <script type="text/javascript">
+  function add_page_stats_to_params(obj_a, deal_id, add_params) {
+    var reg = new RegExp("^/(page/[1-9])?$");
+    var pathname = window.location.pathname;
+    var r = pathname.match(reg);
+    if(r != null) {
+      pathname = 'index' + pathname;
+    }
+    else {
+      if(pathname.charAt(0) == '/')
+        pathname = pathname.replace('/', '');
+    }
+    if(pathname.charAt(pathname.length - 1) != '/')
+      pathname += '/';
+    if(add_params != '')
+      pathname += add_params + '/';
+    var deal_div = $('#deal' + deal_id);
+    var i = deal_div.index();
+    var num_per_line = 3;
+    pathname += (Math.floor(i / num_per_line) + 1) + '*' + (i % num_per_line + 1);
+    var h_path = obj_a.href;
+    var r1 = null;
+    if(h_path.indexOf('?') > 0) {
+      if((r1 = h_path.match(/[&?](page_stats_w=[^& ]+)($|&)/)) != null) {
+        h_path = h_path.replace(r1[1], 'page_stats_w=' + pathname);
+      }
+      else
+        h_path += '&page_stats_w=' + pathname;
+    }
+    else
+      h_path += '?page_stats_w=' + pathname;
+    obj_a.href = h_path;
+    var arr = $('#deal' + deal_id).find('a[onclick] img');
+    if(arr.length == 0)
+      arr = $('#deal' + deal_id).find('a.J_tklink_tmall img');
+    if(arr.length > 0) {
+      $(arr[0]).parent().attr('info', h_path);
+    }
+  }
+</script>
+<div class="area" style="margin-top:15px">
+    <div class="dealbox">
+	<ftx:item type="lists" cid="1" min_price="1" max_price="9999" status="1" num="3">
+<volist name="data" id="item" mod="6">
+	<div class="blockAD">
+    <div class="">
+      <p><a href="{:U('jump/index',array('id'=>$item['id']))}" target="_blank"><img src="{:attach(get_thumb($item['pic_url'], '_b'),'item')}"></a></p>
+      <h3><a target="_blank" href="{:U('jump/index',array('id'=>$item['id']))}">{$item.title}</a></h3>
+      <h4><span><a target="_blank" href="{:U('item/index',array('id'=>$item['id']))}">原价{$item.price}元，促销价{$item.coupon_price}元</a></span><a target="_blank" href="{:U('jump/index',array('id'=>$item['id']))}"></a></h4>
+	    </div>
+  </div>
+    </volist>
+</ftx:item>
+  
+	
+	
+<present name="items_list">	
+<volist name="items_list" id="item" key="i">
+<div info="d,{$item.id},1385654340000,1385427600000,1" class="deal figure1 zt1" id="deal{$item.id}">
+    
+	
+	<div>
+      <p><a target="_blank" js_trac="FROM_LIEBIAO" info="{:U('jump/index',array('id'=>$item['id']))}" href="{:U('jump/index',array('id'=>$item['id']))}" onclick="add_page_stats_to_params(this,{$item.id},'')">
+        <img src="{:attach(get_thumb($item['pic_url'], '_b'),'item')}" width="290px" height="290px">
+      </a></p>
+      <h2>
+        
+        <a target="_blank" info="{:U('jump/index',array('id'=>$item['id']))}" href="{:U('jump/index',array('id'=>$item['id']))}" onclick="add_page_stats_to_params(this,{$item.id},'')">{$item.title}</a>
+      </h2>
+      <h4>
+        <span><em><b>¥</b><em>{$item.coupon_price}</em></em></span>
+        <span>
+            <i>¥{$item.price}</i>({$item.zk}折)
+            <strong style="margin-left:5px">成交 <font color="#F16767">{$item.volume}</font> 笔 <if condition="$item.ems eq '1' "><font color="#F16767">包邮</font></if></strong>
+					
+        </span>
+        <a target="_blank" js_trac="FROM_LIEBIAO" info="{:U('item/index',array('id'=>$item['id']))}" href="{:U('item/index',array('id'=>$item['id']))}" onclick="add_page_stats_to_params(this,{$item.id},'')"></a>
+      </h4>
+      <h5><span>发布：{$item.coupon_start_time|date="m月d日H时i分",###}</span>分享: <em><a class="sina" href="http://v.t.sina.com.cn/share/share.php?url={:U('item/index',array('id'=>$item['id']))}&amp;title={$item.title}&amp;pic={$item['pic_url']}" target="_blank"></a><a class="qqwb" href="http://share.v.t.qq.com/index.php?c=share&amp;a=index&amp;url={:U('item/index',array('id'=>$item['id']))}&amp;title={$item.title}&amp;pic={$item['pic_url']}" target="_blank"></a><a class="renren" href="http://share.renren.com/share/buttonshare.do?link=http://ivta.yangtata.com/" target="_blank"></a><a class="kaixin" href="http://www.kaixin001.com/rest/records.php?url={:U('item/index',array('id'=>$item['id']))}&amp;style=11&amp;content={$item.title}&amp;pic={$item['pic_url']}" target="_blank"></a><a class="douban" href="http://www.douban.com/recommend/?url={:U('item/index',array('id'=>$item['id']))}&amp;title={$item.title}&amp;image={$item['pic_url']}" target="_blank"></a><a class="qzong" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url={:U('item/index',array('id'=>$item['id']))}&amp;title={$item.title}&amp;pics={$item['pic_url']}" target="_blank"></a></em></h5>
+        <h6>
+          <em>小编：</em> {$item.title}
+          <a znid="{$item.id}" title="{$item.title}" class="jub buy_ed" href="javascript:;">举报</a>
+		  <a class="tix" href="http://qzs.qq.com/snsapp/app/bee/widget/open.htm#content=亲，您在 {:C('ftx_site_name')} 关注的【{$item.title}】马上就要开始抢购了哦。&time={$item.coupon_end_time|date='20y-m-d H:i',###}&advance=5&url={:U('jump/index',array('id'=>$item['id']))}" target="_blank">设置提醒</a>
+        </h6>
+      
+    </div>
+	
+  </div>
+  </volist>
+  </present>
+  
+  </div>
+  </div>
+
+
+
+		<div class="clr"></div>
+
+		<div class="page_div page_bottom" style="text-align:center;">
+        <div class="list_page" style="text-align:center;">    
+        {$page}
+        </div>
+        </div>
+
+    
+    <script type="text/javascript">
+      if ($('.page_div .next a').attr('href')) {
+        $('.page_div').append("<a class='picnext' href='" + $('.page_div .next a').attr('href') + "'></a>")
+      }
+    </script>
+<load href="__STATIC__/ftxia/js/report.js" />
+<include file="public:footer" />
+
+</body>
+</html>

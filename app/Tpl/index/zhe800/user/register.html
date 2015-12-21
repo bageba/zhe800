@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>免费注册会员 - {:C('ftx_site_name')}</title>
+<meta name="keywords" content="{$page_seo.keywords}" />
+<meta name="description" content="{$page_seo.description}" />
+<include file="public:head2" />
+
+<load href="__STATIC__/js/jquery/jquery.js" />
+
+<css file="__STATIC__/css/ftxia/loginreg.css" />
+</head>
+<body>
+<include file="public:header" />
+
+
+
+
+<!--中部-->
+	<div class="mains">
+		<div class="white_top">
+			<div class="white_top_left"></div>
+			<div class="white_top_middle"></div>
+			<div class="white_top_right"></div>
+		</div>
+
+		<div class="white_bg wrap">
+			<div class="wrap_left w_reg">
+				<h1>{:L('register_title')}</h1>
+
+				<form id="J_register_form" action="{:U('user/register')}" method="post" class="regbox" >
+					<div class="fill">
+						<ul>
+							<li><div class="input_left">
+									<label for="email">{:L('email')}：</label> 
+									<input type="text" name="email" class="bg" id="J_email"   tabindex="1" />
+								</div>
+							</li>
+							<li><div class="input_left">
+									<label for="username">{:L('username')}：</label> 
+									<input type="text" name="username" class="bg" id="J_username" tabindex="2" />
+								</div>
+							</li>
+							<li><div class="input_left">
+									<label>{:L('gender')}：</label> 
+									<input type="radio" name="gender" value="0" checked="checked" class="ck"> {:L('female')}
+									<input type="radio" name="gender" value="1" class="ck ml10"> {:L('male')}
+								</div></li>
+							<li><div class="input_left">
+									<label for="password">{:L('password')}：</label> 
+									<input type="password" name="password" class="bg" id="J_password" maxlength="36" tabindex="3" />
+								</div>
+							</li>
+							<li><div class="input_left">
+									<label for="repassword">{:L('confirm_password')}：</label> 
+									<input type="password" name="repassword" class="bg" id="J_repassword" maxlength="36" tabindex="4" />
+								</div>
+							</li>
+
+							<li><div class="ipt_check">
+									<label for="captcha">{:L('captcha')}：</label>
+									<input type="text" name="captcha" id="J_captcha" maxlength="10" class="check input_text bg">
+									<img src="{:U('captcha/'.time())}" id="J_captcha_img" class="captcha_img" alt="{:L('captcha')}" data-url="{:U('captcha/js_rand')}">
+									<a href="javascript:;" id="J_captcha_change">{:L('change_captcha')}</a>
+								</div>
+							</li>
+
+							<li class="ipt_box"> <input class="box fl" name="agreement" type="checkbox" checked="checked"><span class="fl">{:L('i_agree')}《<a href="javascript:;" id="J_protocol_btn">{:C('ftx_site_name')}{:L('user_protocol')}</a>》</span></li>
+
+	
+
+							<li class="ipt_smt">
+							<input type="submit" name="submits" class="smt" id="submits" value="立即注册" tabindex="5" />
+							<input type="hidden" name="action" id="reg" value="reg" /></li>
+						</ul>
+					</div>
+				</form>
+			</div>
+			<div class="wrap_right">
+				<p>
+					{:L('direct_login')}</p>
+               <p> <a href="{:U('user/login')}">{:L('login')}</a>
+				</p>
+				<p>{:L('other_login_model')}：</p>
+				<div class="union">
+					<volist name="oauth_list" id="val">
+            <a class="{$val.code}" href="{:U('oauth/index', array('mod'=>$val['code']))}"></a>
+			</volist>
+				</div>
+			</div>
+		</div>
+
+		<div class="white_bottom">
+			<div class="white_bottom_left"></div>
+			<div class="white_bottom_middle"></div>
+			<div class="white_bottom_right"></div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+ 
+
+<include file="public:footer" />
+<script>
+$(function(){
+    $.ftxia.user.register_form($('#J_register_form')); //注册验证
+});
+</script>
+</div>
+<div id="J_protocol" class="hide"><pre class="dialog_protocol clr6">{:C('ftx_reg_protocol')}</pre></div>
+</body>
+</html>

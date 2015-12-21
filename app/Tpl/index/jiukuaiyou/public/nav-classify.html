@@ -1,0 +1,58 @@
+<div class="jiu-side-nav fixed" style="top:70px;">
+    <div>
+        <a class="logo" title="九块邮-全场九块九包邮" href="http://ivta.yangtata.com"></a></div>
+    <div class="content">
+        <div class="hd">
+            <h3><span>全场9.9包邮</span></h3>
+        </div>
+        <div class="bd">
+            <ul>
+               <empty name="cate_list['s'][$cid]">
+									<empty name="cate_list['s'][$cinfo['pid']]">
+										
+										<volist name="cate_list['p']" id="bcate">
+										<li><a <if condition="$cid eq $bcate['id']">class="on"</if> href="{:U('index/cate', array('cid'=>$bcate['id']))}">{$bcate.name}</a></li>
+										</volist>
+									<else />
+										<volist name="cate_list['s'][$cinfo['pid']]" id="bcate">
+										<li><a <if condition="$cid eq $bcate['id']">class="on"</if> href="{:U('index/cate', array('cid'=>$bcate['id']))}">{$bcate.name}</a></li>
+										</volist>
+									</empty>
+								<else />
+									<empty name="cate_list['s'][$cinfo['pid']]">
+										<volist name="cate_list['s'][$cid]" id="bcate">
+										<li><a <if condition="$cid eq $bcate['id']">class="on"</if> href="{:U('index/cate', array('cid'=>$bcate['id']))}">{$bcate.name}</a></li>
+										</volist>
+									<else />
+										<volist name="cate_list['s'][$cinfo['pid']]" id="bcate">
+										<li><a <if condition="$cid eq $bcate['id']">class="on"</if> href="{:U('index/cate', array('cid'=>$bcate['id']))}">{$bcate.name}</a></li>
+										</volist>
+									</empty>
+								</empty>
+            </ul>
+            <ul class="bd-other bd-web">
+                <ftx:nav type="lists" style="top">
+			<volist name="data" id="val">
+				<li>
+				<a href="{$val.link}" <if condition="$val.target eq 1">target="_blank"</if>>{$val.name}</a>
+				</li>
+			</volist>
+			</ftx:nav>
+            </ul>
+        </div>
+        <div class="hd">
+            <h3>精选推荐</h3>
+        </div>
+        <div class="bd">
+            <ul class="bd-other">
+                <ftx:nav type="lists" style="main">
+					<volist name="data" id="val">
+				<li class="split <if condition="$nav_curr eq $val['alias']">current</if>"><a href="{$val.link}" <if condition="$val.target eq 1">target="_blank"</if>>{$val.name}</a></li>
+					</volist>
+				</ftx:nav>
+				</ul></div>
+        <div class="bottom">
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<include file="public:head" />
+<css file="__STATIC__/ftxia/css/user.css" />
+<css file="__STATIC__/ftxia/css/goods.css" />
+<css file="__STATIC__/css/ftxia/table_form.css" />
+</head>
+<body>
+<include file="public:header" />
+<link rel="stylesheet" type="text/css" href="__STATIC__/js/calendar/calendar-blue.css"/>
+<script type="text/javascript" src="__STATIC__/js/calendar/calendar.js"></script>
+<div class="mains">
+    <div class="contain register_con">
+        <div class="left_con fl">
+			<ul class="left_nav">
+				<li class="cur"><a href="{:U('goods/goods_add')}">报名新宝贝</a></li>
+				<li><a href="{:U('goods/mygoods')}">已报名宝贝</a></li>
+			</ul>
+		</div>	
+
+        <div class="right_con fr">
+            <div class="re_content">
+                <h3 class="title">　宝贝报名 :</h3>
+
+                <form action="{:U('goods/goods_add')}" method="post" name="form" class="GoodsAddform">
+                    <ul>
+						<li id="tipss">
+							<label>宝贝链接：</label>
+							<input type="text" id="good_link" name="link" class="txt txt01" value="">
+                            <p class="tips"><span id="good_link_error" class="red onError">输入宝贝链接后，下方会显示宝贝部份信息。</span></p>
+                        </li>
+
+
+
+                        <li class="j_class">
+                        <label class="fenlei">所属分类：</label>
+							<select class="J_cate_select mr10" id="J_cate_select" data-pid="0"   data-uri="{:U('item/ajax_getchilds', array('type'=>0))}" data-selected=""></select>
+							<input type="hidden" name="cate_id" id="J_cate_id" value="" />
+							<p class="s1" id="fenlei_error" style="display:none;"></p>
+							<p class="tips" id="fenlei">分类必须与宝贝类型一致，会直接影响您的宝贝九块邮显示的位置。</p>
+                        </li>
+                        
+                        <li>
+                            <label>图片链接：</label>
+                            <input type="text" class="txt txt02" id="img_link" value="">
+
+                            <p class="s1" id="pic_error" style="display:none;"></p>
+                            <p class="tips">请输入淘宝图片网络地址 图片尺寸：
+                              <span class="red">(图片必须是白底无水印,正方形，310x310以上)</span>
+                            </p>
+                        </li>
+						 <li><label>宝贝库存：</label><input type="text" id="J_TDealCount" name="inventory" class="txt good_inventory" value="" maxlength="10">
+                                                      <p class="tips">库存不能低于200件</p>
+                        </li>
+
+                        <li><label>当前销量：</label><input type="text" id="good_inventory" class="txt good_price" name="volume" value="">
+                            <p class="tips"><span id="good_inventorys" class="red onError">请输入当前销量</span></p>
+                            <p class="tips"></p>
+                        </li>
+
+                	
+          
+						<li><label>商品原价：</label><input type="text" id="price" class="txt price" name="price" value="">
+                            <p class="s1" id="prices" style="display:none"></p>
+                            <p class="tips"></p>
+                        </li>
+						<input type="hidden" name="coupon_rate" id="coupon_rate" size="10" class="input-text" />
+                        <li><label>活动价格：</label><input type="text" id="good_price" class="txt good_price" name="good_price" value="">
+                            <p class="s1" id="good_prices" style="display:none"></p>
+                            <p class="tips"></p>
+                        </li>
+						<input type="hidden" name="ems" value="0" id="ems" />
+						
+						 <li>
+                            <label>推荐理由：</label>
+                            <textarea id="intro" name="intro" maxlength="140">请务必以客观的角度评价您的宝贝，否则会影响到您宝贝的审核。</textarea>
+                            <p class="tips"><span id="intros" class="red onError">请输入推荐理由</span></p>
+                        </li>
+
+						<li class="j_class">
+                        <label class="fenlei">商品来源：</label>
+                        <select name="shop_type" id="shop_type">
+							<volist name="orig_list" id="val">
+							<option value="{$val.type}">{$val.name}</option>
+							</volist>
+						</select>
+                        <p class="s1" id="shop_types" style="display:none;"></p>
+                        </li>
+                        <li><label></label>
+							<input type="hidden" class="iid" name="iid" id="iid" value="">
+							<input type="button" tabindex="5" value="提 交" id="smt" class="smt submit">
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <!-- end of right_con -->
+    </div>
+    <!-- end of contain -->
+</div>
+
+<!--主部结束-->
+<include file="public:footer" />
+<script src="__STATIC__/js/select.js"></script>
+<!--<link rel="stylesheet" href="/static/js/kindeditor/themes/default/default.css" />
+<link rel="stylesheet" href="/static/js/kindeditor/plugins/code/prettify.css" />
+<script charset="utf-8" src="/static/js/kindeditor/kindeditor.js"></script>
+<script charset="utf-8" src="/static/js/kindeditor/lang/zh_CN.js"></script>-->
+<script type="text/javascript">
+var desc = '';
+$("#J_TDealCount").val(Math.round(Math.random()*9900+99)); 
+$('.J_cate_select').cate_select('请选择');
+	/*descEditor=KindEditor.create('#intro',{
+	uploadJson : '/?g=admin&m=attachment&a=editer_upload',
+	fileManagerJson : '/?g=admin&m=attachment&a=editer_manager',
+	allowFileManager : true
+	}); 
+	var collect_desc_url = "{:U('goods/ajaxgetdesc')}";
+	$('#getDesc').click(function(){
+		var link = $("#good_link").val();
+		if (link != '') {
+			$.getJSON(collect_desc_url, {url:link}, function(result){
+				if(result.status == 1){
+					descEditor.html(result.data.desc);
+					desc = result.data.desc;		
+				}else if(result.status == 0){
+					$('#good_link_error').show().html(result.msg);
+				}
+			});
+		}
+	});*/
+</script>
+<script src="__STATIC__/js/goods.js"></script>
+</body>
+</html>

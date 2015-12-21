@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<include file="public:head" />
+<load href="__STATIC__/ftxia/css/tmall.css" />
+<load href="__STATIC__/ftxia/new/css/md-nav-good.css" />
+<load href="__STATIC__/ftxia/css/list.css" />
+
+</head>
+<body>
+<include file="public:header" />
+<div class="jiu-nav widescreen clear" style="z-index: 18; ">
+	<include file="public:nav-classify" />
+    
+		<notempty name="k">
+				<ul class="nav-channel type clear">
+					<li><a class="all" style="width:auto; padding:0 12px;">您搜索的内容为：<span class="red">{$k}</span></a></li>
+					<span class="clear"></span>
+				</ul>
+				<else />
+				<ul class="nav-channel clear list-sort">
+					<li>
+						<a href="{:U('index/index')}" class="all">
+            	<i class="null"></i>全部 ({$total_item})
+            </a>
+            <notempty name="cid">
+            <a href="{:U('index/cate',array('cid'=>$cid,'sort'=>'default'))}" class="ju_nav <if condition="$index_info['sort'] eq 'default'"> on </if>"><span>默认</span></a>
+            <a href="{:U('index/cate',array('cid'=>$cid,'sort'=>'hot'))}" class="ju_nav <if condition="$index_info['sort'] eq 'hot'"> on </if>"><span>销量</span>&nbsp;<i class="sort-sign"></i></a>
+            <a href="{:U('index/cate',array('cid'=>$cid,'sort'=>'rate'))}" class="ju_nav <if condition="$index_info['sort'] eq 'rate'"> on </if>"><span>折扣</span>&nbsp;<i class="sort-sign"></i></a>
+            <a href="{:U('index/cate',array('cid'=>$cid,'sort'=>'new'))}" class="ju_nav <if condition="$index_info['sort'] eq 'new'"> on </if>"><span>最新</span>&nbsp;<i class="sort-sign"></i></a>
+            <else />
+            <a href="{:U('index/index',array('sort'=>'default'))}" class="ju_nav <if condition="$index_info['sort'] eq 'default'"> on </if>"><span>默认</span></a>
+            <a href="{:U('index/index',array('sort'=>'hot'))}" class="ju_nav <if condition="$index_info['sort'] eq 'hot'"> on </if>"><span>销量</span>&nbsp;<i class="sort-sign"></i></a>
+            <a href="{:U('index/index',array('sort'=>'rate'))}" class="ju_nav <if condition="$index_info['sort'] eq 'rate'"> on </if>"><span>折扣</span>&nbsp;<i class="sort-sign"></i></a>
+            <a href="{:U('index/index',array('sort'=>'new'))}" class="ju_nav <if condition="$index_info['sort'] eq 'new'"> on </if>"><span>最新</span>&nbsp;<i class="sort-sign"></i></a>
+            </notempty>
+            <a class="right " href="{:U('before/index')}"><i class="on"></i>往期宝贝</a>
+          </li>
+          <li class="last">
+          	<a class="today" href="{:U('xinpin/index')}">今日新品(<font id="total_xinpin">{$today_item}</font>)</a>
+          	<a href="{:U('yugao/index')}" class="torrow"><i class="torrow"></i>明日预告</a>
+          </li>
+        </ul>
+        </notempty>	
+</div>
+
+<div class="mains">
+        <div class="contain">
+          
+			<present name="items_list">
+            <ul class="product-list">
+			<volist name="items_list" id="item" key="i" mod="3">
+                <li <eq name="mod" value="2">class="mr0"</eq>>
+                    <div class="list-good">
+                        <h3>
+                        	<if condition="$item.shop_type eq 'C' "><i class="tao_n" title="淘宝网"></i></if><if condition="$item.shop_type eq 'B' "><i class="tao_t" title="天猫商城"></i></if> <a href="{:U('item/index',array('id'=>$item['id']))}"  target="_blank" title="{$item.title}"> {$item.title}  </a>
+                        	                         </h3>
+                        <div class="pic"><a href="{:U('jump/index',array('id'=>$item['id']))}"  rel="nofollow"  target="_blank"><img src="{$item.pic_url}_310x310.jpg" height="260" width="290"></a></div>
+                        <div class="buy-action">
+                            <span class="price"><em>￥</em>{$item.coupon_price}</span>
+							<span class="oldprice"><em>¥</em>{$item.price}</span>
+                            <notempty name="visitor">
+							<if condition="$visitor['username'] eq C('ftx_index_admin')">
+							<span class="show" style="width: 30px;" data-id="{$item.id}"><a title="不显示" href="javascript:void(0);" data-id="{$item.id}">取消</a></span>
+							</if>
+							</notempty>                            
+                            <a href="{:U('jump/index',array('id'=>$item['id']))}"  rel="nofollow"  target="_blank" class="links "></a>
+                        </div>
+                    </div>
+                </li>
+				</volist>
+				</ul>
+				  </present>
+            <div class="clear"></div>
+            <div class="page"><em></em><div>{$page}</div></div>
+        </div>
+    </div>
+
+<include file="public:footer" />
+</body>
+</html>

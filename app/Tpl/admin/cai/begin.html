@@ -1,0 +1,31 @@
+<div class="loading">
+[添加成功  <span class="blue">【{$suc}】</span>个商品 ] -[添加失败【{$err}】个商品]<hr/>
+
+<table style="border:1px solid gray; border-collapse: collapse;">
+<tr><th colspan='5'>商品添加信息</th></tr>
+  <tr>
+  <td style="border:1px solid gray;">宝贝排序</td>
+  <td style="border:1px solid gray;">店铺类型</td>
+  <td style="border:1px solid gray;">宝贝名称</td>
+  <td style="border:1px solid gray;">宝贝来源</td>
+  <td style="border:1px solid gray;">添加状态</td>
+  </tr>
+<volist name='items' id='v' key='n'>
+  <tr>
+  <td style="border:1px solid gray;">第{$n}个</td>
+  <td style="border:1px solid gray;">{$v.type}店</td>
+  <td style="border:1px solid gray;">{$v.title}</td>
+  <td style="border:1px solid gray;">来自【{$v.source}】</td>
+  <td style="border:1px solid gray;">
+  	<if condition="$v['status'] eq 1">
+  	<font color='green'>成功</font>
+  	<elseif condition="$v['status'] eq 0"/>
+  		<font color='red'>失败</font>
+  		<else/>
+  		<font color='gary'>未知</font>
+</if>
+  </td>
+  </tr>
+</volist>
+</table>
+</div>

@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<include file="public:head" />
+<load href="__STATIC__/css/ftxia/article.css" />
+<style type="text/css">
+body,td,th {
+	font-family: Tahoma, Helvetica, Arial, "宋体", sans-serif;
+}
+.foot .xd_info div {
+float: left;
+}
+.foot .white_bg {
+width: 980px;
+overflow: visible;
+padding: 10px 0px;
+margin: 0 auto;
+position: relative;
+z-index: 100;
+}
+.foot .xd_info {
+width: 980px;
+overflow: hidden;
+clear: both;
+padding-bottom: 10px;
+margin-top: 10px;
+}
+
+.content_text h2 {
+	padding: 10px 0;
+	font-size: 14px;
+}
+.content_text table td {
+	text-indent: 12px;
+}
+.mains .about .about_contain .about_content p {
+	line-height: 26px;
+	color: #727272;
+	font-size: 14px;
+}
+.mains .about .about_contain .about_content .about_link {
+	padding: 0 20px;
+	height: auto;
+	overflow: hidden;
+	clear: both;
+	width: 680px;
+}
+.mains .about .about_contain .about_content .about_link ul li {
+	float: left;
+	line-height: 30px;
+	overflow: hidden;
+	width: 92px;
+	margin-right: 5px;
+}
+.mains .about .about_contain .about_content .about_link ul li a {
+	color: #727272;
+	font-size: 12px;
+}
+.mains .about .about_contain .about_content .about_tip {
+	background: none repeat scroll 0 0 #F8F8F8;
+	line-height: 24px;
+	margin: 15px 0 15px;
+	overflow: hidden;
+	padding: 5px 15px;
+	width: 700px;
+}
+.mains .about .about_contain .about_content .about_tip a {
+	color: #0289CB;
+	text-decoration: none;
+}
+
+.mains .about .about_contain .about_content .kefu p {
+	
+}
+.mains .about .about_contain .about_content p a {
+	color: #0289CB;
+	text-decoration: none;
+}
+</style>
+</head>
+<body>
+<include file="public:header" />
+	
+	
+<div class="mains">
+	<div class="about piece">
+		<div class="white_bg">
+			<div class="about_menu fl">
+				<ul>
+					<volist name="helps" id="vol">
+					<li><a <if condition="$vol.id eq $id"> class="cur" </if> href="{:U('help/read',array('id'=>$vol['id']))}">{$vol.title}</a></li>	
+					</volist>
+					<li><a href="{:U('goods/goods_add')}">商家报名</a></li>
+				</ul>
+			</div>
+			
+			<div class="about_contain fr">
+				<div class="about_tit">{$help.title}</div>
+				<div class="about_content">
+					<br><?php echo htmlspecialchars_decode($help['info']);?><br>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+ 
+
+
+<include file="public:footer" />
+</body>
+</html>

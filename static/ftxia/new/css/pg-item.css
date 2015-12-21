@@ -1,0 +1,222 @@
+.main
+.jiu_item{width:690px;background:#fff;padding:15px
+20px 25px 20px;margin-top:1px}.main .jiu_item
+h3{color:#919191;font-size:14px}.main .jiu_other
+h3{font-size:12px}.main .jiu_item .shijiu_list
+li{width:150px;margin-left:30px}.main .jiu_item .shijiu_list li
+.pic{border:none}.main
+.item_containt{height:auto;width:730px;overflow:hidden;min-height:900px}.main .item_containt
+.jiu_goodsinfo{height:auto;padding:20px;width:690px;overflow:hidden;background:#fff;position:relative}.main .item_containt .jiu_goodsinfo
+h3{margin-bottom:10px;color:#000;font-size:20px;font-family:"微软雅黑","宋体";font-weight:normal}.main .item_containt .jiu_goodsinfo h3
+a{color:#000;font-size:20px;font-family:"微软雅黑","宋体";font-weight:normal}.main .item_containt .jiu_goodsinfo
+.goods_con{height:auto;overflow:visible;width:710px;margin:0px
+0 7px 0}.main .item_containt .jiu_goodsinfo .goods_con
+.pic{height:310px;width:310px;float:left;text-align:center;margin-right:20px;background:url(/jky/w/new/img/shareinfo_show_big_wrap_bg.jpg) repeat;position:relative}.main .item_containt .jiu_goodsinfo .goods_con .pic a
+img{max-width:310px}.main .item_containt .jiu_goodsinfo .goods_con
+.goods_detail{width:360px;float:left;position:relative;height:313px;position:relative}.main .item_containt .jiu_goodsinfo .goods_con
+.juan_detail{width:353px}.main .item_containt .jiu_goodsinfo .goods_con .juan_detail .shareto
+.share_txt{line-height:24px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail
+.price_tag{background:url(../images/jiu_item.gif) no-repeat 0 0;height:68px;width:355px !important;line-height:68px;font-size:44px;color:#fff;padding-left:20px;position:relative;font-family:"Microsoft Yahei","Arial","Verda","tahoma";font-weight:bold;top:3px;left:-5px;-webkit-box-shadow:-1px 3px 3px rgba(196,194,181,0.6);-moz-box-shadow:-1px 3px 3px rgba(196,194,181,0.6);box-shadow:-1px 3px 3px rgba(196,194,181,0.6);text-shadow:0 0 0 transparent, 1px 1px 1px #8A181B}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .price_tag
+i{font-size:24px;font-style:normal;font-family:"微软雅黑","arial";margin-right:3px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .price_tag
+span{font-size:28px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .price_tag
+.ori_price{color:#b6e09d;font-size:12px;text-decoration:line-through;margin-left:3px;text-shadow:none;font-weight:normal}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .price_tag
+a{display:block;position:absolute;background:url(../images/jiu_item.gif) no-repeat 0 -294px;height:42px;width:115px;top:14px;right:18px;overflow:hidden}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .price_tag a:hover{background-position:-122px -294px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail
+.tag_buy{background-position:0 -73px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .tag_buy
+a{background-position:0 -341px;width:99px;height:41px;right:27px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .tag_buy a:hover{background-position:-114px -341px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail
+.tag_juandou{background-position:0 -598px;height:50px;line-height:50px;box-shadow:none;text-shadow:none}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .tag_juandou
+a{height:44px;width:120px;background-position:0 -659px;top:0px;right:20px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .tag_juandou a:hover{background-position:-135px -659px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .tag_buy
+.ori_price{color:#ffb499}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail
+.tag_sellout{background-position:0 -146px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .tag_sellout
+a{background-position:0 -386px;width:99px;height:41px;right:27px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .tag_sellout a:hover{background-position:0 -386px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .tag_sellout
+.ori_price{color:#e7e7e7}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail
+.tag_end{background-position:0 -146px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .tag_end
+a{background-position:0 -431px;width:99px;height:41px;right:27px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .tag_end a:hover{background-position:0 -431px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .tag_end
+.ori_price{color:#e7e7e7}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .tag_juandou
+span{font-size:14px;font-weight:normal;display:block;float:left}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .tag_juandou
+.nead_all{font-size:24px;font-family:"微软雅黑","verdana";font-weight:bold;margin-right:3px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .goods_juan
+p{color:#818181;font-size:14px;line-height:30px;margin-left:15px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .goods_juan
+.begin_time{float:left}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .goods_juan
+.shoot_time{height:auto;overflow:hidden;line-height:18px;float:left;margin-top:7px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .goods_juan .shoot_time
+.begin_buy{background:url(/jky/w/new/img/begin_buy.gif) no-repeat 0 0px;display:inline-block;vertical-align:-2px;color:#99c957;font-size:12px;padding-left:20px;vertical-align:middle;height:17px;cursor:pointer}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .goods_juan .shoot_time
+.gray{color:#919191}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .goods_juan .shoot_time .gray:hover{text-decoration:none}.main .item_containt .jiu_goodsinfo .goods_con
+.goods_quan{border:#ffe49e solid 1px;border-top:none;width:347px !important;padding:21px
+11px 14px 3px;background:#fffdeb}.main .item_containt .jiu_goodsinfo .goods_con .juan_detail
+.goods_quan{padding:10px
+0px 0px 0px}.main .item_containt .jiu_goodsinfo .goods_con .juan_detail .goods_quan
+.goods_juan{width:347px;height:auto;overflow:hidden}.main .item_containt .jiu_goodsinfo .goods_con .goods_quan
+.detail{padding:24px
+11px 12px 11px;background:#fff8c5;margin-bottom:15px;position:relative}.main .item_containt .jiu_goodsinfo .goods_con .goods_quan .detail
+p{font-size:14px;color:#5e5e5e}.main .item_containt .jiu_goodsinfo .goods_con .goods_quan .detail p
+.price{color:#6cae16;font-weight:normal}.main .item_containt .jiu_goodsinfo .goods_con .goods_quan .detail p
+.count{color:#999;font-size:12px}.main .item_containt .jiu_goodsinfo .goods_con .goods_quan .detail
+.price_all{color:#999;font-size:12px;margin-top:13px}.main .item_containt .jiu_goodsinfo .goods_con .goods_quan .detail .price_all
+span{color:#ccc}.main .item_containt .jiu_goodsinfo .goods_con .goods_quan .detail .price_all
+.equal{color:#7a7a7a}.main .item_containt .jiu_goodsinfo .goods_con .goods_quan .detail .price_all
+.juandou{color:#999;margin-left:15px}.main .item_containt .jiu_goodsinfo .goods_con .goods_quan .detail
+.title{display:block;background:url(../images/jiu_item.gif) no-repeat -249px -302px;height:17px;width:107px;position:absolute;top:-5px;left:10px}.main .item_containt .jiu_goodsinfo .goods_con .goods_quan .detail
+.juan_title{background-position:-249px -329px}.main .item_containt .jiu_goodsinfo .goods_con .goods_quan
+.change_bottom{height:auto;overflow:hidden;width:322px}.main .item_containt .jiu_goodsinfo .goods_con .juan_detail
+.change_bottom{height:44px;border-top:#ffe9b1 dashed 1px;line-height:44px;padding-left:15px;width:332px !important;margin-top:8px;background:#ffface}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .change_bottom
+span{color:#999;font-size:14px;display:block;float:left}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .change_bottom
+.org_price{font-size:12px;text-decoration:line-through;margin-top:2px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .change_bottom
+.current_price{font-size:22px;color:#6cae16;font-family:"微软雅黑","verdana";margin-right:3px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .change_bottom
+.go_buy{width:73px;height:22px;line-height:20px;line-height:24px \9;*line-height:22px;_line-height:20px;margin-top:11px;float:right;margin-right:20px;display:inline}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .change_bottom .go_buy
+a{display:block;height:22px;width:73px;background:url(../images/jiu_item.gif) no-repeat 0 -711px;color:#fff;font-size:12px;text-align:center}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .change_bottom .go_buy a:hover{background-position:-78px -711px;text-decoration:none}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail
+.wait_buy{position:absolute;top:65px;right:-20px;height:20px;background:#fffbef;border:#ffba75 solid 1px;z-index:10;padding:4px
+6px;color:#dc7d21;font-size:12px;display:none;_width:130px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail
+.wait_try{top:50px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .wait_buy
+p{background:url(../images/tips.gif) no-repeat 0 1px;padding-left:20px;height:22px;line-height:22px;text-shadow:none;font-weight:normal;font-family:"宋体"}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .wait_buy p
+a{color:#0289cd;background:none;position:static;height:auto;width:auto;display:inline}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .wait_buy
+em{background:url(../images/top_cur.gif) no-repeat;width:9px;height:6px;position:absolute;top:-5px;right:75px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail
+.go_sun{position:absolute;top:-20px;right:10px;height:20px;background:#fffbef;border:#ffba75 solid 1px;z-index:10;padding:4px
+6px;color:#dc7d21;font-size:12px;display:none;_width:80px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .go_sun
+p{height:22px;line-height:22px;text-shadow:none;font-weight:normal;font-family:"宋体"}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .go_sun p
+a{color:#0289cd;background:none;position:static;height:auto;width:auto;display:inline}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .go_sun
+em{background:url(../images/bottom_cur.gif) no-repeat;width:9px;height:6px;position:absolute;bottom:-5px;right:75px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail
+.brand{width:360px;height:auto;overflow:hidden}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .brand
+span{background:#c6c6c6;display:block;float:left;padding:0
+7px;height:22px;*line-height:22px;line-height:20px;color:#fff;text-align:center;font-size:16px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail
+.buy_state{clear:both;margin-top:5px;width:360px;height:auto;overflow:hidden}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail
+.title{float:left;width:330px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .title
+a{font-size:14px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .title a:hover{text-decoration:underline;color:#5e5e5e}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .title
+.source{background:url(../images/jiu-spirit.gif) no-repeat 0 -238px;display:inline-block}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .title
+.tao_n{background-position:-482px -40px;height:16px;width:16px;vertical-align:-4px;margin-right:3px;*vertical-align:-2px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .title
+.tao_t{background-position:-482px -4px;display:inline-block;height:14px;width:14px;vertical-align:-2px;*vertical-align:-1px;margin-right:3px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .title
+.tao_v{background-position:-475px -22px;display:inline-block;height:14px;width:21px;vertical-align:-2px;margin-right:3px;*vertical-align:-1px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .title .tao-gai{background-position:-471px -58px;display:inline-block;height:14px;width:25px;vertical-align:-2px;margin-right:3px;*vertical-align:-1px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .buy_state
+.buy_ed{display:inline-block;float:right;color:#c6c6c6;width:28px;text-align:right;margin-top:3px\9}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail
+.deal{background:#f9f9f9;padding:15px;width:330px;height:auto;overflow:hidden;margin-top:8px;position:relative}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .deal .go-quan{background:url(/jky/w/new/img/cover/get-quan.gif) no-repeat;position:absolute;top:13px;right:15px;width:175px;height:71px;cursor:pointer}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .deal .go-quan:hover{text-decoration:none}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .deal .go-quan
+.price{position:absolute;top:8px;left:8px;color:#fff;font-size:20px;width:40px;text-align:center}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .deal .go-quan
+.price.three{font-size:16px;font-weight:600;top:10px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .deal .go-quan .price
+i{font-style:normal;font-size:12px;font-family:"微软雅黑","verdana"}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .deal .go-quan
+.other{position:absolute;top:28px;right:0px;width:74px;text-align:center;color:#777;line-height:18px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .deal .go-quan .other .time,.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .deal .go-quan .other
+.num{color:#ff7900}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .deal .go-begin{background:url(../images/get-begin.gif) no-repeat}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .deal .go-begin .other .time,.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .deal .go-begin .other
+.num{color:#4dc00c}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .deal .go-over{background:url(../images/get-over.gif) no-repeat}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .deal .go-over .other .time,.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .deal .go-over .other
+.num{color:#d4d4d4}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .deal
+.other_action{width:330px;height:auto;overflow:hidden;margin-top:8px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .deal
+span{display:block;float:left}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .deal
+.du_icon{display:block;float:left;background:url(../images/dujia.jpg) no-repeat;width:31px;height:18px;margin-right:5px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .deal
+.keyword{height:16px;line-height:14px;padding:0px
+2px;color:#c6c6c6;border:1px;border-style:solid;border-color:#e2e2e2;margin-left:4px;text-align:center;display:block;float:left}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .deal .keyword:hover{color:#888;text-decoration:underline}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .deal .keyword:hover
+em{background-position:0 -22px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .deal
+.shoot_time{width:330px;height:auto;overflow:hidden;line-height:18px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .deal .shoot_time
+.begin_buy{background:url(../images/begin_buy.gif) no-repeat 0 0px;display:inline-block;vertical-align:-2px;color:#99c957;font-size:12px;padding-left:20px;vertical-align:middle;height:17px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .deal .shoot_time
+.gray{color:#919191}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .deal .shoot_time .gray:hover{text-decoration:none}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .deal
+.begin_time{color:#919191;margin-top:8px;width:330px;height:auto;overflow:hidden;clear:both}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .m-price{color:#d4d4d4;width:360px;margin:15px
+0 8px;text-decoration:line-through}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .buy-action{width:360px;height:auto;margin-top:8px;position:relative;z-index:999}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .buy-action
+a{background:url(../images/goods_tag_state.gif) no-repeat -4px -461px;display:block;width:125px;height:40px;line-height:40px;color:#fff;font-family:"微软雅黑","宋体";font-size:20px;text-align:center;float:left}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .buy-action
+.go_buy{background-position:0 -145px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .buy-action
+.go_begin{background-position:0 -186px;text-shadow:1px 1px 3px rgba(84, 175, 2, 0.85)}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .buy-action
+.go_over{background-position:0 -227px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .buy-action
+.sell_out{background-position:0 -432px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .buy-action
+.go_coming{background-position:0 -350px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .buy-action a:hover{text-decoration:none}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .buy-action .go_buy:hover{background-position:0 -268px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .buy-action .go_begin:hover{background-position:0 -309px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .buy-action .go_coming:hover{background-position:0 -391px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .buy-action .quan-tips{background:#fff9d1;border:#ffd1a3 solid 1px;color:#474747;font-size:12px;font-weight:normal;padding:1px
+5px;position:absolute;left:0px;top:45px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .buy-action .quan-tips
+em{display:block;position:absolute;background:url(../images/top_cur.gif) no-repeat;height:6px;width:9px;left:40px;top:-6px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .buy-action .quan-tips
+b{font-weight:normal}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .buy-action .quan-tips b
+i{font-size:16px;font-style:normal;color:#f60;font-weight:bold;margin:0
+2px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .buy-action .quan-tips
+a{color:#0089CD}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .buy-action .quan-tips a:hover{text-decoration:underline}.main .item_containt .jiu_goodsinfo .goods_con .goods_quan .detail
+.go_exchange{display:block;background:url(../images/go_exchange.png) no-repeat;height:37px;width:107px;position:absolute;top:14px;right:-5px}.main .item_containt .jiu_goodsinfo .goods_con .goods_quan .detail
+.go_exchange_gray{background:url(../images/go_exchange_gray.png) no-repeat}.main .item_containt .jiu_goodsinfo .goods_con .goods_quan .detail
+.go_quan{background:url(../images/go_quan.png) no-repeat}.main .item_containt .jiu_goodsinfo .goods_con .goods_quan .detail
+.go_quan_gray{background:url("../images/jiu_item.gif") no-repeat scroll -387px 2px transparent;color:#0089CD;height:16px;line-height:16px;overflow:hidden;width:12px;padding-left:2px;right:5px;top:5px}.main .item_containt .jiu_goodsinfo .goods_con .goods_quan
+.help{float:right}.main .item_containt .jiu_goodsinfo .goods_con .goods_quan .help
+a{display:block;background:url(../images/jiu_item.gif) no-repeat -387px 2px;background:url(../images/jiu_item.gif) no-repeat -387px 2px \9;*background:url(../images/jiu_item.gif) no-repeat -387px 0px;_background:url(../images/jiu_item.gif) no-repeat -387px 2px;width:25px;height:16px;cursor:pointer;padding-left:15px;color:#0089cd;line-height:16px;width:30px;overflow:hidden;padding-top:1px \9;*padding-top:0px;_padding-top:0px}.main .item_containt .jiu_goodsinfo .goods_con .new_quan .detail
+p{color:#999;line-height:22px}.main .item_containt .jiu_goodsinfo .goods_con .new_quan .detail p
+.caption{font-family:"宋体"}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .quan_title
+.quan_tips{background:#fff9d1;border:#ffd1a3 solid 1px;color:#474747;font-size:12px;font-weight:normal;padding:1px
+3px;position:relative;margin-left:7px;vertical-align:5px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .quan_title .quan_tips
+em{display:block;position:absolute;background:url(../images/left_cur.gif) no-repeat;height:9px;width:5px;left:-5px;_left:3px;top:5px;*top:12px;_top:12px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .quan_title .quan_tips
+b{font-weight:normal}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .quan_title .quan_tips b
+i{font-size:16px;font-style:normal;color:#f60;font-weight:bold;margin:0
+2px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .quan_title .quan_tips
+a{color:#0089CD}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .quan_title .quan_tips a:hover{text-decoration:underline}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .quan_title
+.price{color:#ff7900;font-weight:bold;font-size:28px;font-family:Arial}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail .quan_title .price
+i{font-style:normal;font-size:20px;margin-left:1px;vertical-align:1px;font-family:"微软雅黑","verdana"}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail p
+.quan_a{float:right;color:#0089cd;font-size:14px;display:inline-block;margin-top:5px}.main .item_containt .jiu_goodsinfo .goods_con .goods_detail p .quan_a:hover{text-decoration:underline}.main .item_containt .jiu_goodsinfo .goods_con .new_quan .change_bottom
+.shoot_time{color:#999}.main .item_containt .jiu_goodsinfo .goods_con
+.change_recommend{height:auto;width:360px;overflow:hidden;margin-top:8px}.main .item_containt .jiu_goodsinfo .goods_con .change_recommend
+p{color:#999;line-height:20px}.main .item_containt .jiu_goodsinfo .goods_con .change_recommend p
+.comm_name{color:#92bd2f}.main .item_containt .jiu_goodsinfo .goods_con .change_recommend p .comm_name:hover{text-decoration:none}.main .item_containt .jiu_goodsinfo .goods_con
+.shareto{height:auto;overflow:hidden;position:absolute;bottom:0px;right:0px}.main .item_containt .jiu_goodsinfo .goods_con .shareto
+.share_txt{color:#999;float:right;margin-top:3px;_margin-top:1px}.main .item_containt .jiu_goodsinfo .goods_con .shareto .like-state{float:right;margin-top:3px;margin-right:10px}.main .item_containt .jiu_goodsinfo .goods_con .shareto
+.like{display:block;float:left;color:#f5433e;display:block;cursor:pointer;line-height:14px}.main .item_containt .jiu_goodsinfo .goods_con .shareto .like
+em{display:block;background:url(../images/newjky_total.gif) no-repeat -383px -29px;height:20px;width:20px;float:left;margin-top:1px}.main .item_containt .jiu_goodsinfo .goods_con .shareto .like
+span{display:block;float:left;margin-left:4px}.main .item_containt .jiu_goodsinfo .goods_con .shareto .no-like
+em{background-position:-383px -74px}.main .item_containt .jiu_goodsinfo .goods_con .shareto .no-like:hover
+em{background-position:-383px -29px}.main .item_containt .jiu_goodsinfo .goods_con .shareto .no-like
+span{color:#ababab}.main .item_containt .jiu_goodsinfo .goods_con .shareto .no-like:hover
+span{color:#F5433E}.main .item_containt .jiu_goodsinfo .goods_con .shareto .like-state .like-num{height:20px;overflow:hidden;padding-left:2px;position:relative;text-align:left;float:left}.main .item_containt .jiu_goodsinfo .goods_con .shareto .like-state .like-num
+dl{position:relative}.main .item_containt .jiu_goodsinfo .goods_con .shareto .like-state .like-num dl
+dd{height:20px;width:auto;color:#F5433E}.main .item_containt .jiu_goodsinfo .goods_con .shareto .like-state .like-num dl .add-num{color:#F5433E}.main .item_containt .jiu_goodsinfo .goods_con .shareto .like-state .like-num dl .active-num{color:#F5433E}.main .item_containt .jiu_goodsinfo .goods_con .shareto
+.sharebaidu{float:right}.main .item_containt
+.get_quan{margin-top:1px;padding-top:15px;width:737px;padding-left:15px;background:#fff;padding-bottom:15px}.main .item_containt .get_quan
+p{background:url(../images/get_quan.gif) no-repeat;height:137px;width:720px;position:relative}.main .item_containt .get_quan p
+a{position:absolute;top:70px;right:50px;height:20px;width:115px;color:#92bd2f}.main .exch_content
+.nav_exchange{height:40px;width:730px;background:#f9f9f9;margin-top:1px}.main .exch_content .nav_exchange ul
+li{float:left;border-top:#f9f9f9 solid 2px;margin-right:10px}.main .exch_content .nav_exchange ul li
+a{display:inline-block;padding:0
+25px;font-size:14px;color:#919191;font-weight:bold;height:40px;line-height:36px}.main .exch_content .nav_exchange ul
+li.active{background:#fff;border-top:#ff7900 solid 2px}.main .exch_content .nav_exchange ul li.active
+a{color:#a3370f}.main .exch_content .nav_exchange ul li a:hover{text-decoration:none;color:#a3370f}.verifi-code
+span{display:block;float:left;height:26px;line-height:26px;width:56px}.verifi-code
+.security_input{border:1px
+solid #CCC;color:#999;float:left;font-size:14px;height:26px;line-height:26px;padding-left:6px;width:56px}.verifi-code
+.tips_right{background:url("../images/login_total.gif") no-repeat scroll -89px -139px transparent;display:block;float:left;height:14px;margin-left:5px;margin-top:5px;width:14px}.verifi-code
+.tips_wrong{background:url("../images/login_total.gif") no-repeat scroll -109px -139px transparent;display:none;float:left;height:14px;margin-left:5px;margin-top:5px;width:14px}.verifi-code
+.change_code{display:block;float:left;margin-left:8px}.main
+.exch_content{width:730px}.main .exch_content
+.last_rule{padding-bottom:60px}.main .exch_content
+.exchang_ways{height:80px;overflow:hidden;padding:15px;background:#fff;margin-bottom:15px;clear:both}.main .exch_content .exchang_ways
+.ways{background:url(../images/juandou_total.gif) no-repeat 0 -228px;height:18px;width:149px;margin-bottom:15px}.main .exch_content .exchang_ways .step
+li{float:left;height:50px;width:154px;background:url(../images/juandou_total.gif) no-repeat -237px 0;margin-right:24px}.main .exch_content .exchang_ways .step li
+a{display:block;cursor:pointer;height:50px;width:154px}.main .exch_content .exchang_ways .step
+.ways_2{background-position:-237px -62px}.main .exch_content .exchang_ways .step
+.ways_3{background-position:-237px -132px;width:130px}.main .exch_content .exchang_ways .step .ways_3
+a{width:130px}.main .exch_content .exchang_ways .step
+.ways_4{background-position:-237px -205px;width:140px;margin-right:0px}.main .exch_content .exchang_ways .step .ways_4
+a{width:140px}.main .exch_content
+.item_ways{margin-bottom:0px}.main .exch_content .item_ways
+.ways{background:none;font-size:14px;font-weight:bold;color:#727272}.main .exch_content .try_ways .step
+li{background:url(../images/try_total.gif) no-repeat -3px -57px}.main .exch_content .try_ways .step
+.ways_2{background-position:-3px -114px}.main .exch_content .try_ways .step
+.ways_3{background-position:-3px -168px;width:155px}.main .exch_content .try_ways .step
+.ways_4{background-position:-3px -226px;width:165px}.main .exch_content .apply_ways .step
+li{background:url(../images/try_total.gif) no-repeat -176px -57px}.main .exch_content .apply_ways .step
+.ways_2{background-position:-176px -114px}.main .exch_content .apply_ways .step
+.ways_3{background-position:-176px -168px;width:150px}.main .exch_content .apply_ways .step
+.ways_4{background-position:-176px -226px;width:150px}.main .exch_content
+.exchange_rule{background:#fff;padding:0
+15px;height:auto;overflow:hidden;padding-bottom:20px;clear:both}.main .exch_content .exchange_rule
+h3{color:#727272;margin-bottom:10px;text-indent:5px}.main .exch_content .exchange_rule
+p{height:30px;line-height:30px;color:#818181;text-indent:10px}.main .exch_content .exchange_rule p
+a{color:#0289cd}.main .exch_content .exchange_rule
+table{margin-left:5px;border-collapse:collapse}.main .exch_content .exchange_rule table tr
+td{height:32px;line-height:32px;text-align:center}.main .exch_content .exchange_rule table tr
+.f_td{width:200px;border:#e3e3e3 solid 1px}.main .exch_content .exchange_rule table tr
+.se_td{width:365px;border:#e3e3e3 solid 1px}.main .exch_content
+.put_report{padding:5px
+10px;line-height:28px;border:#fff4d8 solid 1px;height:auto;overflow:hidden;width:710px;background:#fffdeb}.main .exch_content .put_report
+span{color:#727272;font-size:14px;font-weight:bold;display:block;float:left;background:url(../images/try_total.gif) no-repeat -385px -92px;padding-left:15px}.main .exch_content .put_report
+.order_btn{background:url(../images/try_total.gif) no-repeat 0 -305px;height:28px;width:80px;display:block;float:right;color:#fff;text-align:center;line-height:26px}.main .exch_content .put_report .order_btn:hover{background-position:-83px -305px;text-decoration:none}.main .exch_content
+.put_report_item{border:none medium;margin:20px
+10px;background:none}.main .exch_content .put_report_item
+span{background:none;padding-left:0px}.applier_list{padding:20px
+20px;border-top:#f2f2f2 dashed 1px}.applier_list ul
+li{float:left;margin-right:48px;margin-bottom:30px;width:136px;height:54px;overflow:hidden}.applier_list ul
+.no{margin-right:0px;margin-top:0px}.applier_list ul li
+.pic{width:54px;float:left;border:#e9e9e8 solid 1px}.applier_list ul li
+.detail{width:70px;float:left;margin-left:10px}.applier_list ul li .detail
+.applier_name{width:70px;color:#333;font-weight:bold;height:16px;overflow:hidden}.applier_list ul li .detail
+.apply_r{background:url(../images/try_total.gif) no-repeat -384px -124px;padding-left:20px;height:20px;line-height:20px;margin-top:10px;color:#92bd2f}.main .exch_content
+.put_order{padding:5px
+10px;line-height:28px;height:auto;overflow:hidden;width:670px;margin:20px
+20px 0}.main .exch_content .put_order
+span{color:#727272;font-size:14px;font-weight:bold;display:block;float:left}.main .exch_content .put_order
+.order_btn{background:url(../images/try_total.gif) no-repeat 0 -305px;height:28px;width:80px;display:block;float:right;color:#fff;text-align:center;line-height:26px}.main .exch_content .put_order .order_btn:hover{background-position:-83px -305px;text-decoration:none}.main .exch_content
+.order_menu{clear:both;height:auto;width:705px;margin-top:15px;padding-left:25px;border-bottom:#f2f2f2 solid 1px;padding-bottom:40px}.main .exch_content .order_menu .pub_area_bd ul
+li{margin-bottom:15px;clear:both;height:auto;overflow:hidden;line-height:24px}.main .exch_content .order_menu
+label{color:#818181;font-size:14px;display:block;float:left}.main .exch_content .order_menu
+.txt{border:#d2d2d2 solid 1px;height:24px;border-radius:3px;width:300px;padding-left:3px;float:left}.main .exch_content .order_menu
+.textarea{width:622px;height:300px;border:#d2d2d2 solid 1px;border-radius:3px;float:left;resize:none;padding-left:3px;padding-top:3px;color:#000;margin-left:0px}.main .exch_content .order_menu
+.tips{color:#aaa;margin-left:5px;display:block;float:left}.main .exch_content .order_menu
+.pub_area_ft{width:630px;margin-left:40px}

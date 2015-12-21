@@ -1,0 +1,253 @@
+.content_body {
+margin-right: 15px;
+margin-top: 15px;
+background: white;
+padding: 15px 35px 15px 15px;
+width: 685px !important;
+min-height: 500px;
+}
+
+.content_body .c_b_menu {
+border-bottom: 2px solid #FF940A;
+height: 29px;
+border-left: #E5E5E5 solid 1px;
+}
+.c_b_menu li {
+border-right: #E5E5E5 solid 1px;
+border-top: #E5E5E5 solid 1px;
+float: left;
+height: 28px;
+line-height: 28px;
+overflow: hidden;
+}
+.c_b_menu li a {
+font-size: 12px;
+padding: 0 17px;
+height: 28px;
+display: block;
+overflow: hidden;
+float: left;
+}
+.c_b_menu li a:hover{text-decoration:none}
+.c_b_menu li a span {
+font-weight: bold;
+}
+.c_b_menu .cur {
+border-right: #FF940A solid 1px;
+border-top: #FF940A solid 1px;
+border-top-width: 2px;
+position: relative;
+line-height: 26px;
+background: #FF9C16;
+height: 27px;
+left: -1px;
+}
+.c_b_menu .cur a {
+color: white;
+}
+
+
+.per_content {margin-left: 60px;_margin-left: 30px;padding: 20px 0px 30px;}
+.per_content ul {
+list-style: none outside none;
+}
+.per_content li {
+clear: both;
+display: block;
+margin-top: 20px;
+overflow: hidden;
+position: relative;
+padding-bottom: 5px;
+}
+.per_content li label {
+display: block;
+float: left;
+height: 26px;
+line-height: 26px;
+text-align: right;
+width: 130px;
+}
+.per_content .head_b img {
+margin-right: 10px;
+width: 100px;
+height: 100px;
+}
+.per_content .head_b .smt_file_fake {
+}
+.per_content li .smt_file_fake {
+background: url("image/new/img/btn_grey_94x27.png") no-repeat scroll 0 0 white;
+border: medium none;
+cursor: pointer;
+height: 27px;
+width: 94px;
+position: absolute;
+top: 75px;
+left: 240px;
+z-index: 4;
+}
+
+.per_content .head_b .smt_file {
+left: 240px;
+top: 75px;
+cursor: pointer;
+}
+
+.per_content li .smt_file {
+height: 28px;
+left: 130px;
+opacity: 0;
+filter: alpha(opacity=0);
+position: absolute;
+top: 0;
+width: 95px;
+cursor: pointer;
+z-index: 5;
+}
+
+.per_content #email, .per_content #username {
+color: #AAA;
+}
+
+.per_content li select {
+float: left;
+border-color: #AAA #DDD #DDD #AAA;
+border-style: solid;
+border-width: 1px;
+font-size: 14px;
+padding: 5px 5px;
+margin-right: 5px;
+margin-top: 1px;
+}
+.per_content li input[type="text"], .per_content li input[type="password"] {
+border-color: #AAA #DDD #DDD #AAA;
+border-style: solid;
+border-width: 1px;
+float: left;
+font-size: 14px;
+height: 26px;
+line-height: 26px;
+padding-left: 5px;
+margin-right: 5px;
+background: white;
+}
+
+.per_content li textarea {
+border-color: #AAA #DDD #DDD #AAA;
+border-style: solid;
+border-width: 1px;
+color: #5E5E5E;
+font-size: 14px;
+height: 60px;
+line-height: 20px;
+padding: 3px 5px;
+width: 350px;
+resize: none;
+overflow: hidden;
+background: white;
+}
+
+.per_content .bind_p {
+margin-top: 10px;
+}
+.per_content p {
+clear: both;
+}
+.per_content li p {
+clear: both;
+color: #989898;
+line-height: 22px;
+margin-left: 130px;
+margin-top: 5px;
+}
+
+.per_content li .smt {
+border: none;
+height: 30px;
+width: 107px;
+}
+.per_content .smt {
+float: left;
+margin-top: 5px;
+display: block;
+text-align: center;
+line-height: 30px;
+font-size: 14px;
+float: left;
+color: white;
+font-weight: bold;
+cursor: pointer;
+background: url(image/new/img/total_zone.gif) no-repeat 0px -39px;
+}
+
+
+
+.c_b_body {
+height: auto;
+width: 685px;
+margin-top: 1px;
+padding-bottom: 50px;
+min-height: 500px;
+}
+.c_b_body .find_gift {
+height: auto;
+overflow: hidden;
+width: 685px;
+padding-top: 100px;
+}
+.c_b_body .find_gift p {
+text-align: center;
+font-size: 14px;
+line-height: 30px;
+}
+.c_b_body .find_gift p a {
+color: #0289CD;
+text-decoration: underline;
+}
+
+.bind-account-list {
+margin-top: 20px;
+overflow: hidden;
+width: 710px;
+}
+
+.bind-account-list li {
+float: left;
+margin-bottom: 30px;
+width: 355px;
+clear: none;
+}
+
+.account-item {
+height: 80px;
+padding-left: 90px;
+position: relative;
+}
+.account-item .website-icon {
+display: block;
+height: 80px;
+left: 0;
+position: absolute;
+top: 0;
+width: 80px;
+}
+.account-item dl dt {
+color: #333;
+font-size: 14px;
+font-weight: 700;
+}
+.account-item dl dd {
+color: #999;
+line-height: 1.8;
+}
+.account-item dl dd.operate {
+margin-top: 6px;
+}
+.account-item dl dd .J_bind {
+height: 27px;
+width: 82px;
+display: block;
+text-align: center;
+line-height: 26px;
+background: url("image/new/img/zone_user_bind_button.png") no-repeat scroll 0px -28px;
+}
+.account-item dl dd a.J_bind:hover{background-position:0px 0px;color:#fff;text-decoration:none}

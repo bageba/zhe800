@@ -1,0 +1,9 @@
+.page{overflow:hidden;text-align:center;position:relative;padding:45px
+0 20px;clear:both}.page
+.pageNav{height:50px;padding-top:50px;position:relative;margin-right:335px;float:right;display:inline}.page a,.page span,.page
+i{background:none repeat scroll 0 0 #FFF;margin-left:1px;padding:10px
+15px;overflow:hidden;color:#a3370f;font-size:14px;font-weight:bold;border-right:none;-moz-box-shadow:1px 1px 3px rgba(226,226,226,0.75);-webkit-box-shadow:1px 1px 3px rgba(226,226,226,0.75);box-shadow:1px 1px 3px rgba(226,226,226,0.75);display:block;float:left}.page a:hover{text-decoration:none;color:#FF6701}.page
+span{background:#ee6217;color:#fff;font-weight:bold}.page
+i{color:#d4d4d4}.page a.pg-next{position:relative;overflow:visible;width:60px;border-radius:0 20px 20px 0}.page a.pg-next
+em{background:url(../images/page-img.gif) no-repeat;height:94px;width:163px;position:absolute;top:-52px;right:-90px}.page a.pg-next:hover{cursor:pointer}.page span.pg-prev{color:#bbb;font-weight:normal;background:none repeat scroll 0 0 #FFF;width:60px;border-radius:20px 0 0 20px}.page span.pg-next{position:relative;overflow:visible;width:60px;border-radius:0 20px 20px 0;background:#fff;color:#bbb}.page span.pg-next
+em{background:url(../images/page-img.gif) no-repeat;height:94px;width:163px;position:absolute;top:-52px;right:-90px}.page a.pg-prev{background:none repeat scroll 0 0 #FFF;width:60px;border-radius:20px 0 0 20px}

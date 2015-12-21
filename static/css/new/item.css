@@ -1,0 +1,230 @@
+/*alert.css*/
+* {margin: 0px;padding: 0px;}
+body {color: #5E5E5E;font-family: Tahoma,Helvetica,Arial,'宋体',sans-serif;font-size: 12px;}
+a {color: #5E5E5E;text-decoration: none;}
+a:hover {color: #FF6C01;text-decoration: underline;}
+h3 {font-size: 14px;}
+ul, li {list-style: none;}
+img {border: 0px;}
+
+
+.mains {width: 1000px;margin: 0 auto;overflow: hidden;}
+.piece {margin-bottom: 15px;width: 1000px;overflow: hidden;}
+.jiu_top {margin-top: 15px;margin-right: 15px;}
+.jiu_bd {width: 760px;overflow: hidden;min-height: 180px;}
+.fl {float: left;}
+.fr {float: right;}
+
+textarea, input[type="text"] {background: url(image/new/img/input_bg_sd.png) no-repeat scroll 0 0 white;font-family: Tahoma,Helvetica,Arial,sans-serif;}
+
+.mains .jiu_right {width: 230px;height: auto;overflow: hidden;margin-top: 15px;}
+ 
+.mains .jiu_shi .shijiu_list {clear: both;height: auto;overflow: hidden;margin-top: 13px;}
+.mains .jiu_shi .shijiu_list li {float: left;margin-left: 16px;_margin-left: 13px;height: auto;width: 150px;}
+.mains .jiu_shi .shijiu_list li .pic img {width: 148px;height:148px}
+.mains .jiu_shi .shijiu_list li .title_name {height: 25px;line-height: 25px;overflow: hidden;}
+.mains .jiu_shi .shijiu_list li .title_name a {text-decoration: none;color: #5A5A5A;}
+.mains .jiu_shi .shijiu_list li .detail {height: 25px;line-height: 25px;margin-top: 3px;}
+.mains .jiu_shi .shijiu_list li .detail .price {color: #EE6217;font-family: "微软雅黑","Arial";font-size: 18px;display: block;float: left;}
+.mains .jiu_shi .shijiu_list li .detail .go_action {color: #1210000;text-decoration: none;}
+.mains .jiu_shi .shijiu_list li .detail a {float: right;text-decoration: underline;}
+.mains .jiu_right {width: 230px;height: auto;overflow: hidden;margin-top: 10px;}
+.mains .jiu_right .per_logo {padding: 10px;background: url(image/new/img/per_bg.jpg) repeat;width: 210px !important;border-bottom: #E7E7E7 solid 1px;}
+.mains .jiu_right .per_logo .juan_logged {width: 210px;height: 72px;background: url(image/new/img/jiu_item.gif) no-repeat 0 -481px;margin-bottom: 7px;}
+.mains .jiu_right .per_logo .juan_logged ul .register {height: 68px;line-height: 68px;width: 109px;overflow: hidden;}
+.mains .jiu_right .per_logo .juan_logged ul li {float: left;}
+.mains .jiu_right .per_logo .juan_logged ul .register a {display: block;cursor: pointer;height: 68px;width: 109px;}
+.mains .jiu_right .per_logo .juan_logged ul .logo_type {padding: 12px 0px 12px 8px;}
+.mains .jiu_right .per_logo .juan_logged ul li {float: left;}
+.mains .jiu_right .per_logo .juan_logged ul .logo_type dl dt {color: #8F8F8F;}
+.mains .jiu_right .per_logo .juan_logged ul .logo_type dl dd {float: left;margin-top: 9px;}
+.mains .jiu_right .per_logo .juan_logged ul .logo_type dl dd a {text-indent: -999em;display: block;}
+.mains .jiu_right .per_logo .per_info {width: 195px;height: auto;overflow: hidden;background: white;padding: 7px;height: 74px;width: 198px !important;padding-bottom: 0px;}
+
+.mains .jiu_right .per_logo .per_info .per_icon {height: 54px;width: 54px;overflow: hidden;float: left;margin-right: 10px;}
+.mains .jiu_right .per_logo .per_info .per_detail {float: left;height: auto;overflow: hidden;width: 124px;_margin-top: -2px;}
+.mains .jiu_right .per_logo .per_info .per_detail .per_user {height: 16px;line-height: 16px;overflow: hidden;}
+.mains .jiu_right .per_logo .per_info .per_detail .per_name {color: #6CAF11;font-size: 14px;font-weight: bold;}
+.mains .jiu_right .per_logo .per_info .per_detail .all_juandou {color: #727272;margin-top: 4px;}
+.mains .jiu_right .per_logo .per_info .per_detail .all_juandou a {color: #0289CD;cursor: pointer;}
+
+.icon_qq, .icon_taobao, .icon_sina, .icon_tengxun {background: url(image/new/img/login_total.gif) no-repeat -2px -138px;height: 18px;width: 16px;display: block;margin-right: 6px;}
+.icon_qq {background-position: -2px -138px;}
+
+.icon_taobao {background-position: -23px -138px;}
+.icon_sina {background-position: -45px -138px;}
+.icon_tengxun {background-position: -67px -138px;}
+.mains .jiu_right .per_logo .juan_btn {height: auto;overflow: hidden;width: 210px;}
+.mains .jiu_right .per_logo .juan_btn a {height: 30px;width: 75px !important;text-align: center;line-height: 28px;background: url(image/new/img/newftx_total.gif) no-repeat 0 -206px;padding-left: 25px;color: #FF7600;display: block;float: left;}
+.mains .jiu_right .per_logo .juan_btn a {height: 30px;width: 75px !important;text-align: center;line-height: 28px;background: url(image/new/img/newftx_total.gif) no-repeat 0 -206px;padding-left: 25px;color: #FF7600;display: block;float: left;}
+.mains .jiu_right .per_logo .juan_btn .visit_btn {color: #93BD2F;background-position: 0 -240px;margin-left: 10px;}
+.mains .jiu_right .exchange_info {background: white;padding: 15px;height: auto;overflow: hidden;width: 200px;}
+.mains .jiu_right .exchange_info h3 {color: #8F8F8F;font-size: 14px;overflow: hidden;height: 24px;}
+.mains .jiu_right .exchange_info h3 span {display: block;float: left;}
+.mains .jiu_right .exchange_info h3 .more {color: #8F8F8F;float: right;font-size: 12px;font-weight: normal;display: block;}
+.mains .jiu_right .exchange_info .goods_info {padding: 12px 0px;border-bottom: whiteSmoke dashed 1px;height: auto;overflow: hidden;clear: both;}
+.mains .jiu_right .exchange_info .goods_info .goods_img {width: 54px;height: 54px;overflow: hidden;float: left;margin-right: 10px;}
+.mains .jiu_right .exchange_info .goods_info .goods_detail {float: left;width: 136px;height: auto;overflow: hidden;margin-top: -3px;}
+.mains .jiu_right .exchange_info .goods_info .goods_detail .goods_title {height: 15px;line-height: 15px;overflow: hidden;}
+.mains .jiu_right .exchange_info .goods_info .goods_detail p {color: #8D8D8D;}
+.mains .jiu_right .exchange_info .goods_info .goods_detail .goods_title a {color: #8D8D8D;}
+.mains .jiu_right .exchange_info .goods_info .goods_detail .goods_price, .mains .jiu_right .exchange_info .goods_info .goods_detail .exchange_price {margin-top: 5px;}
+.mains .jiu_right .exchange_info .goods_info .goods_detail .exchange_price b {color: #FF7201;font-weight: normal;margin-right: 2px;} 
+.mains .jiu_right .theysays {margin-top: 15px;padding: 0px;width: 230px;}
+.mains .jiu_right .theysays h3 {height: 38px;line-height: 38px;background: #F9F9F9;border-bottom: #F1F1F1 solid 1px;padding: 0 15px;color: #8D8D8D;}
+.mains .jiu_right .exchange_info h3 .more {color: #8F8F8F;float: right;font-size: 12px;font-weight: normal;display: block;}
+.mains .jiu_right .worth_buy .worth_buy_goods ul li {float: left;margin-right: 8px;margin-bottom: 8px;margin-left: 8px;margin-top: 8px;}
+.mains .jiu_right .worth_buy .worth_buy_goods ul .no {margin-right: 0px;padding-bottom: 0px;}
+.mains .jiu_right .worth_buy .worth_buy_goods ul li .goodsimg a {display: block;height: 100px;width: 100px;overflow: hidden;position: relative;}
+.mains .jiu_right .worth_buy .worth_buy_goods ul li .goodsimg a:hover {text-decoration: none;}
+.mains .jiu_right .worth_buy .worth_buy_goods ul li .goodsimg span {background-color: rgba(255, 112, 0, 0.7);background-color: rgba(255, 112, 0, 0.7) 9;filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#aaff7000,endColorstr=#aaff7000);bottom: 0px;cursor: pointer;display: block;height: 22px;right: 1px;line-height: 22px;position: absolute;text-align: center;padding-left: 3px;padding-right: 3px;color: white;}
+.mains .jiu_right .exchange_info .no {padding-bottom: 5px;border-bottom: none;}
+
+.white_bg {height: auto;background-color: white;}
+
+
+
+
+
+/*item.css*/
+
+
+
+/*page.css*/
+.jiu_goods {background: url(image/new/img/background_bg.png) repeat;}
+.jiu_top {background: url(image/new/img/background_bg.png) repeat;}
+.jiu_top {margin-top: 10px;margin-right: 10px;}
+.mains .item_containt {height: auto;width: 760px;overflow: hidden;background: white;min-height: 900px;}
+.mains .item_containt .jiu_goodsinfo {height: auto;padding: 15px;width: 705px;overflow: hidden;background: white;position: relative;}
+.mains .item_containt .jiu_comment {height: auto;padding: 15px;background: white;}
+.mains .jiu_item {width: 705px;background: white;padding: 15px 15px 25px 15px;}
+.mains .jiu_shi {height: auto;overflow: hidden;width: 1000px;padding-bottom: 20px;}
+.mains .item_containt .jiu_goodsinfo h3 a {color: black;font-size: 20px;font-family: "微软雅黑","宋体";font-weight: normal;}
+.mains .item_containt .jiu_goodsinfo .goods_con {height: auto;overflow: hidden;width: 705px;margin: 15px 0;}
+.mains .item_containt .jiu_goodsinfo .goods_con .pic {height: 310px;width: 310px;float: left;text-align: center;overflow: hidden;margin-right: 24px;background: url(image/new/img/shareinfo_show_big_wrap_bg.jpg) repeat;}
+.mains .item_containt .jiu_goodsinfo .goods_con .goods_detail {width: 363px;float: left;position: relative;height: 313px;position: relative;}
+
+.mains .item_containt .jiu_goodsinfo .goods_con .goods_detail .price_tag {background: url(image/new/img/jiu_item.gif) no-repeat 0 0;height: 68px;width: 355px !important;line-height: 68px;font-size: 44px;color: white;padding-left: 20px;position: relative;font-family: "Microsoft Yahei","Arial","Verda","tahoma";font-weight: bold;top: 3px;left: -4px;-moz-box-shadow: -1px 3px 3px rgba(196,194,181,0.6);box-shadow: -1px 3px 3px rgba(196, 194, 181, 0.6);text-shadow: 0 0 0 transparent, 1px 1px 1px #8A181B;}
+.mains .item_containt .jiu_goodsinfo .goods_con .goods_detail .price_tag i {font-size: 24px;font-style: normal;font-family: "微软雅黑","arial";margin-right: 3px;}
+.mains .item_containt .jiu_goodsinfo .goods_con .goods_detail .price_tag span {font-size: 28px;}
+.mains .item_containt .jiu_goodsinfo .goods_con .goods_detail .price_tag {line-height: 68px;font-size: 44px;color: white;font-family: "Microsoft Yahei","Arial","Verda","tahoma";font-weight: bold;text-shadow: 0 0 0 transparent, 1px 1px 1px #8A181B;}
+.mains .item_containt .jiu_goodsinfo .goods_con .goods_detail .price_tag .ori_price {color: #B6E09D;font-size: 12px;text-decoration: line-through;margin-left: 3px;text-shadow: none;font-weight: normal;}
+.mains .item_containt .jiu_goodsinfo .goods_con .goods_detail .price_tag span {font-size: 28px;}
+.mains .item_containt .jiu_goodsinfo .goods_con .goods_detail .price_tag {line-height: 68px;font-size: 44px;color: white;font-family: "Microsoft Yahei","Arial","Verda","tahoma";font-weight: bold;text-shadow: 0 0 0 transparent, 1px 1px 1px #8A181B;}
+.mains .item_containt .jiu_goodsinfo .goods_con .goods_detail .price_tag a {display: block;position: absolute;background: url(image/new/img/jiu_item.gif) no-repeat 0 -294px;height: 42px;width: 115px;top: 14px;right: 18px;overflow: hidden;}
+.mains .item_containt .jiu_goodsinfo .goods_con .goods_detail .price_tag a:hover{background-position:-122px -294px}
+.mains .item_containt .jiu_goodsinfo .goods_con .goods_detail .tag_buy {background-position: 0 -73px;}
+.mains .item_containt .jiu_goodsinfo .goods_con .goods_detail .tag_buy .ori_price {color: #FFB499;}
+.mains .item_containt .jiu_goodsinfo .goods_con .goods_detail .tag_buy a {background-position: 0 -341px;width: 99px;height: 41px;right: 27px;}
+.mains .item_containt .jiu_goodsinfo .goods_con .goods_detail .tag_buy a:hover{background-position:-114px -341px}
+
+
+.mains .item_containt .jiu_goodsinfo .goods_con .goods_detail .tag_juandou{background-position:0 -598px;height:50px;line-height:50px;box-shadow:none;text-shadow:none}
+.mains .item_containt .jiu_goodsinfo .goods_con .goods_detail .tag_juandou a{height:44px;width:120px;background-position:0 -659px;top:0px}
+.mains .item_containt .jiu_goodsinfo .goods_con .goods_detail .tag_juandou a:hover{background-position:-135px -659px}
+.mains .item_containt .jiu_goodsinfo .goods_con .goods_detail .tag_buy .ori_price{color:#ffb499}
+.mains .item_containt .jiu_goodsinfo .goods_con .goods_detail .tag_sellout{background-position:0 -146px}
+.mains .item_containt .jiu_goodsinfo .goods_con .goods_detail .tag_sellout a{background-position:0 -386px;width:99px;height:41px;right:27px}
+.mains .item_containt .jiu_goodsinfo .goods_con .goods_detail .tag_sellout a:hover{background-position:0 -386px}
+.mains .item_containt .jiu_goodsinfo .goods_con .goods_detail .tag_sellout .ori_price{color:#e7e7e7}
+.mains .item_containt .jiu_goodsinfo .goods_con .goods_detail .tag_end{background-position:0 -146px}
+.mains .item_containt .jiu_goodsinfo .goods_con .goods_detail .tag_end a{background-position:0 -431px;width:99px;height:41px;right:27px}
+.mains .item_containt .jiu_goodsinfo .goods_con .goods_detail .tag_end a:hover{background-position:0 -431px}
+.mains .item_containt .jiu_goodsinfo .goods_con .goods_detail .tag_end .ori_price{color:#e7e7e7}
+.mains .item_containt .jiu_goodsinfo .goods_con .goods_detail .tag_juandou span{font-size:14px;font-weight:normal;display:block;float:left}
+.mains .item_containt .jiu_goodsinfo .goods_con .goods_detail .tag_juandou .nead_all{font-size:24px;font-family:"微软雅黑","verdana";font-weight:bold;margin-right:3px}
+.mains .item_containt .jiu_goodsinfo .goods_con .goods_detail .goods_juan p{color:#818181;font-size:14px;line-height:30px;margin-left:15px}
+.mains .item_containt .jiu_goodsinfo .goods_con .goods_quan{border:#ffe49e solid 1px;border-top:none;width:322px !important;padding:21px 11px 14px 3px;background:#fffdeb}
+.mains .item_containt .jiu_goodsinfo .goods_con .juan_detail .goods_quan{padding:10px 0px 0px 0px}
+.mains .item_containt .jiu_goodsinfo .goods_con .goods_quan .detail{padding:24px 11px 12px 11px;background:#fff8c5;margin-bottom:15px;position:relative}
+
+
+
+.mains .item_containt .jiu_goodsinfo .goods_con .goods_quan {border: #FFE49E solid 1px;border-top: none;width: 347px !important;padding: 21px 11px 14px 3px;background: #FFFDEB;}
+.mains .item_containt .jiu_goodsinfo .goods_con .goods_quan .change_bottom {height: auto;overflow: hidden;width: 322px;}
+.mains .item_containt .jiu_goodsinfo .goods_con .goods_quan .shoot_time {margin-left: 10px;float: left;width: 300px;}
+.mains .item_containt .jiu_goodsinfo .goods_con .change_recommend {height: auto;width: 363px;overflow: hidden;margin-top: 8px;}
+.mains .item_containt .jiu_goodsinfo .goods_con .change_recommend p {color: #999;line-height: 20px;}
+.mains .item_containt .jiu_goodsinfo .goods_con .change_recommend p .comm_name {color: #92BD2F;}
+.mains .item_containt .jiu_goodsinfo .goods_con .shareto {margin-top: 20px;height: auto;overflow: hidden;position: absolute;bottom: 0px;right: 0px;}
+.mains .item_containt .jiu_goodsinfo .goods_con .shareto .sharebaidu {float: right;}
+.mains .item_containt .jiu_goodsinfo .goods_con .shareto .share_txt {color: #999;float: right;height: 24px;line-height: 24px;}
+.mains .item_containt .jiu_comment {height: auto;padding: 15px;background: white;}
+.mains .item_containt .jiu_comment h4 {font-size: 14px;color: gray;text-indent: 14px;height: 36px;line-height: 36px;background: #F3F3F3;}
+.note_comment_warp {clear: both;}
+.note_comment {margin-top: 20px;margin-left: 5px;}
+.note_comment .c_l {background-color: white;padding-bottom: 20px;}
+.note_comment .c_l li {min-height: 40px;padding: 10px 20px 10px 0;width: 685px;overflow: hidden;}
+.note_comment .c_l .avt {float: left;height: 34px;width: 34px;overflow: hidden;}
+.note_comment .c_l li .sms {color: #666;line-height: 18px;padding: 0 0px 0 48px;}
+.note_comment .c_l li .sms .icard {color: #09E;}
+.note_comment .c_l .sms span {color: #CCC;font-size: 12px;}
+.note_comment .c_l div {line-height: 120%;text-align: right;padding: 10px 0px 0 48px;}
+.note_comment .c_l div span {color: #CCC;font-size: 12px;float: left;}
+.note_comment .c_l div a {color: #2571BD;}
+.pub_area {clear: both;padding-top: 20px;width: 685px;}
+.pub_area .pub_txt {border: 1px solid #CCC;height: 60px;line-height: 16px;margin-top: 5px;overflow: hidden;padding: 5px;resize: none;width: 673px;font-size: 12px;-moz-box-shadow: 2px 2px 3px #ECECEC inset;-webkit-box-shadow: 2px 2px 3px #ECECEC inset;box-shadow: 2px 2px 3px #ECECEC inset;color: #999;}
+.pub_area_ft {margin-top: 10px;overflow: hidden;height: 24px;}
+.pub_area_ft .pub_btn {background: url("image/new/img/total_item.gif") no-repeat scroll -64px -45px transparent;color: white;display: block;font-weight: 600;height: 24px;line-height: 22px;margin: 0 2px 0 5px;text-align: center;width: 51px;float: right;}
+.pub_area .pub_out {padding: 2px 0;}
+.mains .jiu_item {width: 705px;background: white;padding: 15px 15px 25px 15px;}
+.mains .jiu_shi {height: auto;overflow: hidden;width: 1000px;padding-bottom: 20px;}
+.mains .jiu_item h3 {color: gray;font-family: "微软雅黑","宋体";font-size: 18px;font-weight: normal;}
+.mains .jiu_item .shijiu_list li {width: 162px;margin-left: 18px;}
+.mains .jiu_item .shijiu_list li .pic {padding: 6px;display: block;height: 148px;width: 148px;overflow: hidden;border: #E5E5E5 solid 1px;}
+
+
+
+
+.item-like {
+	background: none repeat scroll 0 0 #F2F2F2;
+	color: #666666;
+	display: block;
+	font: 14px/24px 'Microsoft Yahei';
+	padding: 15px 10px;
+	text-align: center;
+}
+
+.item-like strong,.item-bottom-like strong {
+	color: #C7223D;
+	font: normal 26px "arial";
+}
+
+
+.item-last-time {
+	display: block;
+	padding: 15px 0 15px 20px;
+}
+
+.item-last-time dt {
+	background: url('http://s0.mizhe.cn/image/icons/timer.png') no-repeat
+		scroll left center transparent;
+	font-weight: normal;
+	color: #999;
+	display: block;
+	line-height: 17px;
+	margin-bottom: 8px;
+	padding-left: 20px;
+}
+
+.item-last-time dd {
+	color: #666666;
+	font-size: 14px;
+	height: 32px;
+	margin: 0;
+	overflow: hidden;
+	text-align: center;
+	padding-right: 15px;
+}
+
+.item-last-time dd em {
+	color: #333333;
+	font-family: arial;
+	font-size: 24px;
+	margin: 0 5px;
+}
+
+.item-last-time .closed {
+	color: #999;
+	line-height: 32px;
+}
