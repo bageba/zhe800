@@ -139,7 +139,7 @@ CREATE TABLE `ftxia_items` (
   `ordid` int(11) DEFAULT '9999' COMMENT '自定义排序',
   `cate_id` int(11) DEFAULT '0' COMMENT '属于分类',
   `orig_id` smallint(6) DEFAULT '1',
-  `num_iid` varchar(11) NOT NULL,
+  `num_iid` varchar(20) NOT NULL,
   `title` varchar(255) NOT NULL,
   `intro` varchar(255) DEFAULT NULL,
   `tags` varchar(255) DEFAULT NULL,
